@@ -1,0 +1,20 @@
+:root {
+  --it-body-color: #ffffff;
+  --it-theme-color: #BF4315;
+  --it-primary-color: #FFF3EF;
+  --it-heading-color: #33251F;
+  --it-body-color-2: #69615D;
+  --it-btn-color: #BF4215;
+  --tp-sub-font-color: #BF4315;
+  --it-white-color: #fff;
+  --it-common-white: #fff;
+  --it-black-color: #000;
+  --it-common-black: #000;
+}
+
+:root {
+  --it-font-body: "Sora", serif;
+  --it-font-heading: "Marcellus", serif;
+  --it-font-sub-heading: "Fuzzy Bubbles", serif;
+  --it-font-awesome-6-pro: "Font Awesome 6 Pro";
+}/*# sourceMappingURL=index.css.map */

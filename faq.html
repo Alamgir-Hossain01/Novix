@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>novix</title>
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom-animation.css">
+   <link rel="stylesheet" href="assets/css/nice-select.css">
+   <!-- <link rel="stylesheet" href="assets/css/BeerSlider.css"> -->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body id="body" class="it-magic-cursor">
+
+
+    <!-- preloader -->
+   <div id="preloader">
+      <div class="preloader">
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+   <!-- preloader end  -->
+
+    <div id="magic-cursor">
+      <div id="ball"></div>
+   </div>
+
+
+     <!-- back-to-top-start  -->
+   <button class="scroll-top scroll-to-target" data-target="html">
+      <i class="far fa-angle-double-up"></i>
+   </button>
+   <!-- back-to-top-end  -->
+
+
+   <header class="z-index-11">
+      <!-- header-top-area-start -->
+      <div class="it-header-top-area z-index-11 d-none d-sm-block" data-bg-color="#33251F">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-8 col-md-8 col-sm-8 col-7">
+                  <div class="it-header-top-left d-flex">
+                     <span>
+                        <svg xmlns="htit://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                           <path d="M15.9766 3H3.97656C3.15156 3 2.48406 3.675 2.48406 4.5L2.47656 13.5C2.47656 14.325 3.15156 15 3.97656 15H15.9766C16.8016 15 17.4766 14.325 17.4766 13.5V4.5C17.4766 3.675 16.8016 3 15.9766 3ZM15.9766 6L9.97656 9.75L3.97656 6V4.5L9.97656 8.25L15.9766 4.5V6Z" fill="white" />
+                        </svg>
+                        <a href="mailto:Prospery@company.com"> Prospery@company.com </a>
+                     </span>
+                     <span class="it-header-dvir"></span>
+                     <span class="d-none d-sm-block">
+                        <svg xmlns="htit://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M9.42306 16.6005C9.42306 16.6005 3.97656 12.0135 3.97656 7.5C3.97656 5.9087 4.6087 4.38258 5.73392 3.25736C6.85914 2.13214 8.38526 1.5 9.97656 1.5C11.5679 1.5 13.094 2.13214 14.2192 3.25736C15.3444 4.38258 15.9766 5.9087 15.9766 7.5C15.9766 12.0135 10.5301 16.6005 10.5301 16.6005C10.2271 16.8795 9.72831 16.8765 9.42306 16.6005ZM9.97656 10.125C10.3213 10.125 10.6626 10.0571 10.9811 9.92518C11.2996 9.79327 11.589 9.59991 11.8327 9.35616C12.0765 9.1124 12.2698 8.82302 12.4017 8.50454C12.5337 8.18606 12.6016 7.84472 12.6016 7.5C12.6016 7.15528 12.5337 6.81394 12.4017 6.49546C12.2698 6.17698 12.0765 5.8876 11.8327 5.64384C11.589 5.40009 11.2996 5.20673 10.9811 5.07482C10.6626 4.9429 10.3213 4.875 9.97656 4.875C9.28037 4.875 8.61269 5.15156 8.12041 5.64384C7.62812 6.13613 7.35156 6.80381 7.35156 7.5C7.35156 8.19619 7.62812 8.86387 8.12041 9.35616C8.61269 9.84844 9.28037 10.125 9.97656 10.125Z" fill="white" />
+                        </svg>
+                        <a href="#">6391 Elgin Street, Suite</a>
+                     </span>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-4 col-5">
+                  <div class="it-header-top-social-right justify-content-end">
+                     <span class="it-header-top-social-text">Social :</span>
+                     <a href="#" class="it-header-top-social-icon">
+                        <svg xmlns="htit://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                           <path d="M11.0016 2.15625C10.0816 2.15625 9.1993 2.52171 8.54879 3.17222C7.89827 3.82274 7.53281 4.70503 7.53281 5.625V7.55625H5.67656C5.58356 7.55625 5.50781 7.63125 5.50781 7.725V10.275C5.50781 10.368 5.58281 10.4438 5.67656 10.4438H7.53281V15.675C7.53281 15.768 7.60781 15.8438 7.70156 15.8438H10.2516C10.3446 15.8438 10.4203 15.7687 10.4203 15.675V10.4438H12.2931C12.3703 10.4438 12.4378 10.3912 12.4566 10.3162L13.0941 7.76625C13.1003 7.74137 13.1009 7.71538 13.0956 7.69027C13.0903 7.66516 13.0793 7.64158 13.0636 7.62133C13.0478 7.60108 13.0276 7.5847 13.0046 7.57342C12.9815 7.56214 12.9562 7.55627 12.9306 7.55625H10.4203V5.625C10.4203 5.54867 10.4353 5.47309 10.4646 5.40257C10.4938 5.33204 10.5366 5.26797 10.5906 5.21399C10.6445 5.16002 10.7086 5.11721 10.7791 5.088C10.8496 5.05878 10.9252 5.04375 11.0016 5.04375H12.9516C13.0446 5.04375 13.1203 4.96875 13.1203 4.875V2.325C13.1203 2.232 13.0453 2.15625 12.9516 2.15625H11.0016Z" fill="white" />
+                        </svg>
+                     </a>
+                     <a href="#" class="it-header-top-social-icon">
+                        <svg xmlns="htit://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                           <path d="M8.35231 5.75C7.75558 5.75 7.18328 5.98705 6.76132 6.40901C6.33937 6.83097 6.10231 7.40326 6.10231 8C6.10231 8.59674 6.33937 9.16903 6.76132 9.59099C7.18328 10.0129 7.75558 10.25 8.35231 10.25C8.94905 10.25 9.52135 10.0129 9.9433 9.59099C10.3653 9.16903 10.6023 8.59674 10.6023 8C10.6023 7.40326 10.3653 6.83097 9.9433 6.40901C9.52135 5.98705 8.94905 5.75 8.35231 5.75ZM8.35231 4.25C9.34687 4.25 10.3007 4.64509 11.004 5.34835C11.7072 6.05161 12.1023 7.00544 12.1023 8C12.1023 8.99456 11.7072 9.94839 11.004 10.6517C10.3007 11.3549 9.34687 11.75 8.35231 11.75C7.35775 11.75 6.40392 11.3549 5.70066 10.6517C4.9974 9.94839 4.60231 8.99456 4.60231 8C4.60231 7.00544 4.9974 6.05161 5.70066 5.34835C6.40392 4.64509 7.35775 4.25 8.35231 4.25ZM13.2273 4.0625C13.2273 4.31114 13.1285 4.5496 12.9527 4.72541C12.7769 4.90123 12.5385 5 12.2898 5C12.0412 5 11.8027 4.90123 11.6269 4.72541C11.4511 4.5496 11.3523 4.31114 11.3523 4.0625C11.3523 3.81386 11.4511 3.5754 11.6269 3.39959C11.8027 3.22377 12.0412 3.125 12.2898 3.125C12.5385 3.125 12.7769 3.22377 12.9527 3.39959C13.1285 3.5754 13.2273 3.81386 13.2273 4.0625ZM8.35231 2C6.49681 2 6.19381 2.00525 5.33056 2.0435C4.74256 2.07125 4.34806 2.15 3.98206 2.2925C3.67594 2.40528 3.3991 2.58548 3.17206 2.81975C2.93752 3.04671 2.75706 3.32355 2.64406 3.62975C2.50156 3.99725 2.42281 4.391 2.39581 4.97825C2.35681 5.80625 2.35156 6.09575 2.35156 8C2.35156 9.85625 2.35681 10.1585 2.39506 11.0217C2.42281 11.609 2.50156 12.0043 2.64331 12.3695C2.77081 12.6958 2.92081 12.9305 3.16981 13.1795C3.42256 13.4315 3.65731 13.5822 3.97981 13.7067C4.35031 13.85 4.74481 13.9295 5.32981 13.9565C6.15781 13.9955 6.44731 14 8.35156 14C10.2078 14 10.5101 13.9948 11.3733 13.9565C11.9598 13.9288 12.3543 13.85 12.7211 13.7083C13.0272 13.5955 13.304 13.4153 13.5311 13.181C13.7838 12.929 13.9346 12.6942 14.0591 12.371C14.2016 12.002 14.2811 11.6075 14.3081 11.021C14.3471 10.1937 14.3516 9.9035 14.3516 8C14.3516 6.1445 14.3463 5.8415 14.3081 4.97825C14.2803 4.39175 14.2008 3.99575 14.0591 3.62975C13.9463 3.32362 13.7661 3.04679 13.5318 2.81975C13.3048 2.58521 13.028 2.40475 12.7218 2.29175C12.3543 2.14925 11.9598 2.0705 11.3733 2.0435C10.5461 2.0045 10.2566 2 8.35156 2M8.35156 0.5C10.3893 0.5 10.6436 0.5075 11.4438 0.545C12.2418 0.5825 12.7863 0.70775 13.2641 0.89375C13.7591 1.08425 14.1761 1.34225 14.5931 1.7585C14.9746 2.1333 15.2697 2.58685 15.4578 3.0875C15.6431 3.56525 15.7691 4.10975 15.8066 4.9085C15.8418 5.708 15.8516 5.96225 15.8516 8C15.8516 10.0378 15.8441 10.292 15.8066 11.0915C15.7691 11.891 15.6431 12.434 15.4578 12.9125C15.2697 13.4131 14.9746 13.8667 14.5931 14.2415C14.2183 14.623 13.7647 14.9181 13.2641 15.1063C12.7863 15.2915 12.2418 15.4175 11.4438 15.455C10.6436 15.4903 10.3893 15.5 8.35156 15.5C6.31381 15.5 6.05956 15.4925 5.25931 15.455C4.46131 15.4175 3.91756 15.2915 3.43906 15.1063C2.93842 14.9181 2.48486 14.623 2.11006 14.2415C1.72854 13.8667 1.43342 13.4131 1.24531 12.9125C1.05931 12.4347 0.934062 11.8903 0.896562 11.0915C0.860562 10.292 0.851562 10.0378 0.851562 8C0.851562 5.96225 0.859062 5.708 0.896562 4.9085C0.934062 4.109 1.05931 3.566 1.24531 3.0875C1.43342 2.58685 1.72854 2.1333 2.11006 1.7585C2.48486 1.37698 2.93842 1.08186 3.43906 0.89375C3.91681 0.70775 4.46056 0.5825 5.25931 0.545C6.06031 0.50975 6.31456 0.5 8.35231 0.5" fill="white" />
+                        </svg>
+                     </a>
+                     <a href="#" class="it-header-top-social-icon">
+                        <svg xmlns="htit://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                           <path d="M13.6188 2.29724L9.87175 6.58049L6.63175 2.29724H1.9375L7.54525 9.62924L2.23075 15.7035H4.50625L8.608 11.016L12.193 15.7035H16.7695L10.924 7.97549L15.8927 2.29724H13.6188ZM12.8207 14.3422L4.594 3.58649H5.94625L14.0807 14.3415L12.8207 14.3422Z" fill="white" />
+                        </svg>
+                     </a>
+                     <a href="#" class="it-header-top-social-icon">
+                        <svg xmlns="htit://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M9.7336 6.597V7.86975C10.0001 7.46376 10.3675 7.13392 10.7998 6.91253C11.232 6.69114 11.7144 6.58577 12.1996 6.60675C14.7908 6.60675 15.3511 8.22675 15.3511 10.3343V14.625H12.9511V10.821C12.9511 9.9135 12.7681 8.7465 11.3551 8.7465C9.98485 8.7465 9.75085 9.73425 9.75085 10.7535V14.625H7.35835V6.597H9.7336ZM5.7511 4.5795C5.7508 4.81725 5.68033 5.04963 5.54851 5.24749C5.41669 5.44535 5.22939 5.5999 5.0101 5.69175C4.7909 5.78286 4.54954 5.80669 4.31675 5.76022C4.08396 5.71374 3.87026 5.59905 3.70285 5.43075C3.53512 5.26234 3.42094 5.04811 3.37464 4.81498C3.32835 4.58185 3.35202 4.34023 3.44268 4.12052C3.53334 3.90081 3.68694 3.71281 3.88416 3.58015C4.08138 3.4475 4.31342 3.37613 4.5511 3.375C4.70906 3.375 4.86548 3.40619 5.01136 3.46677C5.15725 3.52736 5.28973 3.61615 5.40122 3.72806C5.51271 3.83997 5.60101 3.97279 5.66105 4.1189C5.72109 4.26501 5.75169 4.42154 5.7511 4.5795Z" fill="white" />
+                           <path d="M5.75156 6.60669H3.35156V14.6249H5.75156V6.60669Z" fill="white" />
+                        </svg>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- header-top-area-end -->
+
+      <!-- header-area-start -->
+      <div id="header-sticky" class="it-header-area it-header-ptb" data-bg-color="#FDFDFD">
+         <div class="container">
+            <div class="p-relative">
+               <div class="row align-items-center">
+                  <div class="col-xl-2  col-lg-2 col-md-2 col-sm-5 col-5">
+                     <div class="it-header-logo">
+                        <a href="index.html"><img src="assets/img/logo/logo-01.png" alt=""></a>
+                     </div>
+                  </div>
+                  <div class="col-xl-7 col-lg-7 col-md-5 col-sm-2 col-2 ">
+                     <div class="it-header-menu it-header-dropdown d-none d-xl-block">
+                        <nav class="it-menu-content">
+                           <ul>
+                              <li class="has-dropdown p-static">
+                                 <a href="index.html">Home</a>
+                                 <div class="it-submenu submenu has-home-img">
+                                    <div class="it-homemenu-wrapper">
+                                       <div class="row">
+                                          <div class="col home-img">
+                                             <div class="home-img-thumb home-img-overly mb-20">
+                                                <img  src="assets/img/demo/home-1.png" alt>
+                                                <div class="home-img-btn">
+                                                   <a class="it-btn-sm" href="index.html">
+                                                      <span class="text-one">Multi Page</span>
+                                                   </a>
+                                                   <a class="it-btn-sm" href="index-one-page.html">
+                                                      <span class="text-one">One Page</span>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="home-img-content text-center">
+                                                <h4 class="home-img-title">
+                                                   <a href="index.html">Home 01</a>
+                                                </h4>
+                                             </div>
+                                          </div>
+                                          <div class="col home-img">
+                                             <div class="home-img-thumb home-img-overly mb-20">
+                                               <img  src="assets/img/demo/home-2.png" alt="">
+                                                <div class="home-img-btn">
+                                                   <a class="it-btn-sm" href="index-2.html">
+                                                      <span class="text-one">Multi Page</span>
+                                                   </a>
+                                                   <a class="it-btn-sm" href="index-2-one-page.html">
+                                                      <span class="text-one">One Page</span>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="home-img-content text-center">
+                                                <h4 class="home-img-title">
+                                                   <a href="index-2.html">Home 02</a>
+                                                </h4>
+                                             </div>
+                                          </div>
+                                          <div class="col home-img">
+                                             <div class="home-img-thumb home-img-overly mb-20">
+                                                <img  src="assets/img/demo/home-3.png" alt="">
+                                                <div class="home-img-btn">
+                                                   <a class="it-btn-sm" href="index-3.html">
+                                                      <span class="text-one">Multi Page</span>
+                                                   </a>
+                                                   <a class="it-btn-sm" href="index-3-one-page.html">
+                                                      <span class="text-one">One Page</span>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="home-img-content text-center">
+                                                <h4 class="home-img-title">
+                                                   <a href="index-3.html">Home 03</a>
+                                                </h4>
+                                             </div>
+                                          </div>
+                                          <div class="col home-img">
+                                             <div class="home-img-thumb home-img-overly mb-20">
+                                               <img  src="assets/img/demo/home-4.png" alt>
+                                                <div class="home-img-btn">
+                                                   <a class="it-btn-sm" href="index-4.html">
+                                                      <span class="text-one">Multi Page</span>
+                                                   </a>
+                                                   <a class="it-btn-sm" href="index-4-one-page.html">
+                                                      <span class="text-one">One Page</span>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="home-img-content text-center">
+                                                <h4 class="home-img-title">
+                                                   <a href="index-4.html">Home 04</a>
+                                                </h4>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <a href="about.html">About Us</a>
+                              </li>
+                              <li>
+                                 <a href="service.html">Services</a>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="#">Pages</a>
+                                 <ul class="it-submenu submenu">
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="team-details.html">Team Details</a></li>
+                                    <li><a href="testimonial.html">Testimonial</a></li>
+                                    <li><a href="video-gallery.html">Video</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="faq.html">Faq</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                 </ul>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="blog.html">Blog</a>
+                                 <ul class="it-submenu submenu">
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="blog-details-right-sidebar.html">Blog details</a></li>
+                                 </ul>
+                              </li>
+                              <li>
+                                 <a href="contact.html">Contact</a>
+                              </li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-5 col-sm-5 col-5">
+                     <div class="it-header-right-action d-flex justify-content-end align-items-center">
+                        <a href="contact.html" class="it-btn-orange d-md-inline-flex d-none d-sm-block ">
+                           <span>
+                              <span class="text-1">Booking Now</span>
+                              <span class="text-2">Booking Now</span>
+                           </span>
+                           <i>
+                              <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z"
+                                    fill="white" />
+                              </svg>
+                              <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z"
+                                    fill="white" />
+                              </svg>
+                           </i>
+                        </a>
+                        <div class="it-header-bar d-xl-none">
+                              <button class="it-menu-bar">
+                                 <span>
+                                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                       xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M10 18.3333C10 17.4128 10.7462 16.6667 11.6667 16.6667H21.6667C22.5872 16.6667 23.3333 17.4128 23.3333 18.3333C23.3333 19.2538 22.5872 20 21.6667 20H11.6667C10.7462 20 10 19.2538 10 18.3333ZM0 1.66667C0 0.746183 0.746183 0 1.66667 0H21.6667C22.5872 0 23.3333 0.746183 23.3333 1.66667C23.3333 2.58713 22.5872 3.33333 21.6667 3.33333H1.66667C0.746183 3.33333 0 2.58713 0 1.66667ZM0 10C0 9.07953 0.746183 8.33333 1.66667 8.33333H21.6667C22.5872 8.33333 23.3333 9.07953 23.3333 10C23.3333 10.9205 22.5872 11.6667 21.6667 11.6667H1.66667C0.746183 11.6667 0 10.9205 0 10Z"
+                                          fill="currentcolor" />
+                                    </svg>
+                                 </span>
+                              </button>
+                           </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- header-area-end -->
+   </header>
+
+
+   <!-- it-offcanvus-area-start -->
+   <div class="it-offcanvas-area">
+      <div class="itoffcanvas">
+         <div class="itoffcanvas__close-btn">
+            <button class="close-btn"><i class="fal fa-times"></i></button>
+         </div>
+         <div class="itoffcanvas__logo">
+            <a href="index.html">
+               <img src="assets/img/logo/footer-logo-02.png" alt="">
+            </a>
+         </div>
+         <div class="itoffcanvas__text">
+            <p>Suspendisse interdum consectetur libero id. Fermentum leo vel orci porta non. Euismod viverra nibh
+               cras pulvinar suspen.</p>
+         </div>
+         <div class="it-menu-mobile d-xl-none"></div>
+         <div class="itoffcanvas__info">
+            <h3 class="offcanva-title">Get In Touch</h3>
+            <div class="it-info-wrapper mb-20 d-flex align-items-center">
+               <div class="itoffcanvas__info-icon">
+                  <a href="#"><i class="fal fa-envelope"></i></a>
+               </div>
+               <div class="itoffcanvas__info-address">
+                  <span>Email</span>
+                  <a href="maito:hello@yourmail.com">hello@yourmail.com</a>
+               </div>
+            </div>
+            <div class="it-info-wrapper mb-20 d-flex align-items-center">
+               <div class="itoffcanvas__info-icon">
+                  <a href="#"><i class="fal fa-phone-alt"></i></a>
+               </div>
+               <div class="itoffcanvas__info-address">
+                  <span>Phone</span>
+                  <a href="tel:(00)45611227890">(00) 456 1122 7890</a>
+               </div>
+            </div>
+            <div class="it-info-wrapper mb-20 d-flex align-items-center">
+               <div class="itoffcanvas__info-icon">
+                  <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+               </div>
+               <div class="itoffcanvas__info-address">
+                  <span>Location</span>
+                  <a href="htits://www.google.com/maps/@37.4801311,22.8928877,3z" target="_blank">Riverside 255,
+                     San Francisco, USA </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+   <!-- it-offcanvus-area-end -->
+
+   
+
+
+
+ <div id="smooth-wrapper">
+      <div id="smooth-content">
+
+   <main>
+      <!-- breadcrumb-area-start -->
+      <div class="it-breadcrumb-area fix" data-bg-color="#33251F" data-bg-img="assets/img/services/service-page-1.png">
+               <div class="container">
+                  <div class="row align-items-center justify-content-center text-center">
+                     <div class="col-12">
+                        <div class="it-breadcrumb-content">
+                           <div class="it-breadcrumb-title-box">
+                              <h3 class="it-breadcrumb-title it-split-text it-split-in-right">Frequently Asked Questions</h3>
+                           </div>
+                            <div class="it-fade-anim" data-fade-from="top" data-ease="bounce" data-delay="1.1">
+                              <div class="it-breadcrumb-list">
+                                 <span><a href="index.html">Home</a></span>
+                                 <span class="dvdr"> / </span>
+                                 <span><a href="faq.html">FAQ</a></span>
+                              </div>
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         </div>
+      <!-- breadcrumb-area-end -->
+
+        <!-- faq-area-start -->
+<div class="it-faq-area pt-125">
+   <div class="container">
+      <div class="row justify-content-center">
+         <div class="col-xl-6 col-lg-6">
+            <div class="it-section-info">
+               <span class="it-section-sub-title">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                     <path d="M12.7852 0C12.7852 0 12.6431 6.77508 15.3663 9.47596C18.0701 12.1576 24.7852 12 24.7852 12C24.7852 12 18.0484 11.976 15.3663 14.706C12.7265 17.3931 12.7852 24 12.7852 24C12.7852 24 12.8064 17.3873 10.153 14.706C7.47448 11.9994 0.785156 12 0.785156 12C0.785156 12 7.45319 12.1342 10.153 9.47596C12.8898 6.78131 12.7852 0 12.7852 0Z" fill="#BF4315" />
+                  </svg> Frequently asked question
+               </span>
+               <h2 class="it-section-title mb-20 mt-10 wow itfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
+                  Frequently Asked Questions
+               </h2>
+            </div>
+
+            <div class="it-faq-left">
+               <div class="it-custom-accordion">
+                  <div class="accordion" id="accordionExample2">
+                     <div class="accordion-items wow itfadeRight" data-wow-duration=".9s" data-wow-delay=".4s">
+                        <h4 class="accordion-header" id="headingOne1">
+                           <button class="accordion-buttons" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                              1. Is plastic surgery safe?
+                              <span class="it-accordion-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> <path d="M12.0014 15.0537L6.34766 9.39994L7.40141 8.34619L12.0014 12.9462L16.6014 8.34619L17.6552 9.39994L12.0014 15.0537Z" fill="#5F6368"/> </svg></span>
+                           </button>
+                        </h4>
+                        <div id="collapseOne1" class="accordion-collapse collapse show"
+                           aria-labelledby="headingOne1" data-bs-parent="#accordionExample2">
+                           <div class="accordion-body">
+                              <p class="mb-0">Yes. When performed by certified surgeons, it's safe and closely monitored from start to finish.</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="accordion-items wow itfadeLeft" data-wow-duration=".9s" data-wow-delay=".4s">
+                        <h4 class="accordion-header" id="headingTwo2">
+                           <button class="accordion-buttons collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseTwo2"
+                              aria-expanded="false" aria-controls="collapseTwo2">
+                              2. How long does recovery take?
+                              <span class="it-accordion-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> <path d="M12.0014 15.0537L6.34766 9.39994L7.40141 8.34619L12.0014 12.9462L16.6014 8.34619L17.6552 9.39994L12.0014 15.0537Z" fill="#5F6368"/> </svg></svg></span>
+                           </button>
+                        </h4>
+                        <div id="collapseTwo2" class="accordion-collapse collapse"
+                           aria-labelledby="headingTwo2" data-bs-parent="#accordionExample2">
+                           <div class="accordion-body">
+                              <p class="mb-0">Recovery depends on the procedure — some heal in days, others in weeks. We guide you throughout recovery.</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="accordion-items wow itfadeRight" data-wow-duration=".9s" data-wow-delay=".4s">
+                        <h4 class="accordion-header" id="headingThree3">
+                           <button class="accordion-buttons collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseThree3"
+                              aria-expanded="false" aria-controls="collapseThree3">
+                              3. Is plastic surgery safe again?
+                              <span class="it-accordion-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> <path d="M12.0014 15.0537L6.34766 9.39994L7.40141 8.34619L12.0014 12.9462L16.6014 8.34619L17.6552 9.39994L12.0014 15.0537Z" fill="#5F6368"/> </svg></svg></span>
+                           </button>
+                        </h4>
+                        <div id="collapseThree3" class="accordion-collapse collapse"
+                           aria-labelledby="headingThree3" data-bs-parent="#accordionExample2">
+                           <div class="accordion-body">
+                              <p class="mb-0">Yes. When performed by certified surgeons, it's safe and closely monitored from start to finish.</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="accordion-items wow itfadeLeft" data-wow-duration=".9s" data-wow-delay=".4s">
+                        <h4 class="accordion-header" id="headingFour4">
+                           <button class="accordion-buttons collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseFour4"
+                              aria-expanded="false" aria-controls="collapseFour4">
+                              4. How long is the recovery time?
+                              <span class="it-accordion-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> <path d="M12.0014 15.0537L6.34766 9.39994L7.40141 8.34619L12.0014 12.9462L16.6014 8.34619L17.6552 9.39994L12.0014 15.0537Z" fill="#5F6368"/> </svg></svg></span>
+                           </button>
+                        </h4>
+                        <div id="collapseFour4" class="accordion-collapse collapse"
+                           aria-labelledby="headingFour4" data-bs-parent="#accordionExample2">
+                           <div class="accordion-body">
+                              <p class="mb-0">It varies by procedure — some heal in days, others may take weeks. We provide full recovery guidance.</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="accordion-items wow itfadeRight" data-wow-duration=".9s" data-wow-delay=".4s">
+                        <h4 class="accordion-header" id="headingFive5">
+                           <button class="accordion-buttons collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseFive5"
+                              aria-expanded="false" aria-controls="collapseFive5">
+                              5. Is there a consultation fee?
+                              <span class="it-accordion-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> <path d="M12.0014 15.0537L6.34766 9.39994L7.40141 8.34619L12.0014 12.9462L16.6014 8.34619L17.6552 9.39994L12.0014 15.0537Z" fill="#5F6368"/> </svg></svg></span>
+                           </button>
+                        </h4>
+                        <div id="collapseFive5" class="accordion-collapse collapse"
+                           aria-labelledby="headingFive5" data-bs-parent="#accordionExample2">
+                           <div class="accordion-body">
+                              <p class="mb-0">We offer free initial consultations to help you explore your options and make informed decisions with no pressure.</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="accordion-items wow itfadeLeft" data-wow-duration=".9s" data-wow-delay=".4s">
+                        <h4 class="accordion-header" id="headingSix6">
+                           <button class="accordion-buttons collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseSix6"
+                              aria-expanded="false" aria-controls="collapseSix6">
+                              6. Are plastic surgery results permanent?
+                              <span class="it-accordion-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> <path d="M12.0014 15.0537L6.34766 9.39994L7.40141 8.34619L12.0014 12.9462L16.6014 8.34619L17.6552 9.39994L12.0014 15.0537Z" fill="#5F6368"/> </svg></svg></span>
+                           </button>
+                        </h4>
+                        <div id="collapseSix6" class="accordion-collapse collapse"
+                           aria-labelledby="headingSix6" data-bs-parent="#accordionExample2">
+                           <div class="accordion-body">
+                              <p class="mb-0">Results can last many years, but natural aging and lifestyle factors may affect them.</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="accordion-items wow itfadeRight" data-wow-duration=".9s" data-wow-delay=".4s">
+                        <h4 class="accordion-header" id="headingSeven7">
+                           <button class="accordion-buttons collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseSeven7"
+                              aria-expanded="false" aria-controls="collapseSeven7">
+                              7. Is plastic surgery safe?
+                              <span class="it-accordion-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> <path d="M12.0014 15.0537L6.34766 9.39994L7.40141 8.34619L12.0014 12.9462L16.6014 8.34619L17.6552 9.39994L12.0014 15.0537Z" fill="#5F6368"/> </svg></svg></span>
+                           </button>
+                        </h4>
+                        <div id="collapseSeven7" class="accordion-collapse collapse"
+                           aria-labelledby="headingSeven7" data-bs-parent="#accordionExample2">
+                           <div class="accordion-body">
+                              <p class="mb-0">Yes. When performed by certified surgeons, it's safe and closely monitored from start to finish.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-items wow itfadeLeft" data-wow-duration=".9s" data-wow-delay=".4s">
+                        <h4 class="accordion-header" id="headingEight8">
+                           <button class="accordion-buttons collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseEight8"
+                              aria-expanded="false" aria-controls="collapseEight8">
+                              8. Will I have visible scars?
+                              <span class="it-accordion-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> <path d="M12.0014 15.0537L6.34766 9.39994L7.40141 8.34619L12.0014 12.9462L16.6014 8.34619L17.6552 9.39994L12.0014 15.0537Z" fill="#5F6368"/> </svg></svg></span>
+                           </button>
+                        </h4>
+                        <div id="collapseEight8" class="accordion-collapse collapse"
+                           aria-labelledby="headingEight8" data-bs-parent="#accordionExample2">
+                           <div class="accordion-body">
+                              <p class="mb-0">Modern techniques minimize scarring and we guide you on proper healing.</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="accordion-items wow itfadeRight" data-wow-duration=".9s" data-wow-delay=".4s">
+                        <h4 class="accordion-header" id="headingNine9">
+                           <button class="accordion-buttons collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseNine9"
+                              aria-expanded="false" aria-controls="collapseNine9">
+                              9. How much does plastic surgery cost?
+                              <span class="it-accordion-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> <path d="M12.0014 15.0537L6.34766 9.39994L7.40141 8.34619L12.0014 12.9462L16.6014 8.34619L17.6552 9.39994L12.0014 15.0537Z" fill="#5F6368"/> </svg></svg></span>
+                           </button>
+                        </h4>
+                        <div id="collapseNine9" class="accordion-collapse collapse"
+                           aria-labelledby="headingNine9" data-bs-parent="#accordionExample2">
+                           <div class="accordion-body">
+                              <p class="mb-0">Costs vary depending on procedure. We provide transparent pricing after consultation.</p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="accordion-items wow itfadeLeft" data-wow-duration=".9s" data-wow-delay=".4s">
+                        <h4 class="accordion-header" id="headingTen10">
+                           <button class="accordion-buttons collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseTen10"
+                              aria-expanded="false" aria-controls="collapseTen10">
+                              10. Is financing available?
+                              <span class="it-accordion-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> <path d="M12.0014 15.0537L6.34766 9.39994L7.40141 8.34619L12.0014 12.9462L16.6014 8.34619L17.6552 9.39994L12.0014 15.0537Z" fill="#5F6368"/> </svg></svg></span>
+                           </button>
+                        </h4>
+                        <div id="collapseTen10" class="accordion-collapse collapse"
+                           aria-labelledby="headingTen10" data-bs-parent="#accordionExample2">
+                           <div class="accordion-body">
+                              <p class="mb-0">Yes, we offer flexible financing options to make treatment more affordable.</p>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+</div>
+
+
+            <!-- faq-area-end -->
+
+      <!--Subscribe-area-start -->
+      <div class="it-Subscribe-area pt-100 it-join-subscribe-area-margin wow itfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
+         <div class="container br-5" data-bg-color="#BF4315">
+            <div class="row justify-content-center align-items-center">
+               <div class="col-xl-5 col-lg-5 col-md-4 col-sm-12 col-xs-12 wow itfadeLeft" data-wow-duration=".9s" data-wow-delay=".9s">
+                  <div class="it-section-info ">
+                     <h2 class="it-section-title pt-70 pb-70 pl-70" data-color="#fff">
+                        Subscribe To Our <br>News Letter
+                     </h2>
+                  </div>
+               </div>
+               <div class="col-xl-7 col-lg-7 col-md-8 col-sm-12 col-xs-12 wow itfadeRight" data-wow-duration=".9s" data-wow-delay=".9s">
+                  <div class="it-subscribe p-relative pr-70 pl-70">
+                     <input type="email" placeholder="Enter Email Address">
+                     <div class="it-subscribe-btn text-center p-absolute">
+                        <button class="it-btn-orange it-btn it-btn-white d-md-inline-flex">
+                           <span>
+                              <span class="text-1">Subscribe Now </span>
+                              <span class="text-2">Subscribe Now </span>
+                           </span>
+                           <i>
+                              <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z"
+                                    fill="white" />
+                              </svg>
+                              <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z"
+                                    fill="white" />
+                              </svg>
+                           </i>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Subscribe-area-end -->
+   </main>
+
+
+   <footer>
+      <!--footer-area-start -->
+      <section class="it-footer-area p-relative pt-150 fix" data-bg-color="#190600">
+         <div class="it-footer-shape p-absolute"><img src="assets/img/shape/footer-shape.png" alt=""></div>
+         <div class="container z-index-11">
+            <div class="it-footer-top-dashed mt-90 pb-25"></div>
+            <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 wow itfadeLeft" data-wow-duration=".9s" data-wow-delay=".5s">
+                  <div class="it-footer-widget">
+                     <div class="it-footer-logo pb-20">
+                        <img src="assets/img/logo/footer-logo-02.png" alt="">
+                     </div>
+                     <p class="fnw-300 fns-14 lh-20" data-color="#B1ACAC">Enhancing confidence through expert <br> aesthetic and surgical treatments in a safe, welcoming environment.</p>
+                     <div class="it-footer-logo-contact fns-14 " data-color="#B1ACAC">
+                        <div class="it-footer-phone pb-10">
+                                       <span class="it-footer-icon"><svg xmlns="htit://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M19.7857 11.7308C19.5849 11.7308 19.4071 11.659 19.2523 11.5153C19.0973 11.3715 19.0074 11.1933 18.9827 10.9808C18.7661 9.36667 18.0862 7.98817 16.9432 6.84534C15.8003 5.70234 14.4218 5.0225 12.8077 4.80584C12.5953 4.78084 12.4171 4.69334 12.2732 4.54334C12.1296 4.39334 12.0577 4.21209 12.0577 3.99959C12.0577 3.78709 12.1321 3.60909 12.2808 3.46559C12.4294 3.32192 12.6051 3.26359 12.8077 3.29059C14.8436 3.51109 16.5792 4.33892 18.0145 5.77409C19.4497 7.20942 20.2775 8.945 20.498 10.9808C20.525 11.1833 20.4663 11.359 20.322 11.5078C20.1777 11.6565 19.9989 11.7308 19.7857 11.7308ZM15.6482 11.7308C15.4852 11.7308 15.341 11.6751 15.2155 11.5636C15.0898 11.4521 14.9956 11.3033 14.9327 11.1173C14.7801 10.5763 14.5002 10.0991 14.0932 9.68559C13.6862 9.27209 13.2123 8.99234 12.6713 8.84634C12.4853 8.7835 12.3365 8.68942 12.225 8.56409C12.1135 8.43875 12.0577 8.28834 12.0577 8.11284C12.0577 7.862 12.1439 7.65967 12.3162 7.50584C12.4888 7.352 12.6846 7.302 12.9038 7.35584C13.7794 7.55917 14.5339 7.97767 15.1673 8.61134C15.8006 9.24484 16.2224 10.0026 16.4327 10.8846C16.4866 11.1039 16.432 11.2998 16.269 11.4721C16.106 11.6446 15.8991 11.7308 15.6482 11.7308ZM19.4402 20.5001C17.5557 20.5001 15.6625 20.0619 13.7605 19.1856C11.8587 18.3093 10.1113 17.0731 8.51825 15.4771C6.92542 13.8809 5.69083 12.1334 4.8145 10.2346C3.93817 8.33592 3.5 6.44434 3.5 4.55984C3.5 4.257 3.6 4.00467 3.8 3.80284C4 3.601 4.25 3.50009 4.55 3.50009H7.8115C8.064 3.50009 8.28675 3.5825 8.47975 3.74734C8.67275 3.912 8.7955 4.1155 8.848 4.35784L9.42125 7.30009C9.46092 7.57309 9.45258 7.80767 9.39625 8.00384C9.33975 8.2 9.23842 8.36475 9.09225 8.49809L6.78275 10.7463C7.15442 11.427 7.57908 12.0709 8.05675 12.6781C8.53425 13.2851 9.05125 13.8648 9.60775 14.4173C10.1564 14.9662 10.7397 15.4758 11.3577 15.9463C11.9757 16.4168 12.6431 16.8547 13.3598 17.2598L15.6038 14.9963C15.7603 14.8335 15.9498 14.7193 16.1723 14.6538C16.3946 14.5885 16.6257 14.5725 16.8655 14.6058L19.6423 15.1713C19.8948 15.238 20.1008 15.3668 20.2605 15.5578C20.4202 15.7488 20.5 15.9655 20.5 16.2078V19.4501C20.5 19.7501 20.3991 20.0001 20.1973 20.2001C19.9954 20.4001 19.7431 20.5001 19.4402 20.5001ZM6.073 9.32709L7.85775 7.61934C7.88975 7.59367 7.91058 7.55842 7.92025 7.51359C7.92992 7.46875 7.92833 7.42709 7.9155 7.38859L7.48075 5.15384C7.46792 5.10267 7.4455 5.06425 7.4135 5.03859C7.3815 5.01292 7.33983 5.00009 7.2885 5.00009H5.15C5.1115 5.00009 5.07942 5.01292 5.05375 5.03859C5.02825 5.06425 5.0155 5.09634 5.0155 5.13484C5.06667 5.81817 5.1785 6.51234 5.351 7.21734C5.52333 7.9225 5.764 8.62575 6.073 9.32709ZM14.773 17.9693C15.4358 18.2783 16.1272 18.5146 16.847 18.6781C17.567 18.8414 18.2397 18.9385 18.8652 18.9693C18.9037 18.9693 18.9358 18.9565 18.9615 18.9308C18.9872 18.9052 19 18.8731 19 18.8346V16.7308C19 16.6795 18.9872 16.6378 18.9615 16.6058C18.9358 16.5738 18.8974 16.5514 18.8462 16.5386L16.7462 16.1116C16.7077 16.0988 16.6741 16.0972 16.6453 16.1068C16.6164 16.1165 16.5859 16.1373 16.5538 16.1693L14.773 17.9693Z" fill="#BF4315"/>
+            </svg>
+                                       </span>
+                           <a href="tel:(270) 555-0117"><span>Phone:</span> (270) 555-0117</a>
+                        </div>
+                        <div class="it-footer-email pb-10">
+                                       <span class="it-footer-icon"><svg xmlns="htit://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M4.30775 19.5C3.80258 19.5 3.375 19.325 3.025 18.975C2.675 18.625 2.5 18.1974 2.5 17.6923V6.30775C2.5 5.80258 2.675 5.375 3.025 5.025C3.375 4.675 3.80258 4.5 4.30775 4.5H19.6923C20.1974 4.5 20.625 4.675 20.975 5.025C21.325 5.375 21.5 5.80258 21.5 6.30775V17.6923C21.5 18.1974 21.325 18.625 20.975 18.975C20.625 19.325 20.1974 19.5 19.6923 19.5H4.30775ZM20 7.44225L12.4865 12.252C12.4097 12.2955 12.3302 12.3298 12.248 12.3548C12.166 12.3798 12.0833 12.3923 12 12.3923C11.9167 12.3923 11.834 12.3798 11.752 12.3548C11.6698 12.3298 11.5903 12.2955 11.5135 12.252L4 7.44225V17.6923C4 17.7821 4.02883 17.8558 4.0865 17.9135C4.14417 17.9712 4.21792 18 4.30775 18H19.6923C19.7821 18 19.8558 17.9712 19.9135 17.9135C19.9712 17.8558 20 17.7821 20 17.6923V7.44225ZM12 11L19.8463 6H4.15375L12 11ZM4 7.673V6.52975V6.5595V6.52775V7.673Z" fill="#BF4315"/>
+            </svg>
+                                       </span>
+                           <a href="mailto:info@prospery.com"><span>Email:</span> info@prospery.com</a>
+                        </div>
+                        <div class="it-footer-location">
+                                       <svg xmlns="htit://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12.0011 19.5135C13.9575 17.7622 15.4545 16.0823 16.4924 14.474C17.5302 12.8657 18.0491 11.457 18.0491 10.248C18.0491 8.425 17.47 6.92633 16.3116 5.752C15.1533 4.57767 13.7165 3.9905 12.0011 3.9905C10.2858 3.9905 8.84896 4.57767 7.69062 5.752C6.53229 6.92633 5.95312 8.425 5.95312 10.248C5.95312 11.457 6.47204 12.8657 7.50988 14.474C8.54771 16.0823 10.0448 17.7622 12.0011 19.5135ZM12.0011 20.9403C11.8063 20.9403 11.6115 20.9067 11.4166 20.8395C11.2216 20.7722 11.0453 20.668 10.8876 20.527C9.99029 19.7 9.15054 18.8483 8.36838 17.972C7.58637 17.0958 6.90662 16.2199 6.32912 15.3443C5.75146 14.4686 5.29438 13.6007 4.95788 12.7405C4.62138 11.8802 4.45312 11.0493 4.45312 10.248C4.45312 7.94033 5.19954 6.07208 6.69237 4.64325C8.18537 3.21442 9.95496 2.5 12.0011 2.5C14.0473 2.5 15.8169 3.21442 17.3099 4.64325C18.8027 6.07208 19.5491 7.94033 19.5491 10.248C19.5491 11.0493 19.3809 11.8785 19.0444 12.7355C18.7079 13.5927 18.2525 14.4607 17.6781 15.3395C17.1036 16.2183 16.4254 17.0943 15.6434 17.9672C14.8614 18.8404 14.0216 19.6904 13.1241 20.5173C12.9688 20.6583 12.7922 20.764 12.5944 20.8345C12.3967 20.905 12.199 20.9403 12.0011 20.9403ZM12.0029 11.8652C12.5004 11.8652 12.9257 11.6881 13.2789 11.3338C13.6322 10.9794 13.8089 10.5535 13.8089 10.056C13.8089 9.5585 13.6317 9.13308 13.2774 8.77975C12.923 8.42658 12.497 8.25 11.9994 8.25C11.5019 8.25 11.0765 8.42717 10.7234 8.7815C10.37 9.13583 10.1934 9.56183 10.1934 10.0595C10.1934 10.557 10.3705 10.9823 10.7249 11.3355C11.0792 11.6887 11.5052 11.8652 12.0029 11.8652Z" fill="#BF4315"/>
+            </svg>
+                                       <span> 4140 Parker Rd. Allentown, <br> New Mexico 31134</span>
+                                    </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12 wow itfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
+                  <div class="it-footer-widget-2">
+                     <h3 class="it-footer-title fns-16 fnw-400 lh-20 pb-15" data-color="#FDFDFD">Quick Links</h3>
+                     <ul class="lh-24" data-color="#B1ACAC">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Meet the Team</a></li>
+                        <li><a href="#">Before & After</a></li>
+                        <li><a href="#">Book Appointment</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12 wow itfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
+                  <div class="it-footer-widget-3">
+                     <h3 class="it-footer-title fns-16 fnw-400 lh-24 pb-15 it-heading-font-2" data-color="#FDFDFD">Our Services</h3>
+                     <ul  class="lh-24" data-color="#B1ACAC">
+                        <li><a href="#">Botox & Fillers</a></li>
+                        <li><a href="#">Laser Treatments</a></li>
+                        <li><a href="#">Liposuction</a></li>
+                        <li><a href="#">Facelift Surgery</a></li>
+                        <li><a href="#">Rhinoplasty</a></li>
+                        <li><a href="#">Skin <br> Rejuvenation</a></li>
+                        <li><a href="#">Face Filler</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 wow itfadeRight" data-wow-duration=".9s" data-wow-delay="1.1s">
+                  <div class="it-footer-widget-4">
+                     <h3 class="it-footer-title fns-16 fnw-600 lh-20 pb-15 it-heading-font-2" data-color="#FDFDFD">News Feeds</h3>
+                     <div class=" d-flex align-items-center">
+                        <div class="it-footer-thumb mr-15">
+                           <img src="assets/img/footer/footer-img-01.jpg" alt="">
+                        </div>
+                        <div class="it-footer-thumb-text">
+                           <span class="fns-14 lh-24"data-color="#B1ACAC">14 June 2025</span>
+                           <h3 class="it-footer-title fns-18 lh-24 it-heading-font-2 fnw-400" data-color="#FDFDFD">Enhance Your Natural <br> Look</h3>
+                        </div>
+                     </div>
+                     <div class=" d-flex align-items-center">
+                        <div class="it-footer-thumb mr-15">
+                           <img src="assets/img/footer/footer-img-02.jpg" alt="">
+                        </div>
+                        <div class="it-footer-thumb-text">
+                           <span class="fns-14 lh-24"data-color="#B1ACAC">14 June 2025</span>
+                           <h3 class="it-footer-title fns-18 lh-24 it-heading-font-2 fnw-400"data-color="#FDFDFD">Latest in Aesthetic <br> Surgery</h3>
+                        </div>
+                     </div>
+                     <div class=" d-flex align-items-center">
+                        <div class="it-footer-thumb mr-15">
+                           <img src="assets/img/footer/footer-img-03.jpg" alt="">
+                        </div>
+                        <div class="it-footer-thumb-text">
+                           <span class="fns-14 lh-24" data-color="#B1ACAC">14 June 2025</span>
+                           <h3 class="it-footer-title fns-18 lh-28 it-heading-font-2 fnw-400"data-color="#FDFDFD">Future New Trends in <br> Beauty </h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="it-footer-copyright-area pb-20 z-index-11">
+            <div class="container">
+               <div class="it-footer-sep mt-20 pb-20"></div>
+               <div class="row">
+                  <div class="col-7 wow itfadeLeft" data-wow-duration=".9s" data-wow-delay=".7s">
+                     <div class="it-footer-copyright fnw-300 lh-20">
+                        <span>
+                           © 2025 <a href="#">Novix</a> is Proudly Powered by  <a class="it-footer-underline fnw-500" href="#">Ordianit.</a>
+                        </span>
+                     </div>
+                  </div>
+                  <div class="col-5 wow itfadeRight" data-wow-duration=".9s" data-wow-delay=".7s">
+                     <div class="it-footer-social text-end">
+                        <a href="#">
+                           <svg xmlns="htit://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+                              <path d="M2.22811 12H4.75442V6.94105H7.03063L7.28074 4.42737H4.75442V3.15789C4.75442 2.99039 4.82096 2.82975 4.93941 2.7113C5.05785 2.59286 5.2185 2.52632 5.386 2.52632H7.28074V0H5.386C4.54848 0 3.74525 0.332706 3.15303 0.924926C2.56081 1.51715 2.22811 2.32037 2.22811 3.15789V4.42737H0.964949L0.714844 6.94105H2.22811V12Z" fill="white" />
+                           </svg>
+                        </a>
+                        <a href="#">
+                           <svg xmlns="htit://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                              <path d="M3.48 0H8.52C10.44 0 12 1.56 12 3.48V8.52C12 9.44295 11.6334 10.3281 10.9807 10.9807C10.3281 11.6334 9.44295 12 8.52 12H3.48C1.56 12 0 10.44 0 8.52V3.48C0 2.55705 0.366642 1.6719 1.01927 1.01927C1.6719 0.366642 2.55705 0 3.48 0ZM3.36 1.2C2.78713 1.2 2.23773 1.42757 1.83265 1.83265C1.42757 2.23773 1.2 2.78713 1.2 3.36V8.64C1.2 9.834 2.166 10.8 3.36 10.8H8.64C9.21287 10.8 9.76227 10.5724 10.1674 10.1674C10.5724 9.76227 10.8 9.21287 10.8 8.64V3.36C10.8 2.166 9.834 1.2 8.64 1.2H3.36ZM9.15 2.1C9.34891 2.1 9.53968 2.17902 9.68033 2.31967C9.82098 2.46032 9.9 2.65109 9.9 2.85C9.9 3.04891 9.82098 3.23968 9.68033 3.38033C9.53968 3.52098 9.34891 3.6 9.15 3.6C8.95109 3.6 8.76032 3.52098 8.61967 3.38033C8.47902 3.23968 8.4 3.04891 8.4 2.85C8.4 2.65109 8.47902 2.46032 8.61967 2.31967C8.76032 2.17902 8.95109 2.1 9.15 2.1ZM6 3C6.79565 3 7.55871 3.31607 8.12132 3.87868C8.68393 4.44129 9 5.20435 9 6C9 6.79565 8.68393 7.55871 8.12132 8.12132C7.55871 8.68393 6.79565 9 6 9C5.20435 9 4.44129 8.68393 3.87868 8.12132C3.31607 7.55871 3 6.79565 3 6C3 5.20435 3.31607 4.44129 3.87868 3.87868C4.44129 3.31607 5.20435 3 6 3ZM6 4.2C5.52261 4.2 5.06477 4.38964 4.72721 4.72721C4.38964 5.06477 4.2 5.52261 4.2 6C4.2 6.47739 4.38964 6.93523 4.72721 7.27279C5.06477 7.61036 5.52261 7.8 6 7.8C6.47739 7.8 6.93523 7.61036 7.27279 7.27279C7.61036 6.93523 7.8 6.47739 7.8 6C7.8 5.52261 7.61036 5.06477 7.27279 4.72721C6.93523 4.38964 6.47739 4.2 6 4.2Z" fill="white" />
+                           </svg>
+                        </a>
+                        <a href="#"><svg xmlns="htit://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                              <path d="M9.45 0.5625H11.2903L7.27029 5.16879L12 11.4379H8.29714L5.39486 7.6365L2.07771 11.4379H0.235714L4.53514 6.50936L0 0.563357H3.79714L6.41657 4.03736L9.45 0.5625ZM8.80286 10.3339H9.82286L3.24 1.60907H2.14629L8.80286 10.3339Z" fill="white" />
+                           </svg>
+                        </a>
+                        <a href="#"><svg xmlns="htit://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.7336 6.597V7.86975C10.0001 7.46376 10.3675 7.13392 10.7998 6.91253C11.232 6.69114 11.7144 6.58577 12.1996 6.60675C14.7908 6.60675 15.3511 8.22675 15.3511 10.3343V14.625H12.9511V10.821C12.9511 9.9135 12.7681 8.7465 11.3551 8.7465C9.98485 8.7465 9.75085 9.73425 9.75085 10.7535V14.625H7.35835V6.597H9.7336ZM5.7511 4.5795C5.7508 4.81725 5.68033 5.04963 5.54851 5.24749C5.41669 5.44535 5.22939 5.5999 5.0101 5.69175C4.7909 5.78286 4.54954 5.80669 4.31675 5.76022C4.08396 5.71374 3.87026 5.59905 3.70285 5.43075C3.53512 5.26234 3.42094 5.04811 3.37464 4.81498C3.32835 4.58185 3.35202 4.34023 3.44268 4.12052C3.53334 3.90081 3.68694 3.71281 3.88416 3.58015C4.08138 3.4475 4.31342 3.37613 4.5511 3.375C4.70906 3.375 4.86548 3.40619 5.01136 3.46677C5.15725 3.52736 5.28973 3.61615 5.40122 3.72806C5.51271 3.83997 5.60101 3.97279 5.66105 4.1189C5.72109 4.26501 5.75169 4.42154 5.7511 4.5795Z" fill="white" />
+                              <path d="M5.75156 6.60669H3.35156V14.6249H5.75156V6.60669Z" fill="white" />
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--footer-area-end -->
+   </footer>
+
+
+      </div>
+   </div>
+
+
+   
+   <script src="assets/js/jquery.min.js"></script>
+   <script src="assets/js/bootstrap.bundle.js"></script>
+   <script src="assets/js/ordain-it.js"></script>
+   <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+   <!-- <script src="assets/js/BeerSlider.js"></script> -->
+   <script src="assets/js/isotope-pkgd.js"></script>
+   <script src="assets/js/wow.js"></script>
+   <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>

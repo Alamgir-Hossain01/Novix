@@ -1,0 +1,80 @@
+@use '../../utils' as *;
+
+.it-services{
+  &-area{
+    @media #{$md}{
+      padding-top: 50px;
+    }
+    @media #{$xs}{
+      padding-top: 30px;
+    }
+  }
+  &-icon{
+    & svg{
+    color: var(--it-theme-color);
+    }
+  }
+  &__text{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: var(--it-font-heading);
+    color: var(--it-heading-color);
+  }
+  &__content{
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.10);
+
+  //   a{
+  //   display: flex;
+  //   width: 50px;
+  //   height: 50px;
+  //   justify-content: center;
+  //   align-items: center;
+  //   border-radius: 40px;
+  //   background: rgba(191, 67, 21, 0.12);
+  // }
+  }
+}
+.it-service__thumb{
+  overflow: hidden;
+  & img{
+    transition: all 0.7s linear;
+ @media #{$lg, $md, $sm, $xs}{
+            width: 100%;
+  height: 100%;
+        }
+        @media #{$xs}{
+            width: 100%;
+        }
+  }
+  width: 100%;
+  height: 100%;
+  &:hover {
+        & img {
+            transform: scale(1.2);
+        }
+    }
+  
+
+}
+.it-section-shape{
+  &-1{
+    top: 0;
+    left: 0;
+  }
+  &-2{
+    top: 0;
+    right: 0;
+  }
+  &-3{
+    bottom: 0;
+    left: 0;
+  }
+  &-4{
+    bottom: 0;
+    right: 0;
+  }
+}
+

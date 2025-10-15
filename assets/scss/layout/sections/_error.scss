@@ -1,0 +1,22 @@
+@use '../../utils/' as *;
+
+
+/*----------------------------------------*/
+/*  11. error css start
+/*----------------------------------------*/
+.it-error {
+    &-thumb {
+        @media #{$lg} {
+            margin-bottom: 90px;
+        }
+
+        @media #{$md,$xs} {
+            margin-bottom: 50px;
+        }
+    }
+
+    &-title {
+        font-weight: 600;
+        font-size: 45px;
+    }
+}
