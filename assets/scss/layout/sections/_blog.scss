@@ -590,9 +590,8 @@
                     content: '';
                     width: 22px;
                     height: 1px;
-                    
                     transform: translateY(-5px);
-                    background-color: var(--it-theme-color);
+                    background-color: var(--it-heading-color);
                 }
             }
             & .quote {
@@ -644,10 +643,10 @@
                     font-size: 12px;
                     margin-bottom: 10px;
                 }             
-                // &:hover {
-                //     color: var(--it-common-white);
-                //     background-color: var(--it-theme-color);
-                // }
+                &:hover {
+                    color: var(--it-common-white);
+                    background-color: var(--it-theme-color);
+                }
             }
         }
     }

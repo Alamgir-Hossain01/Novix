@@ -3072,7 +3072,7 @@ h4.it-contact-title {
   width: 22px;
   height: 1px;
   transform: translateY(-5px);
-  background-color: var(--it-theme-color);
+  background-color: var(--it-heading-color);
 }
 @media (max-width: 767px) {
   .postbox-blockquote-bottom .quote svg {
@@ -3121,6 +3121,10 @@ h4.it-contact-title {
     font-size: 12px;
     margin-bottom: 10px;
   }
+}
+.postbox-tag-content a:hover {
+  color: var(--it-common-white);
+  background-color: var(--it-theme-color);
 }
 .postbox-share-content a {
   font-size: 16px;
