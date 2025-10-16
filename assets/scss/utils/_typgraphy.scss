@@ -1,16 +1,14 @@
 // font url
 
 
-$font-url : 'https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Marcellus&family=Sora:wght@100..800&display=swap';
+$font-url : 'https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap';
 
 
 // font family
 
 :root {
-    --it-font-body: "Sora", serif;
-    --it-font-heading: "Marcellus", serif;
-    --it-font-sub-heading: "Fuzzy Bubbles", serif;
+    --it-font-body: "DM Sans", sans-serif;
+    --it-font-heading: "Archivo", sans-serif;
+    --it-font-sub-heading: "Archivo", sans-serif;
     --it-font-awesome-6-pro: "Font Awesome 6 Pro";
-    // --it-font-sub-heading: "Sue Ellen Francisco", serif;
-    // --it-font-sub-heading-2: "Tillana", system-ui;
 }

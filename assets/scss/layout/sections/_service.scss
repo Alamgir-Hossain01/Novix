@@ -40,14 +40,15 @@
 .it-service__thumb{
   overflow: hidden;
   & img{
+    border-radius: 12px;
     transition: all 0.7s linear;
- @media #{$lg, $md, $sm, $xs}{
-            width: 100%;
-  height: 100%;
-        }
-        @media #{$xs}{
-            width: 100%;
-        }
+    @media #{$lg, $md, $sm, $xs}{
+      width: 100%;
+      height: 100%;
+    }
+    @media #{$xs}{
+      width: 100%;
+    }
   }
   width: 100%;
   height: 100%;

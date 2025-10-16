@@ -19,7 +19,8 @@
     }
     }
     &-thumb{
-           transition: all 0.7s linear;
+        position: relative;
+        transition: all 0.7s linear;
         border-radius: 5px;
         @media #{$lg, $md, $sm, $xs}{
         width: 100%;
@@ -29,9 +30,13 @@
         font-size: 15px;
         @media #{$lg}{
         font-size: 12px;
+        & i{
+            margin-right: 5px;
+        }
     }
     }
     &-comment{
+        margin-left: 30px;
         font-size: 15px;
          @media #{$lg}{
         font-size: 12px;

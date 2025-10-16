@@ -10,10 +10,11 @@
 
 
 .it-choose-title{
-font-size: 36px;
-font-weight: 400;
-line-height: 1;
-letter-spacing: .2px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: .2px;
+
 }
 .it-choose-thumb{
     &-1{
@@ -62,6 +63,19 @@ letter-spacing: .2px;
 }
 
 
-    .it-choose-list-title{
-        font-size: 20px;
+    .it-choose-list{
+        &-title{
+            font-size: 20px;
+
+        }
+        &-icon{
+            font-size: 18px;
+        }
+        &-thumb{
+            & img{
+                border-radius: 8px;
+                margin-right: 20px;
+            }
+            
+        }
     }

@@ -139,7 +139,7 @@
 	&-orange {
 		font-weight: 500;
 		font-size: 18px;
-		text-transform: uppercase;
+
 		padding: 16px 20px;
 		text-align: center;
 		transition: .4s;
@@ -166,7 +166,7 @@
 			z-index: 1;
 			overflow: hidden;
 			display: inline-block;
-
+			text-transform: capitalize;
 			& span {
 				&.text-1 {
 					position: relative;
