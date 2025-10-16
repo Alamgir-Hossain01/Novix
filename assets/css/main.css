@@ -1,9 +1,10 @@
+@charset "UTF-8";
 /*-----------------------------------------------------------------------------------
 
-    Template Name: Exdos - Creative Agency HTML Template
-    Author: Theme_Pure
-    Support: help.themepure.net
-    Description: Exdos - Creative Agency HTML Template is a modern, customizable, and responsive template designed for agencies to showcase their work, services, and team with stylish layouts and interactive features.
+    Template Name: Novix - Plastic surgery HTML Template
+    Author: Ordianit
+    Support:ordianit@gmail.com
+    Description: Plastic surgery is a specialized branch of medicine that focuses on restoring, reconstructing, or enhancing the appearance and function of different parts of the body. It’s not only about cosmetic improvement but also about repairing damage caused by accidents, burns, birth defects, or medical conditions. With advanced techniques and skilled surgeons, plastic surgery today offers safe and effective results for both aesthetic and reconstructive purposes.
     Version: 1.0.0
 
 -----------------------------------------------------------------------------------
@@ -21,14 +22,57 @@
     02. COMPONENTS css
 	-----------------
 		2.1 Accordion
-		2.2 Back to Top
+		2.2 faq
 		2.3 Breadcrumb
 		2.4 Button
 		2.5 Custom Animation
-		2.6 Offcanvas
-		2.7 Preloader
-		2.8 Search Bar
-		2.9 Skill
+		2.6 Preloader
+		2.7 section-title
+		2.8 Skill
+
+		-----------------
+    03.  layout
+	-----------------
+		3.1 blog
+		3.2 header
+		  3.2.1 offcanvas
+		  3.2.2 sidemenu
+		3.3 section
+		  3.3.1 about
+		  3.3.2 before-after
+		  3.3.3 blog
+		  3.3.4 choose
+		  3.3.5 contact
+		  3.3.6 error
+		  3.3.7 faq
+		  3.3.8 font-size
+		  3.3.9 footer
+		  3.3.10 gallery
+		  3.3.11 hero
+		  3.3.12 menu
+		  3.3.13 service
+		  3.3.14 subcribe
+		  3.3.15 team
+		  3.3.16 testimonial
+		  3.3.17 video
+
+		-----------------
+		04.  theme
+		-----------------
+
+
+			-----------------
+    05.  utils
+	-----------------
+		5.1 breakpoint
+		5.2 color
+		5.3 extend
+		5.4 mixins
+		5.4 typography
+		5.5 variables
+
+		-----------------
+
 
 **********************************************/
 /*----------------------------------------*/
@@ -2343,6 +2387,9 @@ img {
   font-family: "DM Sans";
 }
 
+/*----------------------------------------*/
+/*  3.2 header
+/*----------------------------------------*/
 .it-header-top-area {
   font-size: 14px;
   font-weight: 400;
@@ -2679,6 +2726,9 @@ header {
   font-family: var(--it-font-body);
 }
 
+/*----------------------------------------*/
+/* 3.2.1 offcanvas
+/*----------------------------------------*/
 .it-header-toggle {
   background: #BF4315;
   width: 48px;
@@ -2953,6 +3003,9 @@ header {
   width: 100%;
 }
 
+/*----------------------------------------*/
+/*  3.3.12 menu
+/*----------------------------------------*/
 .it-hero {
   padding: 170px 0;
 }
@@ -3263,7 +3316,7 @@ header {
 }
 
 /*----------------------------------------*/
-/*  16. menu css start
+/*  3.3.12 menu
 /*----------------------------------------*/
 .it-header-menu nav ul li {
   position: relative;
@@ -3868,6 +3921,9 @@ header {
   display: none;
 }
 
+/*----------------------------------------*/
+/* 3.3.1 about
+/*----------------------------------------*/
 @media (max-width: 767px) {
   .it-about-area {
     padding-bottom: 50px;
@@ -4047,6 +4103,9 @@ header {
   }
 }
 
+/*----------------------------------------*/
+/* 3.3.13 service
+/*----------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .it-services-area {
     padding-top: 50px;
@@ -4114,6 +4173,9 @@ header {
   right: 0;
 }
 
+/*----------------------------------------*/
+/* 3.3.4 choose
+/*----------------------------------------*/
 @media (max-width: 767px) {
   .it-Choose-area {
     padding-top: 42px;
@@ -4184,6 +4246,9 @@ header {
   margin-right: 20px;
 }
 
+/*----------------------------------------*/
+/* 3.3.17 video
+/*----------------------------------------*/
 @media (max-width: 767px) {
   .it-video-section {
     padding-top: 29px;
@@ -4272,6 +4337,9 @@ header {
   border-radius: 20px;
 }
 
+/*----------------------------------------*/
+/* 3.3.15 team
+/*----------------------------------------*/
 .it-team__thumb {
   position: relative;
 }
@@ -4466,6 +4534,9 @@ header {
   }
 }
 
+/*----------------------------------------*/
+/* 3.3.16 testimonial
+/*----------------------------------------*/
 @media (max-width: 767px) {
   .it-testimonial-area {
     padding-top: 42px;
@@ -4588,6 +4659,9 @@ header {
   width: 100%;
 }
 
+/*----------------------------------------*/
+/* 3.3.2 before-after
+/*----------------------------------------*/
 .it-Different-before-after {
   position: relative;
   display: flex;
@@ -4687,6 +4761,9 @@ header {
   }
 }
 
+/*----------------------------------------*/
+/* 3.3.5 contact
+/*----------------------------------------*/
 .it-contact-content {
   position: absolute;
   bottom: 15%;
@@ -4862,6 +4939,9 @@ h4.it-contact-title {
   }
 }
 
+/*----------------------------------------*/
+/* 3.3.3 blog
+/*----------------------------------------*/
 .it-blog-info {
   box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -6016,6 +6096,9 @@ a:last-child .sidebar-widget-list {
   border: 1px solid var(--it-theme-color);
 }
 
+/*----------------------------------------*/
+/* 3.3.14 subscribe
+/*----------------------------------------*/
 @media (max-width: 767px) {
   .it-subscribe {
     padding-left: 22px;
@@ -6080,6 +6163,9 @@ a:last-child .sidebar-widget-list {
   }
 }
 
+/*----------------------------------------*/
+/* 3.3.9 footer
+/*----------------------------------------*/
 .it-footer {
   font-family: var(--it-font-heading);
   font-weight: 600;
@@ -6291,6 +6377,9 @@ a:last-child .sidebar-widget-list {
   color: var(--it-theme-color);
 }
 
+/*----------------------------------------*/
+/* 3.3.8 font-size
+/*----------------------------------------*/
 .fns-16 {
   font-size: 16px;
   line-height: 24px;
@@ -6327,7 +6416,7 @@ a:last-child .sidebar-widget-list {
 }
 
 /*----------------------------------------*/
-/*  12. faq css start
+/* 3.3.7 faq
 /*--------------------------------------- -*/
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .it-faq-area {
@@ -6408,7 +6497,7 @@ a:last-child .sidebar-widget-list {
 }
 
 /*----------------------------------------*/
-/*  11. error css start
+/*  3.3.6 error
 /*----------------------------------------*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .it-error-thumb {
@@ -6425,6 +6514,9 @@ a:last-child .sidebar-widget-list {
   font-size: 45px;
 }
 
+/*----------------------------------------*/
+/* 3.3.10 gallery
+/*----------------------------------------*/
 .it-single-image img {
   border-radius: 30px;
 }
