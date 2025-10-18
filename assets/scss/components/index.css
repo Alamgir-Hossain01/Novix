@@ -13,9 +13,9 @@
 }
 
 :root {
-  --it-font-body: "Sora", serif;
-  --it-font-heading: "Marcellus", serif;
-  --it-font-sub-heading: "Fuzzy Bubbles", serif;
+  --it-font-body: "DM Sans", sans-serif;
+  --it-font-heading: "Archivo", sans-serif;
+  --it-font-sub-heading: "Archivo", sans-serif;
   --it-font-awesome-6-pro: "Font Awesome 6 Pro";
 }
 
@@ -54,7 +54,6 @@
 .it-btn-orange {
   font-weight: 500;
   font-size: 18px;
-  text-transform: uppercase;
   padding: 16px 20px;
   text-align: center;
   transition: 0.4s;
@@ -83,6 +82,7 @@
   z-index: 1;
   overflow: hidden;
   display: inline-block;
+  text-transform: capitalize;
 }
 .it-btn-orange span span.text-1 {
   position: relative;
@@ -263,9 +263,10 @@
   }
 }
 .it-section-title {
-  font-size: 48px;
-  line-height: 60px;
-  text-transform: capitalize;
+  font-size: 50px;
+  line-height: 1.08;
+  font-style: normal;
+  font-weight: 600;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .it-section-title {

@@ -1,9 +1,10 @@
+@charset "UTF-8";
 /*-----------------------------------------------------------------------------------
 
-    Template Name: Exdos - Creative Agency HTML Template
-    Author: Theme_Pure
-    Support: help.themepure.net
-    Description: Exdos - Creative Agency HTML Template is a modern, customizable, and responsive template designed for agencies to showcase their work, services, and team with stylish layouts and interactive features.
+    Template Name: Novix - Plastic surgery HTML Template
+    Author: Ordianit
+    Support:ordianit@gmail.com
+    Description: Plastic surgery is a specialized branch of medicine that focuses on restoring, reconstructing, or enhancing the appearance and function of different parts of the body. It’s not only about cosmetic improvement but also about repairing damage caused by accidents, burns, birth defects, or medical conditions. With advanced techniques and skilled surgeons, plastic surgery today offers safe and effective results for both aesthetic and reconstructive purposes.
     Version: 1.0.0
 
 -----------------------------------------------------------------------------------
@@ -21,20 +22,63 @@
     02. COMPONENTS css
 	-----------------
 		2.1 Accordion
-		2.2 Back to Top
+		2.2 faq
 		2.3 Breadcrumb
 		2.4 Button
 		2.5 Custom Animation
-		2.6 Offcanvas
-		2.7 Preloader
-		2.8 Search Bar
-		2.9 Skill
+		2.6 Preloader
+		2.7 section-title
+		2.8 Skill
+
+		-----------------
+    03.  layout
+	-----------------
+		3.1 blog
+		3.2 header
+		  3.2.1 offcanvas
+		  3.2.2 sidemenu
+		3.3 section
+		  3.3.1 about
+		  3.3.2 before-after
+		  3.3.3 blog
+		  3.3.4 choose
+		  3.3.5 contact
+		  3.3.6 error
+		  3.3.7 faq
+		  3.3.8 font-size
+		  3.3.9 footer
+		  3.3.10 gallery
+		  3.3.11 hero
+		  3.3.12 menu
+		  3.3.13 service
+		  3.3.14 subcribe
+		  3.3.15 team
+		  3.3.16 testimonial
+		  3.3.17 video
+
+		-----------------
+		04.  theme
+		-----------------
+
+
+			-----------------
+    05.  utils
+	-----------------
+		5.1 breakpoint
+		5.2 color
+		5.3 extend
+		5.4 mixins
+		5.4 typography
+		5.5 variables
+
+		-----------------
+
 
 **********************************************/
 /*----------------------------------------*/
 /*  1.1 Theme Default
 /*----------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Marcellus&family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 :root {
   --it-body-color: #ffffff;
   --it-theme-color: #BF4315;
@@ -50,9 +94,9 @@
 }
 
 :root {
-  --it-font-body: "Sora", serif;
-  --it-font-heading: "Marcellus", serif;
-  --it-font-sub-heading: "Fuzzy Bubbles", serif;
+  --it-font-body: "DM Sans", sans-serif;
+  --it-font-heading: "Archivo", sans-serif;
+  --it-font-sub-heading: "Archivo", sans-serif;
   --it-font-awesome-6-pro: "Font Awesome 6 Pro";
 }
 
@@ -69,7 +113,7 @@ body {
   font-family: var(--it-font-body);
   font-size: 16px;
   font-weight: normal;
-  color: var(--it-body-font-color);
+  color: var(--it-body-color-2);
   line-height: 1;
 }
 
@@ -139,7 +183,7 @@ ul {
 
 p {
   font-family: var(--it-font-body);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: var(--it-body-font-color);
   margin-bottom: 15px;
@@ -1342,7 +1386,6 @@ img {
 .it-btn-orange {
   font-weight: 500;
   font-size: 18px;
-  text-transform: uppercase;
   padding: 16px 20px;
   text-align: center;
   transition: 0.4s;
@@ -1371,6 +1414,7 @@ img {
   z-index: 1;
   overflow: hidden;
   display: inline-block;
+  text-transform: capitalize;
 }
 .it-btn-orange span span.text-1 {
   position: relative;
@@ -1551,9 +1595,10 @@ img {
   }
 }
 .it-section-title {
-  font-size: 48px;
-  line-height: 60px;
-  text-transform: capitalize;
+  font-size: 50px;
+  line-height: 1.08;
+  font-style: normal;
+  font-weight: 600;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .it-section-title {
@@ -2245,6 +2290,9 @@ img {
   font-family: "DM Sans";
 }
 
+/*----------------------------------------*/
+/*  3.2 header
+/*----------------------------------------*/
 .it-header-top-area {
   font-size: 14px;
   font-weight: 400;
@@ -2455,7 +2503,7 @@ img {
 }
 .it-header-menu > nav > ul > li > a {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   padding: 40px 0;
   display: inline-block;
   color: var(--it-common-black);
@@ -2581,6 +2629,9 @@ header {
   font-family: var(--it-font-body);
 }
 
+/*----------------------------------------*/
+/* 3.2.1 offcanvas
+/*----------------------------------------*/
 .it-header-toggle {
   background: #BF4315;
   width: 48px;
@@ -2851,6 +2902,9 @@ header {
   width: 100%;
 }
 
+/*----------------------------------------*/
+/*  3.3.12 menu
+/*----------------------------------------*/
 .it-hero {
   padding: 170px 0;
 }
@@ -3162,7 +3216,7 @@ header {
 }
 
 /*----------------------------------------*/
-/*  16. menu css start
+/*  3.3.12 menu
 /*----------------------------------------*/
 .it-header-menu nav ul li {
   position: relative;
@@ -3765,6 +3819,9 @@ header {
   display: none;
 }
 
+/*----------------------------------------*/
+/* 3.3.1 about
+/*----------------------------------------*/
 @media (max-width: 767px) {
   .it-about-area {
     padding-bottom: 50px;
@@ -3833,7 +3890,8 @@ header {
   max-width: none;
 }
 .it-about-list-icon span {
-  color: #69615D;
+  color: var(--it-body-color-2);
+  font-size: 18px;
 }
 .it-about-list-title {
   font-size: 28px;
@@ -3881,20 +3939,27 @@ header {
   border-radius: 121px;
   overflow: hidden;
 }
+.it-about-drc {
+  font-size: 18px;
+  line-height: 30px;
+}
 
 .it-about-thumb-1 {
   top: 0;
   right: 30px;
+  border-radius: 30px;
 }
 .it-about-thumb-2 {
   top: 215px;
   left: 0;
   border: 8px solid #FFF;
+  border-radius: 30px;
 }
 .it-about-thumb-3 {
   top: 575px;
   right: 30px;
   z-index: 1;
+  border-radius: 30px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .it-about-thumb-3 {
@@ -3936,6 +4001,9 @@ header {
   }
 }
 
+/*----------------------------------------*/
+/* 3.3.13 service
+/*----------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .it-services-area {
     padding-top: 50px;
@@ -3968,6 +4036,7 @@ header {
   height: 100%;
 }
 .it-service__thumb img {
+  border-radius: 12px;
   transition: all 0.7s linear;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
@@ -4002,6 +4071,9 @@ header {
   right: 0;
 }
 
+/*----------------------------------------*/
+/* 3.3.4 choose
+/*----------------------------------------*/
 @media (max-width: 767px) {
   .it-Choose-area {
     padding-top: 42px;
@@ -4064,7 +4136,17 @@ header {
 .it-choose-list-title {
   font-size: 20px;
 }
+.it-choose-list-icon {
+  font-size: 18px;
+}
+.it-choose-list-thumb img {
+  border-radius: 8px;
+  margin-right: 20px;
+}
 
+/*----------------------------------------*/
+/* 3.3.17 video
+/*----------------------------------------*/
 @media (max-width: 767px) {
   .it-video-section {
     padding-top: 29px;
@@ -4153,6 +4235,9 @@ header {
   border-radius: 20px;
 }
 
+/*----------------------------------------*/
+/* 3.3.15 team
+/*----------------------------------------*/
 .it-team__thumb {
   position: relative;
 }
@@ -4232,6 +4317,9 @@ header {
 }
 .it-team__title:hover {
   color: #BF4315;
+}
+.it-team__content p {
+  font-size: 16px;
 }
 @media (max-width: 767px) {
   .it-team-btn {
@@ -4344,16 +4432,24 @@ header {
   }
 }
 
+/*----------------------------------------*/
+/* 3.3.16 testimonial
+/*----------------------------------------*/
 @media (max-width: 767px) {
   .it-testimonial-area {
     padding-top: 42px;
     padding-bottom: 0;
   }
 }
+.it-testimonial-area p {
+  font-size: 16px;
+}
 .it-testimonial-title {
-  letter-spacing: 0.2px;
+  font-size: 18px;
+  line-height: 1;
 }
 .it-testimonial-content {
+  border-radius: 5px;
   padding: 30px 55px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4384,6 +4480,11 @@ header {
     margin-bottom: 20px;
   }
 }
+.it-testimonial-content p {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 26px;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .it-testimonial-dwon {
     justify-content: center;
@@ -4393,6 +4494,9 @@ header {
   width: 60px;
   height: 60px;
   border-radius: 60px;
+}
+.it-testimonial-text p {
+  font-size: 16px;
 }
 
 .itbrand-slider-active .swiper-wrapper {
@@ -4453,6 +4557,9 @@ header {
   width: 100%;
 }
 
+/*----------------------------------------*/
+/* 3.3.2 before-after
+/*----------------------------------------*/
 .it-Different-before-after {
   position: relative;
   display: flex;
@@ -4555,6 +4662,9 @@ header {
   }
 }
 
+/*----------------------------------------*/
+/* 3.3.5 contact
+/*----------------------------------------*/
 .it-contact-content {
   position: absolute;
   bottom: 15%;
@@ -4644,7 +4754,7 @@ h4.it-contact-title {
   margin-top: 16px;
 }
 .it-contact-form-area {
-  padding: 59px 55px;
+  padding: 69px 55px;
   border-radius: 0 30px 30px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
@@ -4730,6 +4840,9 @@ h4.it-contact-title {
   }
 }
 
+/*----------------------------------------*/
+/* 3.3.3 blog
+/*----------------------------------------*/
 .it-blog-info {
   box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -4751,6 +4864,7 @@ h4.it-contact-title {
   }
 }
 .it-blog-thumb {
+  position: relative;
   transition: all 0.7s linear;
   border-radius: 5px;
 }
@@ -4766,8 +4880,12 @@ h4.it-contact-title {
   .it-blog-time {
     font-size: 12px;
   }
+  .it-blog-time i {
+    margin-right: 5px;
+  }
 }
 .it-blog-comment {
+  margin-left: 30px;
   font-size: 15px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -5877,6 +5995,9 @@ a:last-child .sidebar-widget-list {
   border: 1px solid var(--it-theme-color);
 }
 
+/*----------------------------------------*/
+/* 3.3.14 subscribe
+/*----------------------------------------*/
 @media (max-width: 767px) {
   .it-subscribe {
     padding-left: 22px;
@@ -5941,6 +6062,9 @@ a:last-child .sidebar-widget-list {
   }
 }
 
+/*----------------------------------------*/
+/* 3.3.9 footer
+/*----------------------------------------*/
 .it-footer {
   font-family: var(--it-font-heading);
   font-weight: 600;
@@ -6152,6 +6276,9 @@ a:last-child .sidebar-widget-list {
   color: var(--it-theme-color);
 }
 
+/*----------------------------------------*/
+/* 3.3.8 font-size
+/*----------------------------------------*/
 .fns-16 {
   font-size: 16px;
   line-height: 24px;
@@ -6188,7 +6315,7 @@ a:last-child .sidebar-widget-list {
 }
 
 /*----------------------------------------*/
-/*  12. faq css start
+/* 3.3.7 faq
 /*--------------------------------------- -*/
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .it-faq-area {
@@ -6269,7 +6396,7 @@ a:last-child .sidebar-widget-list {
 }
 
 /*----------------------------------------*/
-/*  11. error css start
+/*  3.3.6 error
 /*----------------------------------------*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .it-error-thumb {
@@ -6286,6 +6413,9 @@ a:last-child .sidebar-widget-list {
   font-size: 45px;
 }
 
+/*----------------------------------------*/
+/* 3.3.10 gallery
+/*----------------------------------------*/
 .it-single-image img {
   border-radius: 30px;
 }
