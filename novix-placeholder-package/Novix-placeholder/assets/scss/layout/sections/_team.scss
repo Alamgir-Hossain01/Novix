@@ -1,0 +1,204 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/* 3.3.15 team
+/*----------------------------------------*/
+
+
+.it-team{
+    &__thumb {
+        position: relative;
+        img {
+            width: 100%;
+            display: block;
+            filter: grayscale(100%);
+            transition: 0.3s ease-in-out;
+            border-radius: 5px;
+            @media #{$xs}{
+            width: 100%;
+            height: 440px;
+        }
+        }
+        &::before{
+        position: absolute;
+        content: "";
+        background: linear-gradient(0deg,  #BF4215 0%, rgba(191, 66, 21, 0.00) 52.36%, rgba(191, 66, 21, 0.00) 100%);
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        z-index: 1;
+        @media #{$xs}{
+            width: 100%;
+            height: 440px;
+        }
+        border-radius: 10px;
+    }
+    &:hover {
+        img {
+        filter: grayscale(0%);
+        }
+        &::before{
+            opacity: 1;
+            visibility: visible;
+        }
+        .it-team__socail{
+            bottom: 35px;
+            opacity: 1;
+            visibility: visible;
+            z-index: 2;
+            }
+        }
+    }
+    &__socail{
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        & a{
+            height: 52px;
+            width: 52px;
+            background-color: #fff;
+            display: inline-block;
+            text-align: center;
+            line-height: 50px;
+            margin: 5px;
+            transition: 0.3s;
+            &:hover{
+                background: #33251F;
+                color: #FFF;
+            }
+        }
+    }
+    &__title{
+        font-size: 22px;
+        letter-spacing: .1px;
+         transition: 0.3s;
+        &:hover{
+            color: #BF4315;
+            }
+    }
+    &__content{
+        & p{
+            font-size: 16px;
+        }
+    }
+    &-btn{
+        @media #{$xs}{
+            padding-top: 24px;
+        }
+    }
+    &-area{
+        @media #{$xs}{
+            padding-bottom: 24px;
+        }
+    }
+   &-details{
+      &__socail{
+         & a{
+         height: 52px;
+         width: 52px;
+         background-color: #fff;
+         border: 1px solid #BF4315;
+         border-radius: 50%;
+         display: inline-block;
+         text-align: center;
+         line-height: 50px;
+         margin: 5px;
+         transition: 0.3s;
+         &:hover{
+            background: #4D1C06;
+            color: #FFF;
+            }
+        }
+    }
+    &__contact{
+        @media #{$xs, $sm , $md , $lg}{
+            padding-top: 0;
+        }
+        & li{
+            color: var(--it-heading-color);
+            font-family: var(--it-font-heading);
+            font-size: 22px;
+            padding-bottom: 10px;
+            line-height: 30px;
+            @media #{$xs, $sm , $md , $lg}{
+                padding-bottom: 0;
+            }
+            & a{
+                color: var(--it-body-font-color);
+                font-family: var(--it-font-body);
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+   }
+   &__skill{
+    font-family: var(--it-font-body);
+    color: #3b2e2b;
+    max-width: 100%;
+    }
+    &__progress-bar{
+        flex: 1;
+        height: 8px;
+        background-color: #EAECF0;
+        border-radius: 24px;
+    }
+    &__progress{
+        height: 100%;
+        background-color: #b86a52;
+        border-radius: 10px;
+        transition: width 0.6s ease;
+    }
+    &__percent{
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--it-heading-color);
+    }
+    &__skill-name{
+        color: var(--it-heading-color);
+        font-family: var(--it-font-heading);
+        font-size: 22px;
+        line-height: 30px;
+    }
+    &__contact{
+        padding: 40px 30px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        background: #FFF;
+        box-shadow: 0 6px 60px 0 rgba(11, 3, 0, 0.08);
+        & label{
+            font-size: 16px;
+            color: var(--it-heading-color);
+            font-family: var(--it-font-heading);
+            padding-bottom: 10px;
+            line-height: 26px;
+        }
+        &-input{
+            padding-bottom: 20px;
+        }
+        &-textarea{
+            height: 140px;
+        }
+    }
+}
+
+
+.it-team__info{
+  @media #{$xs, $sm}{
+    margin: 2px 75px;
+  }
+
+}
+.it-team__content {
+  @media #{$xs, $sm, $md}{
+    text-align: center;
+  }
+}

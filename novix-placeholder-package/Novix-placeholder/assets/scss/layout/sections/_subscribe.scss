@@ -1,0 +1,58 @@
+@use '../../utils/' as *;
+/*----------------------------------------*/
+/* 3.3.14 subscribe
+/*----------------------------------------*/
+
+.it-subscribe {
+    @media #{$xs}{
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    & input{
+        padding: 20px 220px 23px 30px;
+        height: 100%;
+        background: #fff;
+        color: #949494;
+    }
+    &-btn{
+        right: 70px;
+        top: 5px;
+        bottom: auto;
+        padding: 5px;
+         @media #{$xs}{
+        right: 23px;
+        top: 7px;
+    }
+         @media #{$md}{
+        right: 10px;
+    }
+        @media #{$lg}{
+            top: 7px;
+        }
+    }
+    @media #{$md}{
+        padding-right: 0;
+    }
+     @media #{$sm, $xs}{
+        	padding-bottom: 30px;
+    }
+}
+.it-join-subscribe-area-margin {
+    margin-bottom: -130px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.it-section-title{
+    @media #{$md}{
+        padding-top: 21px;
+        padding-bottom: 21px;
+        padding-left: 0;
+    }
+    & br{
+        @media #{$md}{
+            display: none;
+        }
+    }
+}

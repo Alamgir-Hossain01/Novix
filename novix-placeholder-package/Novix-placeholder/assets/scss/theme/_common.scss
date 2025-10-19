@@ -1,0 +1,195 @@
+@use '../utils/' as *;
+
+.w-img{
+	& img{
+		width: 100%;
+	}
+}
+.m-img{
+	& img{
+		max-width: 100%;
+	}
+}
+img{
+	max-width: 100%;
+}
+
+.fix {
+    overflow:hidden
+}
+.clear{
+    clear: both;
+}
+
+.z-index-1{
+	z-index: 1;
+	position: relative;
+}
+.z-index-2{
+	z-index: 2;
+	position: relative;
+}
+.z-index-3{
+	z-index: 3;
+	position: relative;
+}
+
+.z-index-11{
+	z-index: 11;
+	position: relative;
+}
+.overflow-y-visible{
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+.overflow-x-visible{
+	overflow-x: visible;
+	overflow-y: hidden;
+}
+
+.p-relative{
+	position: relative;
+}
+.p-absolute{
+	position: absolute;
+}
+// bg color 
+.white-bg{
+	background-color: var(--it-white-color);
+}
+.bg-black{
+	background-color: var(--it-black-color);
+}
+.bg-grey{
+	background-color: var(--it-primary-color);
+}
+
+.bg-theme{
+	background-color: var(--it-theme-color);
+}
+
+
+
+// bg image css 
+.bg-cover{
+	background-size: cover;
+}
+
+// font family 
+.it-body-font{
+	font-family: var(--it-font-body);
+}
+.it-sub-font-2{
+	font-family: var(--it-font-sub-heading-2);
+}
+
+.it-heading-font{
+	font-family: var(--it-font-heading);
+}
+.it-fuzzy-font{
+	font-family: var(--it-font-sub-heading);
+}
+
+// font size 
+.fns{
+  &-14{
+    font-size: 14px;
+	
+  }
+  &-15{
+    font-size: 15px;
+  }
+  &-18{
+    font-size: 18px;
+  }
+  &-20{
+    font-size: 20px;
+  }
+  &-22{
+    font-size: 22px;
+  }
+  &-24{
+    font-size: 24px;
+  }
+  &-55{
+    font-size: 55px;
+	
+  }
+}
+// font weight 
+.fnw{
+	&-300{
+		font-weight: 300;
+	}
+	&-400{
+		font-weight: 400;
+	}
+	&-500{
+		font-weight: 500;
+	}
+	&-600{
+		font-weight: 600;
+	}
+	&-700{
+		font-weight: 700;
+	}
+}
+// radius 
+.br{
+	&-5{
+		border-radius: 5px;
+	}
+	&-8{
+		border-radius: 8px;
+	}
+	&-12{
+		border-radius: 12px;
+	}
+	&-16{
+		border-radius: 16px;
+	}
+	&-20{
+		border-radius: 20px;
+	}
+	&-30{
+		border-radius: 30px;
+	}
+}
+.lh{
+	&-20{
+		line-height: 20px;
+	}
+	&-24{
+		line-height: 24px;
+	}
+	&-26{
+		line-height: 26px;
+	}
+	&-28{
+		line-height: 28px;
+	}
+	&-30{
+		line-height: 30px;
+	}
+	&-1-2{
+		line-height: 1.2;
+	}
+	&-1{
+		line-height: 1;
+	}
+}
+
+// height 
+.it-h-630{
+	min-height: 630px;
+}
+
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+// padding
+.pr-0{
+	padding-right: 0px;
+}

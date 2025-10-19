@@ -1,0 +1,95 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/* 3.3.17 video
+/*----------------------------------------*/
+
+.it-video{
+		&-section{
+			@media #{$xs}{
+			padding-top: 29px;
+			padding-bottom: 29px;
+			}
+		}
+		&-thumb{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+		}
+		&-bg-shape {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			opacity: 0.05;
+		}
+		&-play-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: var(--it-theme-color);
+			color: var(--it-common-white);
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+			border-radius: 50%;
+			text-align: center;
+			cursor: pointer;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+			&-2{
+				position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: var(--it-theme-color);
+			color: var(--it-common-white);
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			border-radius: 50%;
+			text-align: center;
+			cursor: pointer;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+			}
+			@media #{$xs}{
+				width: 44px;
+				height: 44px;
+				line-height: 44px;
+			}
+			& svg{
+				@media #{$xs}{
+				width: 20px;
+				height: 20px;
+			}
+		}
+		&-overly{
+			&-2{
+				position: absolute;
+				content: "";
+				border-radius: 20px;
+				opacity: 0.3;
+				background:#33251F;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+.video-img {
+  max-width: 100%;
+  border-radius: 30px;
+  border: 10px solid #E1251B;  
+  box-shadow: 0 0 0 2px #fff;
+  position: relative;
+  &-2{
+    border-radius: 20px;
+  }
+}
