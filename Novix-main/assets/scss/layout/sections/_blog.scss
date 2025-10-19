@@ -121,29 +121,6 @@
             font-size: 12px;
         }
         }
-        // & span {
-        //     position: relative;
-        //     padding-left: 25px;
-        //     font-weight: 400;
-        //     font-size: 14px;
-        //     letter-spacing: 0.01em;
-        //     display: inline-block;
-        //     @media #{$lg,$md,$xs}{
-        //         font-size: 13px;
-        //     }
-        //     &:not(:last-child) {
-        //         margin-right: 20px;
-        //         @media #{$xl,$lg,$md,$xs}{
-        //             margin-right: 15px;
-        //         }
-        //     }
-        //     & svg,i {
-        //         position: absolute;
-        //         top: 1px;
-        //         left: 0;
-        //         color: var(--it-theme-color);
-        //     }
-        // }
     }
     &-title {
         font-weight: 600;
@@ -458,10 +435,6 @@
             line-height: 45px;
             border-radius: 5px;
         }
-        // & .postbox__select .nice-select {
-        //     height: 45px;
-        //     line-height: 45px;
-        // }
         & .it-contact-input-box textarea {
             height: 140px;
             overflow: hidden;
@@ -565,18 +538,10 @@
         padding: 22px 31px;
         border-radius: 5px;
         background-color: #F0F0F5;
-        // border-left: 7px solid var(--it-theme-color);
         @media #{$xs} {
             padding: 35px 20px;
         }
         & p {
-            // font-size: 16px;
-            // line-height: 1.67;
-            // color: #000;
-            // display: block;
-            // margin-bottom: 0;
-            // margin-bottom: 25px;
-            // font-family: var(--it-ff-heading);
             @media #{$xl} {
                 font-size: 20px;
             }
@@ -1089,10 +1054,8 @@
         color: var(--it-body-color-2);
         font-family: var(--it-font-body);
         text-transform: capitalize;
-        // text-align: center;
         border-radius: 8px;
         background-color: #F8F5F4;
-        // border: 1px solid rgba(121, 121, 121, 0.2);
         @media #{$xl} {
             font-size: 12px;
         }

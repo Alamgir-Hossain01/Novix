@@ -170,25 +170,6 @@ p {
 	line-height: 24px;
 }
 
-
-a,
-.btn,
-button,
-input,
-select,
-textarea,
-li,
-img,
-.transition-3,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-//    @include mixin.it-transition(.3s);
-}
-
 a:not([href]):not([class]), 
 a:not([href]):not([class]):hover {
 	color: inherit;

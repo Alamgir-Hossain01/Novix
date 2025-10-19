@@ -4138,6 +4138,8 @@ header {
 
 .it-service__thumb {
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .it-service__thumb img {
   border-radius: 12px;
@@ -4153,10 +4155,6 @@ header {
   .it-service__thumb img {
     width: 100%;
   }
-}
-.it-service__thumb {
-  width: 100%;
-  height: 100%;
 }
 .it-service__thumb:hover img {
   transform: scale(1.2);
@@ -4373,15 +4371,13 @@ header {
   visibility: hidden;
   transition: 0.3s;
   z-index: 1;
+  border-radius: 10px;
 }
 @media (max-width: 767px) {
   .it-team__thumb::before {
     width: 100%;
     height: 440px;
   }
-}
-.it-team__thumb::before {
-  border-radius: 10px;
 }
 .it-team__thumb:hover img {
   filter: grayscale(0%);
@@ -4816,7 +4812,6 @@ h4.it-contact-title {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: black; */
   opacity: 0.6;
   background: var(--P, #33251F);
 }
