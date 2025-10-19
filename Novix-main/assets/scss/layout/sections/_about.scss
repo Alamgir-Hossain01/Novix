@@ -11,6 +11,9 @@
     }
   }
   &-wrapper{
+    & img{
+      border-radius: 30px;
+    }
     @media #{$lg, $xs, $sm}{
       padding-top: 21px;
       margin-left: 0;
