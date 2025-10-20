@@ -28,7 +28,6 @@
         $(this).css("background", $(this).attr("data-circle-bar"))
     })
 
-
    //  magnificPopup
 	$('.popup-image').magnificPopup({
 		type: 'image',
@@ -59,7 +58,6 @@
 		}
 	});
 
-
 	if ($('.it-header-height').length > 0) {
 		var headerHeight = document.querySelector(".it-header-height");
 		var setHeaderHeight = headerHeight.offsetHeight;
@@ -74,7 +72,6 @@
 			});
 		});
 	}
-
 
     // itreviwe slider
 
@@ -91,9 +88,6 @@
 		},
 
 	});
-	
-
-
 	
   // it-text-slider
     var swiper = new Swiper('.itbrand-slider-active', {
@@ -122,7 +116,6 @@
 
 	});
 
-
 	// Sidebar Js
 	$(".it-menu-bar").on("click", function () {
 		$(".itoffcanvas").addClass("opened");
@@ -138,23 +131,21 @@
 		$(".search-popup").removeClass("search-active");
 	});
 
-	      // offcanvas
-  $('.it-header-toggle').on('click', function () {
-    $('.it-offcanvas').addClass('it-offcanvas-open');
-    $('.it-offcanvas-overly').addClass('it-offcanvas-overly-open');
-  });
+	// offcanvas
+	$('.it-header-toggle').on('click', function () {
+		$('.it-offcanvas').addClass('it-offcanvas-open');
+		$('.it-offcanvas-overly').addClass('it-offcanvas-overly-open');
+	});
 
-  $('.it-offcanvas-close-toggle, .it-offcanvas-overly').on(
-    'click',
-    function () {
-      $('.it-offcanvas').removeClass('it-offcanvas-open');
-      $('.it-offcanvas-overly').removeClass('it-offcanvas-overly-open');
-    }
-  );
+	$('.it-offcanvas-close-toggle, .it-offcanvas-overly').on(
+		'click',
+		function () {
+		$('.it-offcanvas').removeClass('it-offcanvas-open');
+		$('.it-offcanvas-overly').removeClass('it-offcanvas-overly-open');
+		}
+	);
 
-
-
- // mobile menu
+ 	// mobile menu
 	if ($('.it-menu-content').length && $('.it-menu-mobile').length) {
 		let navContent = document.querySelector(".it-menu-content").outerHTML;
 		let mobileNavContainer = document.querySelector(".it-menu-mobile");
@@ -183,36 +174,29 @@
 		});
 	}
 
+	// before-after
 
-// before-after
+	const imgAfter = document.querySelector('.img-wrapper:nth-of-type(2)');
+	const line = document.getElementById('line');
+	const slider = document.getElementById('slider');
 
-const imgAfter = document.querySelector('.img-wrapper:nth-of-type(2)');
-const line = document.getElementById('line');
-const slider = document.getElementById('slider');
+	if (slider && line && imgAfter) {  // check
+		slider.addEventListener('input', () => {
+			line.style.left = `${slider.value}%`;   
+			imgAfter.style.clipPath = `inset(0px 0px 0px ${slider.value}%)`;
+		});
 
-if (slider && line && imgAfter) {  // check
-    slider.addEventListener('input', () => {
-        line.style.left = `${slider.value}%`;   
-        imgAfter.style.clipPath = `inset(0px 0px 0px ${slider.value}%)`;
-    });
+		slider.addEventListener('dblclick', () => {
+			slider.value = 50;
+			line.style.left = '50%';
+			imgAfter.style.clipPath = 'inset(0px 0px 0px 50%)';
+		});
+	}
 
-    slider.addEventListener('dblclick', () => {
-        slider.value = 50;
-        line.style.left = '50%';
-        imgAfter.style.clipPath = 'inset(0px 0px 0px 50%)';
-    });
-}
-
-	
-	
-
-
-    	// Nice Select Js
+    // Nice Select Js
 	$('select').niceSelect();
 
-
-
-// wow animation
+	// wow animation
 	var wow = new WOW(
 		{
 		  mobile: true,
@@ -220,10 +204,6 @@ if (slider && line && imgAfter) {  // check
 	  );
 	  wow.init();
 	var windowOn = $(window);
-
-
-
-	
 
 	// webgl hover animation
 	if ($('.it-img-anim-wrap').length > 0) {
@@ -269,7 +249,7 @@ if (slider && line && imgAfter) {  // check
 		setupAllImageHoverAnimations();
 	}
 
-		// ScrollSmoother
+	// ScrollSmoother
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 	if ($('#smooth-wrapper').length && $('#smooth-content').length) {
 		gsap.config({
@@ -285,8 +265,6 @@ if (slider && line && imgAfter) {  // check
 
 		});
 	}
-
-
 
 	// split text animation
 	if ($('.it-split-text').length > 0) {
@@ -409,8 +387,7 @@ if (slider && line && imgAfter) {  // check
 		})
 	}
 
-
-		// scroll-to-target 
+	// scroll-to-target 
 	windowOn.on('scroll', function () {
 		var scroll = windowOn.scrollTop();
 		if (scroll < 500) {
