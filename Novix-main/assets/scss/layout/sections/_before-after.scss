@@ -6,95 +6,95 @@
 /*----------------------------------------*/
 
 .it-Different-before-after{
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 660px;
+position: relative;
+display: flex;
+width: 100%;
+height: 660px;
 }
 
 .img-wrapper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+position: absolute;
+width: 100%;
+height: 100%;
+overflow: hidden;
 }
 
 .img-wrapper:nth-child(2) {
-  clip-path: inset(0px 0px 0px 50%);
+clip-path: inset(0px 0px 0px 50%);
 }
 
 .img-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 
 #line {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0.2rem;
-  height: 100%;
-  background-color: #fafafa;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+width: 0.2rem;
+height: 100%;
+background-color: #fafafa;
 }
 
 .it-Different-before-after-input{
-  & input {
-    appearance: none;
-    -webkit-appearance: none;
-    background-color: transparent;
-    position: absolute;
-    width: calc(100% + 2.25rem);
-    height: 100%;
-    left: -1.125rem;
-  }
-  & input::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    height: 2.25rem;
-    width: 2.25rem;
-    background-size: cover;
-    cursor: grab;
-  }
-    input::-moz-range-thumb {
-    height: 2.25rem;
-    width: 2.25rem;
-    border: 0.25rem solid #fff;
-    border-radius: 50%;
-    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 height%3D%2224px%22 viewBox%3D%220 -960 960 960%22 width%3D%2224px%22 fill%3D%22%23000%22%3E%3Cpath d%3D%22M286.15-293.85 100-479.62l185.77-185.76 42.15 41.76-113 113.62h530.16l-113-113.62 42.15-41.76L860-479.62 674.23-293.85l-42.54-41.77 113.39-114H214.54l113.38 114-41.77 41.77Z%22/%3E%3C/svg%3E");
-    background-size: cover;
-    cursor: grab;
-  }
-  input:active::-webkit-slider-thumb {
-    cursor: grabbing;
-  }
+& input {
+   appearance: none;
+   -webkit-appearance: none;
+   background-color: transparent;
+   position: absolute;
+   width: calc(100% + 2.25rem);
+   height: 100%;
+   left: -1.125rem;
+}
+& input::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   appearance: none;
+   height: 2.25rem;
+   width: 2.25rem;
+   background-size: cover;
+   cursor: grab;
+}
+   input::-moz-range-thumb {
+   height: 2.25rem;
+   width: 2.25rem;
+   border: 0.25rem solid #fff;
+   border-radius: 50%;
+   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+   background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 height%3D%2224px%22 viewBox%3D%220 -960 960 960%22 width%3D%2224px%22 fill%3D%22%23000%22%3E%3Cpath d%3D%22M286.15-293.85 100-479.62l185.77-185.76 42.15 41.76-113 113.62h530.16l-113-113.62 42.15-41.76L860-479.62 674.23-293.85l-42.54-41.77 113.39-114H214.54l113.38 114-41.77 41.77Z%22/%3E%3C/svg%3E");
+   background-size: cover;
+   cursor: grab;
+}
+input:active::-webkit-slider-thumb {
+   cursor: grabbing;
+}
 
-  input:active::-moz-slider-thumb {
-    cursor: grabbing;
-  }
+input:active::-moz-slider-thumb {
+   cursor: grabbing;
+}
 }
 
 .it-handle{
- 
-  width: 88.854px;
-  height: 32.409px;
-  transform: translateX(-50%, -50%);
-  border-radius: 16.008px;
-  border: 1px solid var(--White, #FFF);
-  background: rgba(255, 255, 255, 0.10);
-  backdrop-filter: blur(4px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+width: 88.854px;
+height: 32.409px;
+transform: translateX(-50%, -50%);
+border-radius: 16.008px;
+border: 1px solid var(--White, #FFF);
+background: rgba(255, 255, 255, 0.10);
+backdrop-filter: blur(4px);
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .it-line{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(-50%, -50%);
+display: flex;
+justify-content: center;
+align-items: center;
+transform: translate(-50%, -50%);
 }
 
 .it-left-angle{
@@ -107,8 +107,8 @@ color: #fff;
 
 
 .it-Different-before-after {
-  @media #{$xs}{
+@media #{$xs}{
 height: 449px;
-  }
-	
+}
+   
 }
