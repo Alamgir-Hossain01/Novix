@@ -120,7 +120,7 @@
         }
     }
     &__contact{
-        @media #{$xs, $sm , $md , $lg}{
+        @media #{$sm , $md , $lg}{
             padding-top: 0;
         }
         & li{
@@ -202,5 +202,12 @@
 .it-team__content {
   @media #{$xs, $sm, $md}{
     text-align: center;
+     
+  }
+}
+.it-team-details-content{
+   @media #{$xs}{
+     padding-top: 30px;
+    
   }
 }

@@ -4183,6 +4183,8 @@ header {
 
 .it-service__thumb {
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .it-service__thumb img {
   border-radius: 12px;
@@ -4198,10 +4200,6 @@ header {
   .it-service__thumb img {
     width: 100%;
   }
-}
-.it-service__thumb {
-  width: 100%;
-  height: 100%;
 }
 .it-service__thumb:hover img {
   transform: scale(1.2);
@@ -4422,6 +4420,11 @@ header {
 .video-img-2 {
   border-radius: 20px;
 }
+@media (max-width: 767px) {
+  .video-img-1 {
+    padding-bottom: 20px;
+  }
+}
 
 /*----------------------------------------*/
 /* 3.3.15 team
@@ -4535,7 +4538,7 @@ header {
   background: #4D1C06;
   color: #FFF;
 }
-@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .it-team-details__contact {
     padding-top: 0;
   }
@@ -4617,6 +4620,12 @@ header {
 @media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   .it-team__content {
     text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .it-team-details-content {
+    padding-top: 30px;
   }
 }
 
@@ -4748,6 +4757,12 @@ header {
 @media (max-width: 767px) {
   .it-brand-slider-wrap {
     padding-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .it-faq-area {
+    padding-top: 30px;
   }
 }
 
@@ -6776,6 +6791,12 @@ a:last-child .sidebar-widget-list {
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .it-single-image img.image-10 {
     margin-top: 7%;
+  }
+}
+
+@media (max-width: 767px) {
+  .it-gallery-area {
+    padding-top: 50px;
   }
 }
 

@@ -131,3 +131,8 @@
             padding-top: 0;
       }
 }
+.it-faq-area{
+     @media #{$xs}{
+        padding-top: 30px;
+    }
+}
