@@ -126,3 +126,8 @@
   height: 1px;
   width: 100%;
 }
+.it-brand-slider-wrap{
+     @media #{$xs}{
+            padding-top: 0;
+      }
+}

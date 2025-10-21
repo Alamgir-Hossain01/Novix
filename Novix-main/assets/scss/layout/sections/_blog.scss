@@ -10,6 +10,9 @@
       padding: 30px;
          background-color: #fff;
       border-radius: 5px;
+      @media #{$xs}{
+           padding: 20px;
+        }
    }
    &-title{
       font-size: 22px;
@@ -19,6 +22,7 @@
    }
    @media #{$xs}{
       font-size: 17px;
+      padding-bottom: 13px;
    }
    }
    &-thumb{
@@ -37,6 +41,9 @@
             margin-right: 5px;
       }
    }
+   @media #{$xs}{
+            font-size: 12px;
+        }
    }
    &-comment{
       margin-left: 30px;
@@ -44,6 +51,9 @@
          @media #{$lg}{
       font-size: 12px;
    }
+   @media #{$xs}{
+            font-size: 12px;
+        }
    }
    &-user{
       font-size: 15px;
@@ -51,13 +61,19 @@
       font-size: 12px;
    }
    }
+   &-area{
+      @media #{$xs}{
+           padding-top: 33px;
+        }
+   }
+   &-btn{
+      
+   }
 }
 
 
 
-/*----------------------------------------*/
-/*  03. blog css start
-/*----------------------------------------*/
+
 .it-blog {
    &-top-text {
       & p {
@@ -133,7 +149,7 @@
             font-size: 17px;
       }
       @media #{$xs}{
-            font-size: 20px;
+            font-size: 15px;
       }
    }
    &-btn {
@@ -147,8 +163,12 @@
       @media #{$lg}{
             font-size: 14px;
       }
-      @media #{$md,$xs}{
+      @media #{$md}{
             font-size: 16px;
+      }
+       @media #{$xs}{
+            font-size: 13px;
+
       }
       & span {
             & i,svg {
@@ -1171,4 +1191,10 @@
             }
       }
    }
+}
+.it-blog-text{
+   padding-top: 0;
+   @media #{$xs}{
+            padding-bottom: 10px;
+        }
 }

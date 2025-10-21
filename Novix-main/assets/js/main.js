@@ -102,6 +102,17 @@
         delay: 1,
         disableOnInteraction: true,
         },
+		breakpoints: {
+      350: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1200: {
+        slidesPerView: 6,
+      },
+    },
     });
 
 

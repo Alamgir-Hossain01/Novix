@@ -9,7 +9,8 @@
       padding-top: 50px;
     }
     @media #{$xs}{
-      padding-top: 30px;
+      padding-top: 10px;
+      padding-bottom: 20px;
     }
   }
   &-icon{
@@ -23,11 +24,26 @@
     line-height: 30px;
     font-family: var(--it-font-heading);
     color: var(--it-heading-color);
+    @media #{$xs}{
+      font-size: 16px;
+      line-height: 20px;
+    }
+    & br{
+       @media #{$xs}{
+          display: none;
+      }
+
+    }
   }
   &__content{
     padding: 10px;
     border-radius: 16px;
     box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.10);
+  }
+  &-btn{
+    @media #{$xs}{
+    padding-top: 23px;
+    }
   }
 }
 .it-service__thumb{

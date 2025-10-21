@@ -6,22 +6,26 @@
 .it-subscribe {
     @media #{$xs}{
         padding-left: 22px;
-        padding-right: 22px;
+        padding-right: 0;
     }
     & input{
         padding: 20px 220px 23px 30px;
         height: 100%;
         background: #fff;
         color: #949494;
+         @media #{$xs}{
+        padding: 13px 180px 22px 14px;
+      }
     }
     &-btn{
         right: 70px;
         top: 5px;
         bottom: auto;
         padding: 5px;
+
          @media #{$xs}{
-        right: 23px;
-        top: 7px;
+        right: 4px;
+        top: 4px;
     }
          @media #{$md}{
         right: 10px;
@@ -55,4 +59,10 @@
             display: none;
         }
     }
+}
+
+.it-Subscribe-area{
+     @media #{$xs}{
+            padding-top: 40px;
+      }
 }
