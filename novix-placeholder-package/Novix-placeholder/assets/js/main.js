@@ -216,49 +216,6 @@
 	  wow.init();
 	var windowOn = $(window);
 
-	// webgl hover animation
-	if ($('.it-img-anim-wrap').length > 0) {
-		const initImageHoverAnimation = function ($animElement, $images) {
-			const hoverEffectInstance = new hoverEffect({
-				parent: $animElement.get(0),
-				intensity: $animElement.data("intensity") || undefined,
-				speedIn: $animElement.data("speedin") || undefined,
-				speedOut: $animElement.data("speedout") || undefined,
-				easing: $animElement.data("easing") || undefined,
-				hover: $animElement.data("hover") || undefined,
-				image1: $images.eq(0).attr("src"),
-				image2: $images.eq(0).attr("src"),
-				displacementImage: $animElement.data("displacement"),
-				imagesRatio: $images[0].height / $images[0].width,
-				hover: false
-			});
-
-			$animElement.closest(".it-img-anim-wrap")
-				.on("mouseenter", function () {
-					hoverEffectInstance.next();
-				})
-				.on("mouseleave", function () {
-					hoverEffectInstance.previous();
-				});
-		};
-
-		const setupAllImageHoverAnimations = function () {
-			$(".it-img-anim").each(function () {
-				const $currentAnimElement = $(this);
-				const $imgElements = $currentAnimElement.find("img");
-				const $firstImage = $imgElements.eq(0);
-
-				if ($firstImage[0].complete) {
-					initImageHoverAnimation($currentAnimElement, $imgElements);
-				} else {
-					$firstImage.on("load", function () {
-						initImageHoverAnimation($currentAnimElement, $imgElements);
-					});
-				}
-			});
-		};
-		setupAllImageHoverAnimations();
-	}
 
 	// ScrollSmoother
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);

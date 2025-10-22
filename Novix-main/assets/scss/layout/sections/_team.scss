@@ -15,7 +15,6 @@
             border-radius: 5px;
             @media #{$xs}{
             width: 100%;
-            height: 235px;
         }
         }
         &::before{
@@ -194,9 +193,9 @@
 
 
 .it-team__info{
-  @media #{$xs, $sm}{
-    margin: 2px 75px;
-  }
+//   @media #{$xs, $sm}{
+//     margin: 2px 75px;
+//   }
 
 }
 .it-team__content {
