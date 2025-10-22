@@ -92,4 +92,9 @@
   &-2{
     border-radius: 20px;
   }
+  &-1{
+	@media #{$xs}{
+		padding-bottom: 20px;;
+  }
+}
 }

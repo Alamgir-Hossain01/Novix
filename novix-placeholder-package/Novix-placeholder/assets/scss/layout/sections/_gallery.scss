@@ -78,3 +78,8 @@
        }
     }
 }
+.it-gallery-area{
+   @media #{$xs}{
+      padding-top: 50px;
+   }
+}

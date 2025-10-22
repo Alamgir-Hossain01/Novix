@@ -197,3 +197,9 @@
     text-align: start;
   }
 }
+
+.it-about-wrapper-3{
+  @media #{$xs, $sm, $lg}{
+    margin-top: 0;
+  }
+}

@@ -54,11 +54,6 @@
         }
     }
     &-img{
-        & img{
-            width: 60px;
-            height: 60px;
-            border-radius: 60px;
-        }
         &-2{
             & img {
                 width: 60px;
@@ -130,4 +125,14 @@
  border-top: 2px solid #C7C7C7;
   height: 1px;
   width: 100%;
+}
+.it-brand-slider-wrap{
+     @media #{$xs}{
+            padding-top: 0;
+      }
+}
+.it-faq-area{
+     @media #{$xs}{
+        padding-top: 30px;
+    }
 }

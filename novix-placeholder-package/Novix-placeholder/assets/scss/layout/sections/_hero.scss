@@ -56,8 +56,8 @@
             line-height: 1;
          }
                  @media #{$md, $sm}{
-      text-align: center;
-   }
+             text-align: center;
+    }
       & a {
          display: inline-flex;
          flex-direction: column;
@@ -70,9 +70,13 @@
       text-align: center;
    }
       }
-        @media #{$sm, $xs}{
+        @media #{$sm}{
            font-size: 44px;
   line-height: 60px;
+        }
+         @media #{$xs}{
+           font-size: 22px;
+    line-height: 28px;
         }
         & svg{
           @media #{$sm, $xs}{

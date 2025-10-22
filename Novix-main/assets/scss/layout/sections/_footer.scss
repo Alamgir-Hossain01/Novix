@@ -170,6 +170,9 @@
          background: var(--it-theme-color);
       }
     }
+    @media #{$xs, $sm}{
+      margin-top: 15px;
+    }
     
   }
   &-title{

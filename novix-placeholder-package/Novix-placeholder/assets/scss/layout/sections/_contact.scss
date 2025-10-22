@@ -72,7 +72,7 @@ h4.it-contact-title {
 .it-contact{
     &-area{
         @media #{$md, $sm, $xs}{
-            padding-top: 0;
+            padding-top: 93px;
     }
 }
     &-input-box{
@@ -118,7 +118,7 @@ h4.it-contact-title {
 
     }
 	@media #{$lg} {
-    height: 651px;
+    height: 678px;
 }
 	@media #{$xl} {
     height: 701px;

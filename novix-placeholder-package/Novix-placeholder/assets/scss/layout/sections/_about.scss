@@ -7,7 +7,7 @@
 .it-about{
   &-area{
     @media #{$xs}{
-      padding-bottom: 50px;
+      padding-bottom: 0px;
     }
   }
   &-wrapper{
@@ -18,12 +18,17 @@
       padding-top: 21px;
       margin-left: 0;
     }
-    @media #{$md, $sm, $xs}{
+    @media #{$md, $sm}{
      margin-top: 597px;
      text-align: center;
      margin-bottom: 0;
     }
-     @media #{$sm, $xs}{
+    @media #{$xs}{
+     padding-top: 202px;
+     text-align: center;
+     margin-bottom: 40px;
+    }
+     @media #{$sm}{
      margin-top: 441px;
      text-align: center;
      margin-bottom: 0;
@@ -77,7 +82,13 @@
       & span{
         color: var(--it-body-color-2);
         font-size: 18px;
+        @media #{$xs}{
+      font-size: 16px;
+    }
       }
+      @media #{$xs}{
+     margin-bottom: 0;
+    }
     }
     &-title{
       font-size: 28px;
@@ -133,9 +144,6 @@
 
 
 .it-about-thumb{
-  &-wapper{
-
-  }
   &-1{
     top: 0;
     right: 30px;
@@ -187,5 +195,11 @@
 .it-about-list-content.mb-15 {
 	@media #{$xs, $sm, $md} {
     text-align: start;
+  }
+}
+
+.it-about-wrapper-3{
+  @media #{$xs, $sm, $lg}{
+    margin-top: 0;
   }
 }
