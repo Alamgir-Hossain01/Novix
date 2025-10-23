@@ -94,9 +94,13 @@
       @media #{$lg}{
          font-size: 16px;
       }
-              @media #{$md, $sm}{
-      text-align: center;
-   }
+      @media #{$md, $sm}{
+         text-align: center;
+      }
+      @media #{$xs}{
+         padding-left: 40%;
+         padding-top: 5%;
+      }
    }
    &-bg-shape {
          width: 550px;

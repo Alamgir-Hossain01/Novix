@@ -229,3 +229,10 @@
    }
 
 }
+.it-footer-area{
+   & a{
+      &:hover{
+         color: var(--it-theme-color);
+      }
+   }
+}
