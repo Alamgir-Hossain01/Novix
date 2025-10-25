@@ -217,6 +217,7 @@
 	var windowOn = $(window);
 
 
+
 	// ScrollSmoother
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 	if ($('#smooth-wrapper').length && $('#smooth-content').length) {
