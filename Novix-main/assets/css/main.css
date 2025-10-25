@@ -3368,7 +3368,7 @@ header {
 }
 @media (max-width: 767px) {
   .it-hero-video {
-    height: 40vh;
+    height: 50vh;
   }
 }
 .it-hero-video .video-bg {
