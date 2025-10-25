@@ -19,7 +19,7 @@
          font-family: var(--it-font-heading);
          font-size: 16px;
          font-weight: 400;
-         line-height: 24px;
+         line-height: 26px;
          
       }
       &-sub{
@@ -48,7 +48,7 @@
             font-family: var(--it-font-heading);
             font-size: 16px;
             font-weight: 400;
-            line-height: 24px;
+            line-height: 26px;
             color: #B1ACAC;
             
          }
@@ -73,7 +73,7 @@
             font-family: var(--it-font-heading);
             font-size: 16px;
             font-weight: 400;
-            line-height: 24px;
+            line-height: 26px;
             
          }
          &-sub{
@@ -181,6 +181,7 @@
    line-height: 24px;
    font-weight: 400;
    &-2{
+      display: block;
       color: #FDFDFD;
       font-size: 18px;
       line-height: 24px;
