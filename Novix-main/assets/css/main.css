@@ -1961,6 +1961,24 @@ img {
   animation: animate-pulse-black 3s linear infinite;
 }
 
+@keyframes animate-pulse-white {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8), 0 0 0 0 rgba(255, 255, 255, 0.8);
+  }
+  40% {
+    box-shadow: 0 0 0 50px rgba(255, 255, 255, 0), 0 0 0 0 rgba(255, 255, 255, 0.8);
+  }
+  80% {
+    box-shadow: 0 0 0 50px rgba(255, 255, 255, 0), 0 0 0 30px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0), 0 0 0 30px rgba(255, 255, 255, 0);
+  }
+}
+.pulse-white {
+  animation: animate-pulse-white 3s linear infinite;
+}
+
 @keyframes borderanimate {
   0% {
     transform: translate(-50%, -50%) scale(0.8);
@@ -3269,13 +3287,20 @@ header {
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0.8;
+  opacity: 0.5;
   background-color: #33251F;
 }
 
 .it-review-text {
   color: #fff;
   font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 12px;
+}
+.it-review-text-2 {
+  color: #fff;
+  font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   margin-top: 12px;
@@ -3335,6 +3360,47 @@ header {
     justify-content: center;
     margin-top: 159px;
   }
+}
+
+.it-hero-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .it-hero-video {
+    height: 50vh;
+  }
+}
+.it-hero-video .video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.it-hero-video .video-bg video {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: cover;
+}
+.it-hero-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
+.it-review-stars {
+  margin-bottom: 5px;
 }
 
 /*----------------------------------------*/
@@ -4207,8 +4273,6 @@ header {
 
 .it-service__thumb {
   overflow: hidden;
-  width: 100%;
-  height: 100%;
 }
 .it-service__thumb img {
   border-radius: 12px;
@@ -4224,6 +4288,10 @@ header {
   .it-service__thumb img {
     width: 100%;
   }
+}
+.it-service__thumb {
+  width: 100%;
+  height: 100%;
 }
 .it-service__thumb:hover img {
   transform: scale(1.2);

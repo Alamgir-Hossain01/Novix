@@ -154,11 +154,12 @@ line-height: 26px;
 }
 }
 .it-map-wrap iframe {
-	height: 584px;
+	height: 603px;
     width: 100%;
     @media #{$lg, $md, $sm, $xs}{
     margin-top: 20px;
 }
+
 }
 .it-contact-form{
       @media #{$xs}{
