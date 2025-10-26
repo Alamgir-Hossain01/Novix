@@ -13,6 +13,7 @@
       @media #{$xs}{
            padding: 20px;
         }
+       
    }
    &-title{
       font-size: 22px;
@@ -29,9 +30,13 @@
       position: relative;
       transition: all 0.7s linear;
       border-radius: 5px;
+      &:hover {
+         transform: scale(1.1);
+      }
       @media #{$lg, $md, $sm, $xs}{
       width: 100%;
    }
+   
    }
    &-time{
       font-size: 15px;
