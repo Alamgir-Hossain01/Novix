@@ -34,8 +34,11 @@
             }
             &-text{
                 padding-right: 28px;
-                @media #{$sm, $md, $xs}{
+                @media #{$sm, $md,}{
                     padding-right: 0;
+                }
+                @media #{$xs}{
+                    display: none;
                 }
             }
         }
@@ -46,7 +49,7 @@
             padding-right: 10px;
         }
         @media #{$xs}{
-            padding-right: 0;
+            padding-right: 10px;
         }
     }
  

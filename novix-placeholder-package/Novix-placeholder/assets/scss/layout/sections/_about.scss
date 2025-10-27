@@ -192,9 +192,17 @@
   }
 }
 
-.it-about-list-content.mb-15 {
-	@media #{$xs, $sm, $md} {
+.it-about-list-content {
+  p{
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+	@media #{$sm, $md} {
     text-align: start;
+  }
+	@media #{$xs} {
+    text-align: left;
   }
 }
 

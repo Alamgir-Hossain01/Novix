@@ -98,3 +98,18 @@
   }
 }
 }
+.hero-3-img{
+  max-width: 100%;
+  border-radius: 30px;
+  border: 10px solid #E1251B;  
+  box-shadow: 0 0 0 2px #fff;
+  position: relative;
+  &-2{
+    border-radius: 20px;
+  }
+  &-1{
+	@media #{$xs}{
+		padding-bottom: 20px;;
+  }
+}
+}

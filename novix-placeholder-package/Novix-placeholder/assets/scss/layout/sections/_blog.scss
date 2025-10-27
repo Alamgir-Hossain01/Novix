@@ -13,6 +13,7 @@
       @media #{$xs}{
            padding: 20px;
         }
+       
    }
    &-title{
       font-size: 22px;
@@ -29,9 +30,13 @@
       position: relative;
       transition: all 0.7s linear;
       border-radius: 5px;
+      &:hover {
+         transform: scale(1.1);
+      }
       @media #{$lg, $md, $sm, $xs}{
       width: 100%;
    }
+   
    }
    &-time{
       font-size: 15px;
@@ -410,6 +415,10 @@
       font-size: 36px;
       line-height: 44px;
       font-weight: 400;
+       @media #{$xs, $sm}{
+               font-size: 22px;
+               line-height: 30px;
+            }
    }
 }
 
@@ -607,6 +616,9 @@
             font-weight: 400;
             font-size: 22px;
             color: var(--it-heading-color);
+            @media #{$xs}{
+               font-size: 20px;
+            }
       }
       &-content {
             & a {

@@ -3389,6 +3389,43 @@ header {
   margin-bottom: 5px;
 }
 
+.it-hero-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .it-hero-banner {
+    height: 50vh;
+  }
+}
+.it-hero-banner .it-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.it-hero-banner .it-hero-bg img {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: cover;
+}
+.it-hero-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
 /*----------------------------------------*/
 /*  3.3.12 menu
 /*----------------------------------------*/
@@ -4197,9 +4234,14 @@ header {
   line-height: 30px;
   padding-bottom: 20px;
 }
-@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   .it-about-list-content {
     text-align: start;
+  }
+}
+@media (max-width: 767px) {
+  .it-about-list-content {
+    text-align: left;
   }
 }
 
@@ -4506,6 +4548,22 @@ header {
 }
 @media (max-width: 767px) {
   .video-img-1 {
+    padding-bottom: 20px;
+  }
+}
+
+.hero-3-img {
+  max-width: 100%;
+  border-radius: 30px;
+  border: 10px solid #E1251B;
+  box-shadow: 0 0 0 2px #fff;
+  position: relative;
+}
+.hero-3-img-2 {
+  border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .hero-3-img-1 {
     padding-bottom: 20px;
   }
 }
@@ -5569,6 +5627,12 @@ h4.it-contact-title {
   line-height: 44px;
   font-weight: 400;
 }
+@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .it-inner-title-2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
 
 /* blog-details css here*/
 .postbox-details-wrapper .it-blog-btn {
@@ -5761,6 +5825,11 @@ h4.it-contact-title {
   font-weight: 400;
   font-size: 22px;
   color: var(--it-heading-color);
+}
+@media (max-width: 767px) {
+  .postbox-tag-title {
+    font-size: 20px;
+  }
 }
 .postbox-tag-content a {
   padding: 5px 10px;

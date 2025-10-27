@@ -19,7 +19,7 @@
          font-family: var(--it-font-heading);
          font-size: 16px;
          font-weight: 400;
-         line-height: 24px;
+         line-height: 26px;
          
       }
       &-sub{
@@ -36,7 +36,7 @@
          color: #B1ACAC;
          font-weight: 300;
          font-size: 16px;
-         line-height: 20px;
+         line-height: 26px;
       }
       &-2{
          @media #{$xs}{
@@ -48,9 +48,11 @@
             font-family: var(--it-font-heading);
             font-size: 16px;
             font-weight: 400;
-            line-height: 24px;
+            line-height: 26px;
             color: #B1ACAC;
-            
+            & li{
+               margin-bottom: 15px;
+            }
          }
          &-sub{
             margin-left: -60px;
@@ -73,8 +75,10 @@
             font-family: var(--it-font-heading);
             font-size: 16px;
             font-weight: 400;
-            line-height: 24px;
-            
+            line-height: 26px;
+            & li{
+               margin-bottom: 15px;
+            }
          }
          &-sub{
             margin-left: -60px;
@@ -158,14 +162,14 @@
   }
   &-social{
     & a{
-        height: 30px;
-        width: 30px;
+        height: 40px;
+        width: 40px;
         background: rgba(255, 255, 255, 0.12);
         display: inline-block;
         text-align: center;
         margin-left: 5px;
         border-radius: 100%;
-        padding-top: 5px;
+        padding-top: 10px;
       &:hover{
          background: var(--it-theme-color);
       }
@@ -181,6 +185,7 @@
    line-height: 24px;
    font-weight: 400;
    &-2{
+      display: block;
       color: #FDFDFD;
       font-size: 18px;
       line-height: 24px;

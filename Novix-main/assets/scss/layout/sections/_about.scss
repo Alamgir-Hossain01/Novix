@@ -198,8 +198,11 @@
     line-height: 30px;
     padding-bottom: 20px;
   }
-	@media #{$xs, $sm, $md} {
+	@media #{$sm, $md} {
     text-align: start;
+  }
+	@media #{$xs} {
+    text-align: left;
   }
 }
 
