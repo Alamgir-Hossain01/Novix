@@ -181,6 +181,11 @@
             font-family: var(--it-font-heading);
             padding-bottom: 10px;
             line-height: 26px;
+            & span {
+                @media #{$xs}{
+                    display: none;
+                }
+            }
         }
         &-input{
             padding-bottom: 20px;

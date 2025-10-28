@@ -140,6 +140,11 @@
     font-size: 18px;
     line-height: 30px;
   }
+  &-page{
+    @media #{$xs}{
+      margin-left: 0;
+    }
+  }
 }
 
 
