@@ -3035,7 +3035,7 @@ header {
 /*  3.3.12 menu
 /*----------------------------------------*/
 .it-hero {
-  padding: 170px 0;
+  padding-top: 220px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .it-hero-area {
@@ -3163,7 +3163,7 @@ header {
 }
 .it-hero-img {
   left: auto;
-  right: 4%;
+  right: 7%;
   bottom: 0;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -3424,6 +3424,17 @@ header {
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
   z-index: 2;
+}
+
+.it-hero-area {
+  width: 100%;
+  height: 87vh;
+  z-index: 1;
+}
+@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .it-hero-area {
+    height: 100%;
+  }
 }
 
 /*----------------------------------------*/
@@ -4036,7 +4047,7 @@ header {
 /*----------------------------------------*/
 /* 3.3.1 about
 /*----------------------------------------*/
-@media (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
   .it-about-area {
     padding-bottom: 0px;
   }
@@ -4048,6 +4059,7 @@ header {
   .it-about-wrapper {
     padding-top: 21px;
     margin-left: 0;
+    padding-bottom: 50px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
@@ -4251,6 +4263,12 @@ header {
   }
 }
 
+@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .it-about-title {
+    text-align: center;
+  }
+}
+
 /*----------------------------------------*/
 /* 3.3.13 service
 /*----------------------------------------*/
@@ -4309,6 +4327,7 @@ header {
 
 .it-service__thumb {
   overflow: hidden;
+  border-radius: 12px;
   width: 100%;
   height: 100%;
 }

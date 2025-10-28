@@ -57,6 +57,7 @@
 }
 .it-service__thumb{
   overflow: hidden;
+  border-radius: 12px;
   & img{
     border-radius: 12px;
     transition: all 0.7s linear;

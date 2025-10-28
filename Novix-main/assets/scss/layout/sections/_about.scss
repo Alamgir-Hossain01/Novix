@@ -6,7 +6,7 @@
 
 .it-about{
   &-area{
-    @media #{$xs}{
+    @media #{$md, $xs, $sm}{
       padding-bottom: 0px;
     }
   }
@@ -17,6 +17,7 @@
     @media #{$lg, $xs, $sm}{
       padding-top: 21px;
       margin-left: 0;
+      padding-bottom: 50px;
     }
     @media #{$md, $sm}{
      margin-top: 597px;
@@ -209,5 +210,10 @@
 .it-about-wrapper-3{
   @media #{$xs, $sm, $lg}{
     margin-top: 0;
+  }
+}
+.it-about-title {
+    @media #{$xs, $sm, $md}{
+      text-align: center;
   }
 }
