@@ -33,10 +33,6 @@
                } 
             }
             &-text{
-                padding-right: 28px;
-                @media #{$sm, $md,}{
-                    padding-right: 0;
-                }
                 @media #{$xs}{
                     display: none;
                 }
@@ -52,7 +48,13 @@
             padding-right: 10px;
         }
     }
- 
+    &-lacation{
+        & span{
+            @media #{$sm, $xs, $md }{
+                display: none;
+            }
+        }
+    }
 
 }
 

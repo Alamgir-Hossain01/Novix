@@ -51,7 +51,33 @@
             line-height: 26px;
             color: #B1ACAC;
             & li{
-               margin-bottom: 15px;
+               margin-bottom: 10px;
+               & a {
+                  color: #B1ACAC;
+                  position: relative;
+                  &::before {
+                        content: '';
+                        height: 1px;
+                        width: 4px;
+                        transition: .3s;
+                        display: inline-block;
+                        transform: translateY(-5px);
+                        opacity: 0;
+                        background-color: #B1ACAC;
+                  }
+                  @media #{$xl,$lg,$md,$xs} {
+                        font-size: 14px;
+                  }
+                  &:hover {
+                        color: var(--it-theme-color);
+                        &::before {
+                           opacity: 1;
+                           width: 10px;
+                           margin-right: 10px;
+                           background-color: var(--it-theme-color);
+                        }
+                  }
+               }
             }
          }
          &-sub{
@@ -77,7 +103,33 @@
             font-weight: 400;
             line-height: 26px;
             & li{
-               margin-bottom: 15px;
+               margin-bottom: 10px;
+               & a {
+                  color: #B1ACAC;
+                  position: relative;
+                  &::before {
+                        content: '';
+                        height: 1px;
+                        width: 4px;
+                        transition: .3s;
+                        display: inline-block;
+                        transform: translateY(-5px);
+                        opacity: 0;
+                        background-color: #B1ACAC;
+                  }
+                  @media #{$xl,$lg,$md,$xs} {
+                        font-size: 14px;
+                  }
+                  &:hover {
+                        color: var(--it-theme-color);
+                        &::before {
+                           opacity: 1;
+                           width: 10px;
+                           margin-right: 10px;
+                           background-color: var(--it-theme-color);
+                        }
+                  }
+               }
             }
          }
          &-sub{
@@ -181,13 +233,13 @@
   }
   &-title{
    color: #FDFDFD;
-   font-size: 18px;
+   font-size: 24px;
    line-height: 24px;
    font-weight: 400;
    &-2{
       display: block;
-      color: #FDFDFD;
-      font-size: 18px;
+      color: #B1ACAC;
+      font-size: 16px;
       line-height: 24px;
       font-weight: 400;
    }
@@ -198,7 +250,7 @@
    }
    &-text{
       & span{
-         font-size: 16px;
+         font-size: 15px;
          color: #B1ACAC;
          line-height: 24px;
       }

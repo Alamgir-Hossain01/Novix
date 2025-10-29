@@ -81,20 +81,24 @@
 }
 .it-section-shape{
   &-1{
-    top: 0;
-    left: 0;
+    top: -1%;
+    left: -1%;
+    animation: zoomIn 2.5s forwards infinite alternate;
   }
   &-2{
-    top: 0;
-    right: 0;
+    top: -1%;
+    right: -1%;
+    animation: zoomIn 2.5s forwards infinite alternate;
   }
   &-3{
     bottom: 0;
     left: 0;
+    animation: itswing 2.5s forwards infinite alternate;
   }
   &-4{
     bottom: 0;
     right: 0;
+    animation: itswing 2.5s forwards infinite alternate;
   }
 }
 

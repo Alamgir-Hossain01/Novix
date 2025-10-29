@@ -52,6 +52,32 @@
             color: #B1ACAC;
             & li{
                margin-bottom: 10px;
+               & a {
+                  color: #B1ACAC;
+                  position: relative;
+                  &::before {
+                        content: '';
+                        height: 1px;
+                        width: 4px;
+                        transition: .3s;
+                        display: inline-block;
+                        transform: translateY(-5px);
+                        opacity: 0;
+                        background-color: #B1ACAC;
+                  }
+                  @media #{$xl,$lg,$md,$xs} {
+                        font-size: 14px;
+                  }
+                  &:hover {
+                        color: var(--it-theme-color);
+                        &::before {
+                           opacity: 1;
+                           width: 10px;
+                           margin-right: 10px;
+                           background-color: var(--it-theme-color);
+                        }
+                  }
+               }
             }
          }
          &-sub{
@@ -78,6 +104,32 @@
             line-height: 26px;
             & li{
                margin-bottom: 10px;
+               & a {
+                  color: #B1ACAC;
+                  position: relative;
+                  &::before {
+                        content: '';
+                        height: 1px;
+                        width: 4px;
+                        transition: .3s;
+                        display: inline-block;
+                        transform: translateY(-5px);
+                        opacity: 0;
+                        background-color: #B1ACAC;
+                  }
+                  @media #{$xl,$lg,$md,$xs} {
+                        font-size: 14px;
+                  }
+                  &:hover {
+                        color: var(--it-theme-color);
+                        &::before {
+                           opacity: 1;
+                           width: 10px;
+                           margin-right: 10px;
+                           background-color: var(--it-theme-color);
+                        }
+                  }
+               }
             }
          }
          &-sub{
