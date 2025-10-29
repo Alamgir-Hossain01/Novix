@@ -6,7 +6,7 @@
 
 .it-about{
   &-area{
-    @media #{$xs}{
+    @media #{$md, $xs, $sm}{
       padding-bottom: 0px;
     }
   }
@@ -17,6 +17,7 @@
     @media #{$lg, $xs, $sm}{
       padding-top: 21px;
       margin-left: 0;
+      padding-bottom: 50px;
     }
     @media #{$md, $sm}{
      margin-top: 597px;
@@ -131,13 +132,19 @@
             border-bottom: 12px solid #fff; 
             border-right: none;             
             border-radius: 121px;             
-            overflow: hidden;              
+            overflow: hidden; 
+                        
          }
       }
   }
   &-drc{
     font-size: 18px;
     line-height: 30px;
+  }
+  &-page{
+    @media #{$xs}{
+      margin-left: 0;
+    }
   }
 }
 
@@ -148,21 +155,36 @@
     top: 0;
     right: 30px;
     border-radius: 30px;
+    transition: all 0.7s linear;
+    &:hover{
+      transform: scale(1.2);
+      z-index: 2;
+    } 
   }
   &-2{
     top: 215px;
     left: 0;
     border: 8px solid #FFF;
     border-radius: 30px;
+    transition: all 0.7s linear;
+    &:hover{
+      transform: scale(1.2);
+      z-index: 2;
+    } 
   }
   &-3{
     top: 575px;
     right: 30px;
     z-index: 1;
     border-radius: 30px;
+    transition: all 0.7s linear;
      @media #{$lg}{
-           top: 497px;
-        }
+        top: 497px;
+      }
+    &:hover{
+      transform: scale(1.2);
+      z-index: 2;
+    } 
   }
   &-3{
      @media #{$md, $sm, $xs}{
@@ -211,3 +233,10 @@
     margin-top: 0;
   }
 }
+.it-about-title {
+    @media #{$xs, $sm, $md}{
+      text-align: center;
+  }
+}
+
+

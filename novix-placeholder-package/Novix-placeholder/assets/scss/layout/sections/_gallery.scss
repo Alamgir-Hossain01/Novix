@@ -8,74 +8,81 @@
     &-image{
        & img{
          border-radius: 30px;
+         transition: all .3s;
          @media #{$xs}{
-          width: 100%;
-          margin-top: 19px;
-          height: 400px;
+            width: 100%;
+            margin-top: 19px;
+            height: 400px;
          }
          &.image{
           &-3{
             @media #{$sm}{
-       margin-top: 8%;
-       }
+               margin-top: 8%;
+            }
           }
             &-4{
                 margin-top: -23%;
                  @media #{$sm}{
-        margin-top: 8%;;
-       }
-                 @media #{$xs}{
-        margin-top: 5%;;
-       }
-            }
-            &-5 {
-	margin-top: 7%;
-}
-&-6 {
-	margin-top: 7%;
-   @media #{$sm}{
-       margin-top: 6%;
-       }
-}
-&-7 {
-	margin-top: -71%;
-   @media #{$sm}{
-      margin-top: 0%;
-       }
-                 @media #{$xs}{
-        margin-top: 6%;
-       }
-}
-&-8 {
-	margin-top: -100%;
-  @media #{$lg}{
-	margin-top: -32%;
-	width: 32%;
-  }
-   @media #{$sm}{
-       margin-top: 4%;
-       }
-        @media #{$xs}{
-        margin-top: 6%;
-       }
-}
-&-9 {
-	margin-top: -18%;
-   @media #{$sm}{
-        margin-top: 4%;
-       }
-        @media #{$xs}{
-        margin-top: 6%;
-       }
-}
-&-10 {
-	margin-top: 8%;
-   @media #{$sm}{
-        margin-top: 7%;
-       }
-}
+                  margin-top: 8%;;
          }
-       }
+         @media #{$xs}{
+            margin-top: 5%;;
+         }
+               }
+               &-5 {
+            margin-top: 7%;
+         }
+         &-6 {
+            margin-top: 7%;
+            @media #{$sm}{
+               margin-top: 6%;
+               }
+         }
+         &-7 {
+            margin-top: -71%;
+            @media #{$sm}{
+               margin-top: 0%;
+               }
+                        @media #{$xs}{
+               margin-top: 6%;
+               }
+         }
+         &-8 {
+            margin-top: -100%;
+         @media #{$lg}{
+            margin-top: -32%;
+            width: 32%;
+         }
+            @media #{$sm}{
+               margin-top: 4%;
+               }
+               @media #{$xs}{
+               margin-top: 6%;
+               }
+         }
+         &-9 {
+            margin-top: -18%;
+            @media #{$sm}{
+               margin-top: 4%;
+               }
+               @media #{$xs}{
+               margin-top: 6%;
+               }
+         }
+         &-10 {
+            margin-top: 8%;
+            @media #{$sm}{
+               margin-top: 7%;
+               }
+            }
+            }
+         
+         &:hover{
+             transform: scale(1.04); 
+             filter:brightness(0.60);
+             
+         }
+      }
     }
 }
 .it-gallery-area{
@@ -83,3 +90,4 @@
       padding-top: 50px;
    }
 }
+

@@ -789,11 +789,6 @@
                color: var(--it-theme-color);
             }
       }
-      &-user {
-            @media #{$xs} {
-               flex-wrap: wrap;
-            }
-      }
    }
 }
 .sidebar {

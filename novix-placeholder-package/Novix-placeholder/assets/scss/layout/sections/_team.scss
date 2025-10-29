@@ -7,6 +7,7 @@
 .it-team{
     &__thumb {
         position: relative;
+        transition: all 0.4s linear;
         img {
             width: 100%;
             display: block;
@@ -15,6 +16,7 @@
             border-radius: 5px;
             @media #{$xs}{
             width: 100%;
+            
         }
         }
         &::before{
@@ -32,6 +34,7 @@
         border-radius: 10px;
     }
     &:hover {
+        transform: scale(1.1);
         img {
         filter: grayscale(0%);
         }
@@ -47,6 +50,13 @@
             }
         }
     }
+
+    // transition: all 0.7s linear;
+    // &:hover{
+    //   transform: scale(1.2);
+    //   z-index: 2;
+    // }
+
     &__socail{
         position: absolute;
         bottom: 20px;
@@ -181,6 +191,11 @@
             font-family: var(--it-font-heading);
             padding-bottom: 10px;
             line-height: 26px;
+            & span {
+                @media #{$xs}{
+                    display: none;
+                }
+            }
         }
         &-input{
             padding-bottom: 20px;
