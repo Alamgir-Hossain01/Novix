@@ -3289,11 +3289,11 @@ header {
   margin-top: 12px;
 }
 .it-review-info {
-  margin-top: -135px;
-  margin-left: 15%;
+  padding-top: 40px;
+  margin-left: 5%;
 }
 .it-review-box {
-  margin-top: -136px;
+  padding-top: 40px;
 }
 .it-review-avatars {
   display: flex;
@@ -3306,6 +3306,9 @@ header {
   border-radius: 50%;
   border: 2px solid #fff;
   margin-left: -10px;
+}
+.it-review-avatars img:first-child {
+  margin-left: 0;
 }
 .it-review-avatars .count {
   background: #BF4315;
@@ -6593,6 +6596,34 @@ a:last-child .sidebar-widget-list {
 .it-footer-widget-2 ul li {
   margin-bottom: 10px;
 }
+.it-footer-widget-2 ul li a {
+  color: #B1ACAC;
+  position: relative;
+}
+.it-footer-widget-2 ul li a::before {
+  content: "";
+  height: 1px;
+  width: 4px;
+  transition: 0.3s;
+  display: inline-block;
+  transform: translateY(-5px);
+  opacity: 0;
+  background-color: #B1ACAC;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .it-footer-widget-2 ul li a {
+    font-size: 14px;
+  }
+}
+.it-footer-widget-2 ul li a:hover {
+  color: var(--it-theme-color);
+}
+.it-footer-widget-2 ul li a:hover::before {
+  opacity: 1;
+  width: 10px;
+  margin-right: 10px;
+  background-color: var(--it-theme-color);
+}
 .it-footer-widget-2-sub {
   margin-left: -60px;
   padding-top: 47px;
@@ -6624,6 +6655,34 @@ a:last-child .sidebar-widget-list {
 }
 .it-footer-widget-3 ul li {
   margin-bottom: 10px;
+}
+.it-footer-widget-3 ul li a {
+  color: #B1ACAC;
+  position: relative;
+}
+.it-footer-widget-3 ul li a::before {
+  content: "";
+  height: 1px;
+  width: 4px;
+  transition: 0.3s;
+  display: inline-block;
+  transform: translateY(-5px);
+  opacity: 0;
+  background-color: #B1ACAC;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .it-footer-widget-3 ul li a {
+    font-size: 14px;
+  }
+}
+.it-footer-widget-3 ul li a:hover {
+  color: var(--it-theme-color);
+}
+.it-footer-widget-3 ul li a:hover::before {
+  opacity: 1;
+  width: 10px;
+  margin-right: 10px;
+  background-color: var(--it-theme-color);
 }
 .it-footer-widget-3-sub {
   margin-left: -60px;

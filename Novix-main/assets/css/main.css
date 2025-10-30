@@ -3289,11 +3289,11 @@ header {
   margin-top: 12px;
 }
 .it-review-info {
-  margin-top: -135px;
-  margin-left: 15%;
+  padding-top: 40px;
+  margin-left: 5%;
 }
 .it-review-box {
-  margin-top: -136px;
+  padding-top: 40px;
 }
 .it-review-avatars {
   display: flex;
@@ -3306,6 +3306,9 @@ header {
   border-radius: 50%;
   border: 2px solid #fff;
   margin-left: -10px;
+}
+.it-review-avatars img:first-child {
+  margin-left: 0;
 }
 .it-review-avatars .count {
   background: #BF4315;

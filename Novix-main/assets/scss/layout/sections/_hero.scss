@@ -55,8 +55,8 @@
             font-size: 55px;
             line-height: 1;
          }
-                 @media #{$md, $sm}{
-             text-align: center;
+         @media #{$md, $sm}{
+            text-align: center;
     }
       & a {
          display: inline-flex;
@@ -72,11 +72,11 @@
       }
         @media #{$sm}{
            font-size: 44px;
-  line-height: 60px;
+            line-height: 60px;
         }
          @media #{$xs}{
            font-size: 22px;
-    line-height: 28px;
+         line-height: 28px;
         }
         & svg{
           @media #{$sm, $xs}{
@@ -189,8 +189,8 @@
       font-family: var(--it-font-body);
       color: var(--it-common-black);
       }
-              @media #{$md, $sm}{
-      text-align: center;
+      @media #{$md, $sm}{
+         text-align: center;
    }
    }
 }
@@ -246,11 +246,11 @@ margin-top: 12px;
 }
 }
 &-info {
-	margin-top: -135px;
-	margin-left:15%;
+	padding-top: 40px;
+	margin-left: 5%;
 }
    &-box {
-	margin-top: -136px;
+	padding-top: 40px;
 
 }
 &-avatars {
@@ -263,6 +263,9 @@ margin-top: 12px;
   border-radius: 50%;
   border: 2px solid #fff;
   margin-left: -10px;
+  &:first-child{
+   margin-left: 0;
+  }
 }
 & .count {
   background: #BF4315;
