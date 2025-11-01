@@ -121,6 +121,11 @@
          &-1{
             border-radius: 200px;
             background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+            transition: all 0.7s linear;
+            &:hover{
+              transform: scale(1.2);
+              z-index: 2;
+            } 
          }
          &-2{
             right: 0;
@@ -133,7 +138,11 @@
             border-right: none;             
             border-radius: 121px;             
             overflow: hidden; 
-                        
+            transition: all 0.7s linear;
+            &:hover{
+              transform: scale(1.2);
+              z-index: 2;
+            } 
          }
       }
   }

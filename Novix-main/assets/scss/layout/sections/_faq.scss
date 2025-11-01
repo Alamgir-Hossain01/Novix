@@ -13,14 +13,24 @@
    &-thumb{
     &-1{
         border-radius: 30px;
+        transition: all .7s ;
+        &:hover{
+            transform: scale(1.2);
+            z-index: 2;
+         }
     }
     &-2{
-   border-radius: 30px;
-  bottom: -18%;
-  left: 52%;
-  @media #{$lg}{
-    left: 39%;
-  }
+        border-radius: 30px;
+        bottom: -18%;
+        left: 52%;
+        transition: all .7s ;
+            &:hover{
+                transform: scale(1.2);
+                z-index: 2;
+            }
+        @media #{$lg}{
+            left: 39%;
+        }
     }
    }
   &-shape{

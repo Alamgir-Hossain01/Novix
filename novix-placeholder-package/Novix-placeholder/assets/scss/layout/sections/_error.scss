@@ -6,6 +6,7 @@
 /*----------------------------------------*/
 .it-error {
     &-thumb {
+            animation: itswing 1.2s forwards infinite alternate;
         @media #{$lg} {
             margin-bottom: 90px;
         }

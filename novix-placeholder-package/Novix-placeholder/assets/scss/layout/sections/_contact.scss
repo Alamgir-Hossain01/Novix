@@ -126,32 +126,37 @@ h4.it-contact-title {
 }
 .it-single-contact{
     padding: 30px 26px;
-  text-align: center;
-  border-radius: 12px;
-background: #FFF;
-box-shadow: 0 6px 60px 0 rgba(11, 3, 0, 0.08);
-&-svg {
-  margin-bottom: 20px;
-}
-&-text {
-  margin-bottom: 41px;
-  color: #000;
-font-size: 36px;
-font-weight: 400;
-line-height: 34px;
-}
-&-location{
-color:var(--it-body-font-color);
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-@media #{$lg}{
-    font-size: 15px;
-}
-}
-@media #{$md, $sm, $xs}{
-    margin-top: 35px;
-}
+    text-align: center;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0 6px 60px 0 rgba(11, 3, 0, 0.08);
+    transition: .7s;
+    &-svg {
+    margin-bottom: 20px;
+    }
+    &:hover{
+        transform: scale(1.04);
+    }
+
+    &-text {
+    margin-bottom: 41px;
+    color: #000;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 34px;
+    }
+    &-location{
+    color:var(--it-body-font-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    @media #{$lg}{
+        font-size: 15px;
+    }
+    }
+    @media #{$md, $sm, $xs}{
+        margin-top: 35px;
+    }
 }
 .it-map-wrap iframe {
 	height: 603px;
