@@ -18,6 +18,9 @@
       margin-top: 20px;
     }
   }
+  &-info{
+    margin-bottom: 20px;
+  }
   &-icon{
     & svg{
     color: var(--it-theme-color);
@@ -102,3 +105,6 @@
   }
 }
 
+.it-services__info{
+  margin-bottom: 20px;
+}

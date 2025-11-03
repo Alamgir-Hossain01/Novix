@@ -2427,6 +2427,12 @@ img {
 .it-header-top-left svg {
   margin-right: 5px;
 }
+.it-header-top-left a {
+  transition: all 0.4s;
+}
+.it-header-top-left a:hover {
+  color: var(--it-theme-color);
+}
 .it-header-top-social-right {
   display: flex;
   align-items: center;
@@ -2436,6 +2442,9 @@ img {
 }
 .it-header-top-social-icon:last-child {
   margin-right: 0;
+}
+.it-header-top-social-icon svg:hover {
+  color: var(--it-theme-color);
 }
 @media (max-width: 767px) {
   .it-header-top-social-text {
@@ -4324,6 +4333,9 @@ header {
     margin-top: 20px;
   }
 }
+.it-services-info {
+  margin-bottom: 20px;
+}
 .it-services-icon svg {
   color: var(--it-theme-color);
 }
@@ -4403,6 +4415,10 @@ header {
   bottom: 0;
   right: 0;
   animation: itswing 2.5s forwards infinite alternate;
+}
+
+.it-services__info {
+  margin-bottom: 20px;
 }
 
 /*----------------------------------------*/
@@ -5452,6 +5468,7 @@ h4.it-contact-title {
   font-weight: 600;
   font-size: 25px;
   line-height: 1.4;
+  padding-bottom: 15px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .it-blog-title {
@@ -5515,7 +5532,7 @@ h4.it-contact-title {
 .it-blog-content {
   height: 100%;
   margin-left: 5px;
-  padding: 20px;
+  padding-top: 25px;
   padding-left: 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
@@ -6681,7 +6698,7 @@ a:last-child .sidebar-widget-list {
   }
 }
 .it-footer-widget-3 {
-  margin-left: 25px;
+  margin-left: 35px;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .it-footer-widget-3 {

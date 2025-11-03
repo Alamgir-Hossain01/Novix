@@ -20,6 +20,12 @@
             & svg{
                 margin-right: 5px;
             }
+            & a{
+                transition: all .4s;
+                &:hover{
+                    color: var(--it-theme-color);
+                }
+            }
         }
         &-social {  
             &-right{
@@ -31,6 +37,11 @@
                &:last-child{
                 margin-right: 0;
                } 
+               & svg {
+                &:hover{
+                    color: var(--it-theme-color);
+                }
+               }
             }
             &-text{
                 @media #{$xs}{
