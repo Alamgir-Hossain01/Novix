@@ -2470,10 +2470,12 @@ img {
   }
 }
 
-.it-header-top-social-right .it-header-top-social-icon svg:hover {
-  color: var(--it-theme-color);
+.it-header-top-social-right span {
+  margin-right: 10px;
 }
-
+.it-header-top-social-right a {
+  transition: all 0.4s;
+}
 .it-header-top-social-right a:hover {
   color: var(--it-theme-color);
 }
@@ -5250,6 +5252,11 @@ h4.it-contact-title {
 }
 .it-contact-btn {
   margin-top: 55px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .it-contact-btn {
+    margin-top: 30px;
+  }
 }
 
 .it-contact-item {

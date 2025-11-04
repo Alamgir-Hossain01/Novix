@@ -18,6 +18,9 @@
       margin-top: 20px;
     }
   }
+  &-info{
+    margin-bottom: 20px;
+  }
   &-icon{
     & svg{
     color: var(--it-theme-color);
@@ -83,12 +86,11 @@
   &-1{
     top: -1%;
     left: -1%;
-    animation: zoomIn 2.5s forwards infinite alternate;
+
   }
   &-2{
     top: -1%;
     right: -1%;
-    animation: zoomIn 2.5s forwards infinite alternate;
   }
   &-3{
     bottom: 0;
@@ -102,3 +104,8 @@
   }
 }
 
+.it-services__info{
+   margin-top: 20px;
+  margin-bottom: 15px;
+  padding: 0 15px;
+}

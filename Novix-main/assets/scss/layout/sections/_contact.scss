@@ -102,6 +102,9 @@ h4.it-contact-title {
     }
     &-btn{
         margin-top: 55px;
+         @media #{$sm, $xs}{
+            margin-top: 30px;
+         }
     }
 }
 
