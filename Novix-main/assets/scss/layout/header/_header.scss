@@ -68,6 +68,23 @@
     }
 
 }
+// .it-header-top-social-icon{
+//     & svg{
+//         &:hover{
+//             color: var(--it-theme-color);
+//             background-color: black;
+//         }
+//     }
+// }
+.it-header-top-social-right .it-header-top-social-icon{
+    & svg:hover{
+        color: var(--it-theme-color);
+    }
+}
+
+.it-header-top-social-right a:hover {
+    color: var(--it-theme-color);
+}
 
 .header-transparent{
     position: absolute;
