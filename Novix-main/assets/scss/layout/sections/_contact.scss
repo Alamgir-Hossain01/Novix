@@ -11,18 +11,21 @@
     right: auto;
     left: 19%;
      @media #{$lg}{
-            bottom: 23%;
-            left: 4%;
-        }
-        	@media #{$xl} {
- left: 4%;
-}
-@media #{$md}{
-	bottom: 40%;
-	right: auto;
-	left: 6%;
-	z-index: 99;
-}
+        bottom: 23%;
+        left: 4%;
+    }
+    @media #{$xl} {
+    left: 4%;
+    }
+    @media #{$xxl} {
+    left: 7%;
+    }
+    @media #{$md}{
+        bottom: 40%;
+        right: auto;
+        left: 6%;
+        z-index: 99;
+    }
 }
 
 h4.it-contact-title {
