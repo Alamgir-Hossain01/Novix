@@ -4,46 +4,24 @@
 /* 3.3.5 contact
 /*----------------------------------------*/
 
-<<<<<<< HEAD
 
 .it-contact-info {
   position: relative;
   overflow: hidden;
 border-radius: 30px  0 0 30px;
-=======
+}
 .it-contact-content {
     position: absolute;
     bottom: 15%;
     color: #fff;
-    right: auto;
-    left: 19%;
-     @media #{$lg}{
-        bottom: 23%;
-        left: 4%;
-    }
-    @media #{$xl} {
-    left: 4%;
-    }
-    @media #{$xxl} {
-    left: 7%;
-    }
-    @media #{$md}{
-        bottom: 40%;
-        right: auto;
-        left: 6%;
-        z-index: 99;
-    }
->>>>>>> d265382a78232627ee29cb89ff0f59d6ebe88615
 }
 
-/* Contact Image wrapper */
 .it-contact-thumb {
   position: relative;
 border-radius: 30px  0 0 30px;
   overflow: hidden;
 }
 
-/* Image style */
 .it-contact-thumb img {
   width: 100%;
   height: 100%;
@@ -51,7 +29,6 @@ border-radius: 30px  0 0 30px;
   border-radius: 30px  0 0 30px;
 }
 
-/* Overlay using ::before */
 .it-contact-thumb::before {
   content: "";
   position: absolute;
@@ -67,7 +44,6 @@ background: linear-gradient(180deg, rgba(60, 16, 0, 0.00) 0%, rgba(60, 16, 0, 0.
  border-radius: 30px  0 0 30px;
 }
 
-/* Optional glow or hover effect using ::after */
 .it-contact-thumb::after {
   content: "";
   position: absolute;
@@ -81,7 +57,6 @@ background: linear-gradient(180deg, rgba(60, 16, 0, 0.00) 0%, rgba(60, 16, 0, 0.
  border-radius: 30px  0 0 30px;
 }
 
-/* Contact content */
 .it-contact-content {
   position: absolute;
   bottom: 50px;
@@ -114,85 +89,11 @@ background: linear-gradient(180deg, rgba(60, 16, 0, 0.00) 0%, rgba(60, 16, 0, 0.
   margin-bottom: 10px;
 }
 
-/* Hover effect for slight zoom */
 .it-contact-info:hover .it-contact-thumb img {
   transform: scale(1.05);
   transition: all 0.6s ease;
 }
 
-
-// .it-contact-content {
-//     position: absolute;
-//     bottom: 15%;
-//     color: #fff;
-//     right: auto;
-//     left: 18%;
-//     @media #{$xxxl} {
-//        left: 15%;
-//     }
-//      @media #{$xxl}{
-//             bottom: 17%;
-//             left: 10%;
-//         }
-//      @media #{$lg}{
-//         bottom: 23%;
-//         left: 4%;
-//     }
-//     @media #{$xl} {
-//         left: 5%;
-//     }
-        
-//     @media #{$md}{
-//         bottom: 40%;
-//         right: auto;
-//         left: 6%;
-//         z-index: 99;
-//     }
-// }
-
-// h4.it-contact-title {
-//     color: #fff;
-//     font-size: 48px;
-//     font-weight: 400;
-//     line-height: 60px;
-
-// }
-
-// .it-contact-content.p-absolute ul li {
-//     margin-bottom: 10px;
-// }
-
-// .it-contact-overly {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     opacity: 0.6;
-//     background: var(--P, #33251F);
-// }
-
-// .it-contact-thumb{
-//     & img{
-//     border-radius: 30px  0 0 30px;
-//     width: 100%;  
-//     @media #{$md}{
-//         border-radius: 0;
-// } 
-// }
-// &-overly {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     height: 100%;
-//     width: 100%;
-//    border-radius: 30px  0 0 30px;
-//     background: linear-gradient(180deg, rgba(60, 16, 0, 0.00) 0%, rgba(60, 16, 0, 0.00) 40.23%, rgba(60, 16, 0, 0.60) 60.08%, #3C1000 100%);
-//         @media #{$md}{
-//         border-radius: 0;
-// }
-// }
-// }
 
 .it-contact{
     &-area{

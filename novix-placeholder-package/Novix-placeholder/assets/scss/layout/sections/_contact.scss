@@ -4,70 +4,96 @@
 /* 3.3.5 contact
 /*----------------------------------------*/
 
+
+.it-contact-info {
+  position: relative;
+  overflow: hidden;
+border-radius: 30px  0 0 30px;
+}
 .it-contact-content {
     position: absolute;
     bottom: 15%;
     color: #fff;
-    right: auto;
-    left: 19%;
-     @media #{$lg}{
-            bottom: 23%;
-            left: 4%;
-        }
-        	@media #{$xl} {
- left: 4%;
-}
-@media #{$md}{
-	bottom: 40%;
-	right: auto;
-	left: 6%;
-	z-index: 99;
-}
 }
 
-h4.it-contact-title {
+.it-contact-thumb {
+  position: relative;
+border-radius: 30px  0 0 30px;
+  overflow: hidden;
+}
+
+.it-contact-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px  0 0 30px;
+}
+
+.it-contact-thumb::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px  0 0 30px;
+background: linear-gradient(180deg, rgba(60, 16, 0, 0.00) 0%, rgba(60, 16, 0, 0.00) 40.23%, rgba(60, 16, 0, 0.60) 60.08%, #3C1000 100%);
+  opacity: 0.9;
+  transition: all 0.4s ease;
+  z-index: 1;
+ border-radius: 30px  0 0 30px;
+}
+
+.it-contact-thumb::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.05);
+  mix-blend-mode: overlay;
+  z-index: 2;
+ border-radius: 30px  0 0 30px;
+}
+
+.it-contact-content {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 100%;
+  color: #fff;
+  z-index: 3;
+  
+}
+
+.it-contact-title {
     color: #fff;
     font-size: 48px;
-    font-weight: 400;
-    line-height: 60px;
-
+    font-weight: 500;
+    line-height: 50px;
 }
 
-.it-contact-content.p-absolute ul li {
-    margin-bottom: 10px;
+.it-contact-item {
+  font-weight: 400;
+  padding-bottom: 15px;
+  color: #fff;
+  font-size: 24px;
 }
 
-.it-contact-overly {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    background: var(--P, #33251F);
+.it-contact-item-time {
+  list-style: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 10px;
 }
 
-.it-contact-thumb{
-    & img{
-    border-radius: 30px  0 0 30px;
-    width: 100%;  
-    @media #{$md}{
-        border-radius: 0;
-} 
+.it-contact-info:hover .it-contact-thumb img {
+  transform: scale(1.05);
+  transition: all 0.6s ease;
 }
-&-overly {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-   border-radius: 30px  0 0 30px;
-    background: linear-gradient(180deg, rgba(60, 16, 0, 0.00) 0%, rgba(60, 16, 0, 0.00) 40.23%, rgba(60, 16, 0, 0.60) 60.08%, #3C1000 100%);
-        @media #{$md}{
-        border-radius: 0;
-}
-}
-}
+
 
 .it-contact{
     &-area{
@@ -81,10 +107,10 @@ h4.it-contact-title {
             padding: 15px 20px;
         }
          #comment{
-        padding: 15px 20px;
-        height: 80px;
-        color: #948781;
-        margin-top: 16px;
+            padding: 15px 20px;
+            height: 80px;
+            color: #948781;
+            margin-top: 16px;
         
         }
     }
@@ -102,6 +128,9 @@ h4.it-contact-title {
     }
     &-btn{
         margin-top: 55px;
+         @media #{$sm, $xs}{
+            margin-top: 30px;
+         }
     }
 }
 
