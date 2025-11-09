@@ -1336,12 +1336,6 @@ img {
   min-height: 630px;
 }
 
-.container {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
 .pr-0 {
   padding-right: 0px;
 }
@@ -3076,7 +3070,7 @@ header {
   font-size: 20px;
   font-weight: 400;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .it-hero-content p {
     font-size: 16px;
   }
@@ -3181,6 +3175,12 @@ header {
     padding-top: 5%;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .it-hero-play-btn {
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
 .it-hero-img {
   left: auto;
   right: 7%;
@@ -3267,9 +3267,17 @@ header {
   }
 }
 
+.it-hero-btn {
+  margin-top: 0px;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   .it-hero-btn {
     justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .it-hero-btn {
+    margin-top: 20px;
   }
 }
 
@@ -3315,6 +3323,11 @@ header {
   padding-top: 40px;
   margin-left: 5%;
 }
+@media (max-width: 767px) {
+  .it-review-info {
+    padding-top: 15px;
+  }
+}
 .it-review-box {
   padding-top: 40px;
 }
@@ -3357,7 +3370,7 @@ header {
   width: fit-content;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .it-home-2-review {
     margin-top: 57px;
     margin-left: 12px;
@@ -3468,12 +3481,13 @@ header {
 @media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
   .it-hero-3 {
     text-align: center;
+    margin-top: 40px;
   }
 }
 .it-hero-3 p {
   margin-bottom: 40px;
 }
-@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .it-hero-3 p {
     margin-bottom: 20px;
   }
@@ -3481,9 +3495,9 @@ header {
     display: none;
   }
 }
-@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
-  .it-hero-subtitle {
-    padding-top: 40px;
+@media (max-width: 767px) {
+  .it-hero-3 p {
+    display: none;
   }
 }
 

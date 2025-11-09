@@ -22,7 +22,7 @@
       & p{
             font-size: 20px;
             font-weight: 400;
-            @media #{$lg}{
+            @media #{$sm}{
                font-size: 16px;
             }
             @media #{$md, $sm, $xs}{
@@ -66,9 +66,9 @@
          @media #{$lg}{
             width: 40%;
          }
-                 @media #{$md, $sm}{
-      text-align: center;
-   }
+         @media #{$md, $sm}{
+            text-align: center;
+         }
       }
         @media #{$sm}{
            font-size: 44px;
@@ -97,9 +97,13 @@
       @media #{$md, $sm}{
          text-align: center;
       }
-      @media #{$xs}{
+       @media #{$xs}{
          padding-left: 40%;
          padding-top: 5%;
+      }
+       @media #{$sm}{
+         padding-left: 0;
+         padding-top: 0;
       }
    }
    &-img {
@@ -200,8 +204,12 @@
 }
 
 .it-hero-btn {
+    margin-top: 0px;
    @media #{$md, $sm}{
       justify-content: center;
+   }
+   @media #{$xs}{
+      margin-top: 20px;
    }
 	
 }
@@ -252,9 +260,18 @@ margin-top: 12px;
 &-info {
 	padding-top: 40px;
 	margin-left: 5%;
+   @media #{$xs}{
+      padding-top: 15px;
+   }
+   // @media #{$lg, $xl}{
+   //    margin-left: 50px;
+   // }
 }
    &-box {
 	padding-top: 40px;
+   // @media #{$xs}{
+   //    padding-top: 15px;
+   // }
 
 }
 &-avatars {
@@ -299,9 +316,9 @@ margin-top: 12px;
 }
 
 .it-home-2-review {
-	@media #{$xl, $lg}{
+	@media #{$xl}{
       margin-top: 57px;
-	margin-left: 12px;
+	   margin-left: 12px;
    }
    @media #{$md, $sm}{
       text-align: center;
@@ -404,27 +421,36 @@ margin-top: 12px;
    &-3{
       @media #{$xs ,$sm ,$md}{
          text-align: center;
+         margin-top: 40px;
       }
+   //    @media #{$lg ,$xl}{
+   //       margin-left: 50px;
+      
+   //   }
       & p{
          margin-bottom: 40px;
-         @media #{$xs ,$sm}{
+         @media #{$sm}{
             margin-bottom: 20px;
             & span{
                display: none;
             }
          }
+         @media #{$xs}{
+            display: none;
+         }
       }
    }
-   &-subtitle{
-      @media #{$xs ,$sm }{
-         padding-top: 40px;
-      }
+   // &-subtitle{
+   //    @media #{$xs ,$sm }{
+   //       padding-top: 40px;
+   //    }
       
-   }
+   // }
 }
 
 .it-hero-2{
      @media #{$xs ,$sm}{
       text-align: center;
+      
      }
 }
