@@ -181,6 +181,10 @@
       }
    }
    &-btn{
+      @media #{$sm}{
+         
+      }
+
       & span{
       font-size: 18px;
       display: inline-block;
@@ -191,7 +195,7 @@
       }
       @media #{$md, $sm}{
          text-align: center;
-   }
+      }
    }
 }
 
@@ -301,8 +305,7 @@ margin-top: 12px;
    }
    @media #{$md, $sm}{
       text-align: center;
-  justify-content: center;
-  margin-top: 159px;
+      justify-content: center;
    }
 }
 
@@ -342,21 +345,16 @@ margin-top: 12px;
 }
 
    
-
+.it-hero-2{
+      @media #{$md}{
+      text-align: center;
+      }
+}
 
 
 .it-review-stars{
    margin-bottom: 5px;
 }
-
-// .it-hero-shape-6 {
-//     position: absolute;
-//     top: 59%;
-//     left: 0;
-//     z-index: 1;
-//     transform-origin: top center;
-//     animation: itswing 1.5s forwards infinite alternate;
-// }
 
 .it-hero-banner {
   position: relative;
@@ -401,4 +399,32 @@ margin-top: 12px;
   @media #{$xs ,$sm ,$md ,$lg , $xl}{
    height: 100%;
   }
+}
+.it-hero{
+   &-3{
+      @media #{$xs ,$sm ,$md}{
+         text-align: center;
+      }
+      & p{
+         margin-bottom: 40px;
+         @media #{$xs ,$sm}{
+            margin-bottom: 20px;
+            & span{
+               display: none;
+            }
+         }
+      }
+   }
+   &-subtitle{
+      @media #{$xs ,$sm }{
+         padding-top: 40px;
+      }
+      
+   }
+}
+
+.it-hero-2{
+     @media #{$xs ,$sm}{
+      text-align: center;
+     }
 }

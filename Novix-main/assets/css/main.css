@@ -3367,7 +3367,6 @@ header {
   .it-home-2-review {
     text-align: center;
     justify-content: center;
-    margin-top: 159px;
   }
 }
 
@@ -3406,6 +3405,12 @@ header {
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
   z-index: 2;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .it-hero-2 {
+    text-align: center;
+  }
 }
 
 .it-review-stars {
@@ -3457,6 +3462,34 @@ header {
 @media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
   .it-hero-area {
     height: 100%;
+  }
+}
+
+@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .it-hero-3 {
+    text-align: center;
+  }
+}
+.it-hero-3 p {
+  margin-bottom: 40px;
+}
+@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .it-hero-3 p {
+    margin-bottom: 20px;
+  }
+  .it-hero-3 p span {
+    display: none;
+  }
+}
+@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .it-hero-subtitle {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .it-hero-2 {
+    text-align: center;
   }
 }
 
