@@ -116,3 +116,12 @@
             
         }
     }
+.it{
+    &-Choose-area{
+        & .it-section-title{
+            @media #{$xl, $lg}{
+                font-size: 35px;
+            }
+        }
+    }
+}

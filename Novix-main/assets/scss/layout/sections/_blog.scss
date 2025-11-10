@@ -18,6 +18,9 @@
       @media #{$xs}{
            padding: 20px;
         }
+        @media #{$lg}{
+           padding: 15px;
+        }
        
    }
    &-title{
@@ -170,7 +173,7 @@
       @media #{$lg}{
             font-size: 17px;
       }
-      @media #{$xs}{
+      @media #{$xs, $md, $sm}{
             font-size: 15px;
       }
    }
@@ -767,6 +770,7 @@
       }
    }
    &-comment {
+     
       &-title {
             font-weight: 400;
             font-size: 36px;
@@ -1230,4 +1234,20 @@
    @media #{$xs}{
             padding-bottom: 10px;
         }
+}
+
+.it-blog{
+   &-time{
+      
+   }
+   &-comment{
+   @media #{$md}{
+      margin-left: 15px;
+      font-size: 12px;
+   }
+    @media #{$lg}{
+      margin-left: 15px;
+      font-size: 14px;
+   }
+}
 }

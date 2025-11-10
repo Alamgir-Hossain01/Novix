@@ -14,26 +14,23 @@
     & img{
       border-radius: 30px;
     }
-    @media #{$lg, $xs, $sm}{
-      padding-top: 21px;
-      margin-left: 0;
-      padding-bottom: 50px;
+     @media #{$md}{
+      margin-top: 67%;
+      text-align: center;
+      margin-bottom: 0;
     }
-    @media #{$md, $sm}{
-     margin-top: 597px;
-     text-align: center;
-     margin-bottom: 0;
-    }
-    @media #{$xs}{
-     padding-top: 270px;
-     text-align: center;
-     margin-bottom: 40px;
+     @media #{$xs}{
+      margin-top: 55%;
+      margin-bottom: 0;
+      padding-bottom: 80px;
     }
      @media #{$sm}{
-     margin-top: 200px;
-     text-align: center;
-     margin-bottom: 0;
+      margin-top: 60%;
+      text-align: center;
+      margin-bottom: 0;
+      padding-bottom: 80px;
     }
+    
   }
     &-Experience{
         border-radius: 5px;
@@ -157,7 +154,14 @@
   }
 }
 
-
+.it-about-area {
+  & .it-section-title{
+    @media #{$md}{
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+}
 
 .it-about-thumb{
   &-1{
@@ -196,17 +200,21 @@
     } 
   }
   &-3{
-     @media #{$md, $sm, $xs}{
+     @media #{$sm}{
       top: -104px;
       width: 100%;
       right: 0;
     } 
-    @media #{$sm, $xs}{
-      top: -104px;
+    @media #{$xs}{
+      top: -50px;
       width: 100%;
       right: 0;
     }
-
+     @media #{$md}{
+      top: -50px;
+      width: 100%;
+      right: 0;
+    } 
   }
 
 }

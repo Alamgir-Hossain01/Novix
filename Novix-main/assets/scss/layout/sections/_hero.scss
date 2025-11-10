@@ -22,12 +22,12 @@
       & p{
             font-size: 20px;
             font-weight: 400;
-            @media #{$sm}{
-               font-size: 16px;
-            }
+            // @media #{$sm}{
+            //    font-size: 16px;
+            // }
             @media #{$md, $sm, $xs}{
                text-align: center;
-               font-size: 13px;
+               font-size: 16px;
             }
       }
       
@@ -53,6 +53,10 @@
       line-height: 85px;
       @media #{$lg}{
             font-size: 55px;
+            line-height: 65px;
+         }
+      @media #{$xl}{
+            font-size: 60px;
             line-height: 1;
          }
          @media #{$md, $sm}{
@@ -260,66 +264,61 @@ margin-top: 12px;
 &-info {
 	padding-top: 40px;
 	margin-left: 5%;
-   @media #{$xs}{
-      padding-top: 15px;
+   @media #{$sm}{
+      padding-top: 25px;
    }
-   // @media #{$lg, $xl}{
-   //    margin-left: 50px;
-   // }
-}
-   &-box {
-	padding-top: 40px;
    // @media #{$xs}{
    //    padding-top: 15px;
    // }
-
 }
-&-avatars {
-  display: flex;
-  align-items: center;
-  position: relative;
-  &  img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  margin-left: -10px;
-  &:first-child{
-   margin-left: 0;
-  }
-}
-& .count {
-  background: #BF4315;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -10px;
-}
-}
-&-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 15px;             
-  border: 1px solid #BF4315; 
-  border-radius: 10px;  
-  padding: 10px 15px;  
-  background: #fff;    
-  width: fit-content;   
-}
+   &-box {
+	   padding-top: 40px;
+      @media #{$sm}{
+         padding-top: 25px;
+      }
+   }
+   &-avatars {
+   display: flex;
+   align-items: center;
+   position: relative;
+   &  img {
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   border: 2px solid #fff;
+   margin-left: -10px;
+   &:first-child{
+      margin-left: 0;
+   }
+   }
+   & .count {
+   background: #BF4315;
+   color: #fff;
+   font-size: 14px;
+   font-weight: bold;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: -10px;
+   }
+   }
+   &-wrapper {
+   display: flex;
+   align-items: center;
+   gap: 15px;             
+   border: 1px solid #BF4315; 
+   border-radius: 10px;  
+   padding: 10px 15px;  
+   background: #fff;    
+   width: fit-content;   
+   }
 
 }
 
 .it-home-2-review {
-	@media #{$xl}{
-      margin-top: 57px;
-	   margin-left: 12px;
-   }
    @media #{$md, $sm}{
       text-align: center;
       justify-content: center;
@@ -418,19 +417,40 @@ margin-top: 12px;
   }
 }
 .it-hero{
+    @media #{$xs ,$sm ,$md}{
+         text-align: center;
+         margin-top: 20px;
+      }
+      & p{
+         margin-bottom: 30px;
+         @media #{$xl, $lg}{
+            margin-top: 30px;
+         }
+         @media #{$sm}{
+            margin-bottom: 20px;
+             
+            & span{
+               display: none;
+            }
+         }
+         @media #{$xs}{
+            display: none;
+         }
+      }
+
    &-3{
       @media #{$xs ,$sm ,$md}{
          text-align: center;
          margin-top: 40px;
       }
-   //    @media #{$lg ,$xl}{
-   //       margin-left: 50px;
-      
-   //   }
       & p{
          margin-bottom: 40px;
+         @media #{$xl, $lg}{
+            margin-top: 20px;
+         }
          @media #{$sm}{
             margin-bottom: 20px;
+            margin-top: 20px;
             & span{
                display: none;
             }
@@ -453,4 +473,9 @@ margin-top: 12px;
       text-align: center;
       
      }
+}
+.it-home-2-review-2{
+   @media #{$sm}{
+      margin-top: 20px;
+   }
 }
