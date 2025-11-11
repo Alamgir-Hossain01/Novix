@@ -130,7 +130,7 @@
               border-radius: 0;
             }
             @media #{$lg}{
-               padding: 69px 35px 55px 35px;
+               padding: 75px 35px 55px 35px;
                
             }
             @media #{$xl}{
@@ -210,11 +210,11 @@
 }
 
 }
-.it-contact-form{
-      @media #{$xs}{
-        padding-top: 15px;
-      }
-    }
+// .it-contact-form{
+//       @media #{$xs}{
+//         padding-top: 15px;
+//       }
+//     }
 
 .it-contact-form-area{
   & .it-section-title{

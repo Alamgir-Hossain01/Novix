@@ -122,6 +122,9 @@
             @media #{$xl, $lg}{
                 font-size: 35px;
             }
+            @media #{$xs}{
+                margin-bottom: 20px;
+            }
         }
     }
 }

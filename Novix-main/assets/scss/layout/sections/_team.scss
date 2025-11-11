@@ -85,10 +85,10 @@
         font-size: 22px;
         letter-spacing: .1px;
          transition: 0.3s;
-                @media #{$xs}{
-      font-size: 16px;
+        @media #{$xs}{
+            font-size: 16px;
+        }
 
-    }
         &:hover{
             color: #BF4315;
             }
@@ -241,6 +241,13 @@
 .it-team-details-content{
    @media #{$xs}{
      padding-top: 30px;
+    
+  }
+}
+.it-team-content{
+    padding-top: 50px;
+    @media #{$lg, $md }{
+     padding-top: 0px;
     
   }
 }
