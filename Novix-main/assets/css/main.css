@@ -5546,7 +5546,7 @@ header {
 }
 @media (max-width: 767px) {
   .it-blog-time {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 .it-blog-time-2 {
@@ -5575,7 +5575,7 @@ header {
 }
 @media (max-width: 767px) {
   .it-blog-comment {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 .it-blog-user {
@@ -5583,7 +5583,7 @@ header {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .it-blog-user {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 @media (max-width: 767px) {
@@ -6770,6 +6770,7 @@ a:last-child .sidebar-widget-list {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .it-subscribe-btn {
     top: 7px;
+    right: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -6788,23 +6789,60 @@ a:last-child .sidebar-widget-list {
   position: relative;
   z-index: 2;
 }
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .it-section-title {
-    padding-top: 21px;
-    padding-bottom: 21px;
-    padding-left: 0;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .it-section-title br {
-    display: none;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .it-join-subscribe-area-margin {
+    margin-bottom: -60px;
   }
 }
 
 @media (max-width: 767px) {
   .it-Subscribe-area {
     padding-top: 40px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .it-Subscribe-area .it-section-title {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 0;
+    font-size: 27px;
+    line-height: 35px;
+  }
+  .it-Subscribe-area .it-section-title br {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .it-Subscribe-area .it-section-title {
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .it-Subscribe-area .it-section-title {
+    font-size: 45px;
+    line-height: 35px;
+  }
+  .it-Subscribe-area .it-section-title br {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .it-Subscribe-area .it-section-title {
+    font-size: 45px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 0;
+    font-size: 27px;
+    line-height: 35px;
+  }
+}
+.it-Subscribe-area .it-subscribe {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .it-Subscribe-area .it-subscribe {
+    padding-right: 0;
   }
 }
 

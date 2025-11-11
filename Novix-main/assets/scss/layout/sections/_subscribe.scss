@@ -32,6 +32,7 @@
     }
         @media #{$lg}{
             top: 7px;
+            right: 0;
         }
     }
     @media #{$md}{
@@ -45,24 +46,64 @@
     margin-bottom: -130px;
     position: relative;
     z-index: 2;
+     @media #{$lg}{
+       margin-bottom: -60px;
+    }
 }
 
 
-.it-section-title{
-    @media #{$md}{
-        padding-top: 21px;
-        padding-bottom: 21px;
-        padding-left: 0;
-    }
-    & br{
-        @media #{$md}{
-            display: none;
-        }
-    }
-}
+// .it-section-title{
+//     @media #{$md}{
+//         padding-top: 21px;
+//         padding-bottom: 21px;
+//         padding-left: 0;
+//     }
+//     & br{
+//         @media #{$md}{
+//             display: none;
+//         }
+//     }
+// }
 
 .it-Subscribe-area{
-     @media #{$xs}{
-            padding-top: 40px;
-      }
+    @media #{$xs}{
+        padding-top: 40px;
+    }
+    & .it-section-title{
+        @media #{$sm}{
+            padding-top: 21px;
+            padding-bottom: 21px;
+            padding-left: 0;
+            font-size: 27px;
+            line-height: 35px;
+            br{
+                display: none;
+            }
+        }
+        @media #{$xl}{
+            font-size: 45px;
+        }
+         @media #{$md}{
+            font-size: 45px;
+            line-height: 35px;
+            br{
+                display: none;
+            }
+        }
+        @media #{$lg}{
+            font-size: 45px;
+            padding-top: 21px;
+            padding-bottom: 21px;
+            padding-left: 0;
+            font-size: 27px;
+            line-height: 35px;
+        }
+    }
+    & .it-subscribe{
+        padding-left: 70px;
+        padding-right: 70px;
+         @media #{$lg, $md}{
+            padding-right: 0;
+        }
+    }
 }

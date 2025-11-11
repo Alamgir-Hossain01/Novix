@@ -55,7 +55,7 @@
          }
       }
       @media #{$xs}{
-         font-size: 12px;
+         font-size: 15px;
       }
       &-2{
          margin-left: 30px;
@@ -76,13 +76,13 @@
       font-size: 12px;
    }
    @media #{$xs}{
-            font-size: 12px;
+            font-size: 15px;
         }
    }
    &-user{
       font-size: 15px;
          @media #{$lg}{
-      font-size: 12px;
+      font-size: 15px;
    }
    }
    &-area{
