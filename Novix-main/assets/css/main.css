@@ -1398,7 +1398,7 @@ img {
     padding: 12px 12px;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .it-btn-orange {
     font-size: 14px;
     padding: 12px 12px;
@@ -3063,17 +3063,12 @@ header {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .it-hero-area {
-    padding: 30px 0;
+    padding: 30px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .it-hero {
     padding: 110px 0;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
-  .it-hero {
-    padding: 30px 0;
   }
 }
 .it-hero-content p {
@@ -3390,6 +3385,7 @@ header {
   .it-home-2-review {
     text-align: center;
     justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
@@ -4171,10 +4167,15 @@ header {
     padding-bottom: 0px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 767px) {
+  .it-about-area {
+    padding-bottom: 60px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .it-about-wrapper {
     padding-top: 0px;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
   }
 }
 .it-about-wrapper img {
@@ -4187,11 +4188,16 @@ header {
     margin-bottom: 0;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .it-about-wrapper {
+    padding-top: 50px;
+  }
+}
 @media (max-width: 767px) {
   .it-about-wrapper {
     margin-top: 55%;
     margin-bottom: 0;
-    padding-bottom: 80px;
+    padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -4199,7 +4205,7 @@ header {
     margin-top: 60%;
     text-align: center;
     margin-bottom: 0;
-    padding-bottom: 80px;
+    padding-bottom: 0;
   }
 }
 .it-about-Experience {
@@ -4436,20 +4442,20 @@ header {
 /*----------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .it-services-area {
-    padding-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 767px) {
   .it-services-area {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .it-services-area {
-    padding-top: 10px;
-    padding-bottom: 20px;
-    margin-top: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .it-services-info {
@@ -4545,8 +4551,8 @@ header {
 /*----------------------------------------*/
 @media (max-width: 767px) {
   .it-Choose-area {
-    padding-top: 42px;
-    padding-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -4872,8 +4878,8 @@ header {
 }
 @media (max-width: 767px) {
   .it-team-area {
-    padding-bottom: 24px;
-    padding-top: 35px;
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
 .it-team-details__socail a {
@@ -5008,13 +5014,19 @@ header {
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1600px) and (max-width: 1800px) {
+  .it-team-area .it-section-title br {
+    display: none;
+  }
+}
+
 /*----------------------------------------*/
 /* 3.3.16 testimonial
 /*----------------------------------------*/
 @media (max-width: 767px) {
   .it-testimonial-area {
-    padding-top: 42px;
-    padding-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .it-testimonial-area p {
@@ -5166,6 +5178,12 @@ header {
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .it-testimonial-area .it-section-title br {
+    display: none;
+  }
+}
+
 /*----------------------------------------*/
 /* 3.3.2 before-after
 /*----------------------------------------*/
@@ -5270,8 +5288,8 @@ header {
 
 @media (max-width: 767px) {
   .it-Different-area {
-    padding-top: 33px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -5374,9 +5392,10 @@ header {
   transition: all 0.6s ease;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .it-contact-area {
-    padding-top: 93px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .it-contact-input-box input {
@@ -5603,9 +5622,10 @@ header {
     font-size: 15px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
   .it-blog-area {
-    padding-top: 33px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .it-blog-top-text p {
@@ -6747,8 +6767,10 @@ a:last-child .sidebar-widget-list {
   }
 }
 
-.it-blog-area .it-section-info {
-  padding-top: 20px;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .it-blog-area .it-section-title br {
+    display: none;
+  }
 }
 
 /*----------------------------------------*/
@@ -6761,41 +6783,29 @@ a:last-child .sidebar-widget-list {
   }
 }
 .it-subscribe input {
-  padding: 17px 220px 23px 30px;
+  padding: 17px 220px 17px 30px;
   height: 100%;
   background: #fff;
   color: #949494;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .it-subscribe input {
-    padding: 22px 180px 16px 14px;
-  }
-}
-@media (max-width: 767px) {
-  .it-subscribe input {
-    padding: 18px 180px 16px 14px;
+    padding: 15px 180px 15px 15px;
   }
 }
 .it-subscribe-btn {
   right: 70px;
-  top: 5px;
-  bottom: auto;
-  padding: 5px;
+  top: 0;
+  bottom: 0;
+  margin: 7px;
 }
 @media (max-width: 767px) {
   .it-subscribe-btn {
     right: 4px;
-    top: 4px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   .it-subscribe-btn {
-    right: 10px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .it-subscribe-btn {
-    top: 7px;
     right: 0;
   }
 }
@@ -6917,6 +6927,7 @@ a:last-child .sidebar-widget-list {
 }
 @media (max-width: 767px) {
   .it-footer-widget-2 {
+    margin-top: 40px;
     margin-left: 25px;
   }
 }

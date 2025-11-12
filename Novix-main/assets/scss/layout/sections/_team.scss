@@ -105,8 +105,8 @@
     }
     &-area{
         @media #{$xs}{
-            padding-bottom: 24px;
-            padding-top: 35px;
+            padding-bottom: 60px;
+            padding-top: 60px;
         }
     }
    &-details{
@@ -250,4 +250,14 @@
      padding-top: 0px;
     
   }
+}
+
+.it-team-area{
+    & .it-section-title {
+        & br{
+            @media #{$lg, $xl, $xxl, $xxxl }{
+                display: none;
+            }
+        }
+    }
 }

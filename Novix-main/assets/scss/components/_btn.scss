@@ -50,7 +50,7 @@
 			font-size: 15px;
 			padding: 12px 12px;
 		}
-		@media #{$sm}{
+		@media #{$sm, $xs}{
 			font-size: 14px;
     		padding: 12px 12px;
 		}

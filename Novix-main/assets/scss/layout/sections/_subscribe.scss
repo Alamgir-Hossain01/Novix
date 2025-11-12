@@ -9,34 +9,36 @@
         padding-right: 0;
     }
     & input{
-        padding: 17px 220px 23px 30px;
+        padding: 17px 220px 17px 30px;
         height: 100%;
         background: #fff;
         color: #949494;
-        @media #{$sm}{
-            padding: 22px 180px 16px 14px;
+        @media #{$lg, $md, $sm, $xs}{
+            padding: 15px 180px 15px 15px;
         }
-        @media #{$xs}{
-            padding: 18px 180px 16px 14px;
-        }
+        // @media #{$md}{
+        //     padding: 16px 180px 16px 14px;
+        // }
+        // @media #{$xs, $sm}{
+        //     padding: 16px 180px 16px 14px;
+        // }
         
 
     }
     &-btn{
         right: 70px;
-        top: 5px;
-        bottom: auto;
-        padding: 5px;
+        top: 0;
+        bottom: 0;
+        margin: 7px;
 
          @media #{$xs}{
-        right: 4px;
-        top: 4px;
-    }
-         @media #{$md}{
-        right: 10px;
-    }
-        @media #{$lg}{
-            top: 7px;
+            right: 4px;
+            
+        }
+    //      @media #{$md}{
+    //     right: 10px;
+    // }
+        @media #{$lg, $md, $sm}{
             right: 0;
         }
     }

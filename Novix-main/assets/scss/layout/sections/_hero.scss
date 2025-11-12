@@ -7,15 +7,12 @@
 .it-hero{
    padding-top: 220px;
    &-area{
-@media #{$md, $sm, $xs}{
-      padding: 30px 0;
-   }
+   @media #{$md, $sm, $xs}{
+         padding: 30px ;
+      }
    }
    @media #{$xl,$lg}{
       padding: 110px 0;
-   }
-   @media #{$md, $sm, $xs}{
-      padding: 30px 0;
    }
    
    &-content{
@@ -322,6 +319,7 @@ margin-top: 12px;
    @media #{$md, $sm}{
       text-align: center;
       justify-content: center;
+      margin-bottom: 30px;
    }
 }
 
@@ -456,16 +454,11 @@ margin-top: 12px;
             }
          }
          @media #{$xs}{
+             
             display: none;
          }
       }
    }
-   // &-subtitle{
-   //    @media #{$xs ,$sm }{
-   //       padding-top: 40px;
-   //    }
-      
-   // }
 }
 
 .it-hero-2{

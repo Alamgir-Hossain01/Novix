@@ -40,6 +40,7 @@
       }
       &-2{
          @media #{$xs}{
+            margin-top: 40px;
             margin-left: 25px;
          }
          & ul{

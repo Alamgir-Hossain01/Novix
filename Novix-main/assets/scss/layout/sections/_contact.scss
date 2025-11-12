@@ -101,8 +101,9 @@
 
 .it-contact{
     &-area{
-        @media #{$md, $sm, $xs}{
-            padding-top: 93px;
+        @media #{$sm, $xs}{
+            padding-top: 60px;
+            padding-bottom: 60px;
     }
 }
     &-input-box{

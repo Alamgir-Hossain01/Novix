@@ -86,8 +86,9 @@
    }
    }
    &-area{
-      @media #{$xs}{
-           padding-top: 33px;
+      @media #{$xs, $sm}{
+           padding-top: 60px;
+           padding-bottom: 60px;
         }
    }
    &-btn{
@@ -1252,7 +1253,12 @@
 }
 }
 .it-blog-area{
-   & .it-section-info{
-      padding-top: 20px;
+   & .it-section-title{
+      & br{
+          @media #{$md}{
+            display: none;
+          }
+      }
+      
    }
 }
