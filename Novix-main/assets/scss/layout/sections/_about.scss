@@ -12,6 +12,19 @@
     @media #{$xs}{
       padding-bottom: 60px;
     }
+    &-2 {
+    @media #{$md, $xs, $sm}{
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    // @media #{$xs, $sm}{
+    //   padding-bottom: 0px;
+    //   padding-bottom: 60px;
+    // }
+    // @media #{$xs}{
+      
+    // }
+    }
   }
   &-wrapper{
     @media #{$md,}{
@@ -274,9 +287,23 @@
   }
 }
 .it-about-title {
-    @media #{$xs, $sm, $md}{
-      text-align: center;
+    @media #{$xs, $sm , $md}{
+      text-align: start;
   }
 }
 
-
+.it-about-title-area{
+   @media #{$xs, $sm , $md}{
+      text-align: start;
+  }
+}
+.it-section-sub-title-2{
+  @media #{$xs, $sm , $md}{
+      text-align: center;
+  }
+}
+.it-about-section-info {
+  @media #{$xs, $sm , $md}{
+      text-align: center;
+  }
+}

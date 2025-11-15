@@ -37,6 +37,11 @@
          font-weight: 300;
          font-size: 16px;
          line-height: 26px;
+         br{
+            @media #{$md, $lg}{
+               display: none;
+            }
+         }
       }
       &-2{
          @media #{$xs}{
