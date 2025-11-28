@@ -37,11 +37,20 @@
          font-weight: 300;
          font-size: 16px;
          line-height: 26px;
+         br{
+            @media #{$md, $lg}{
+               display: none;
+            }
+         }
       }
       &-2{
          @media #{$xs}{
-            margin-left: 25px;
             margin-top: 40px;
+            margin-left: 25px;
+         }
+         @media #{$sm}{
+            margin-top: 40px;
+            margin-left: 25px;
          }
          & ul{
             color: var(--it-body-font-color);
@@ -92,7 +101,7 @@
             }
       }
       &-3{
-         margin-left: 35px;
+         margin-left: 20px;
          @media #{$sm, $xs}{
             margin-top: 40px;
             }
@@ -146,14 +155,20 @@
       &-4{
          margin-left: 73px;
          @media #{$sm}{
-            margin-left: 0;
+            margin-left: 60px;
+         }
+         @media #{$lg}{
+            margin-left: 25px;
          }
             @media #{$sm, $xs}{
             margin-top: 40px;
 
          }
             @media #{$xs}{
-            margin-left: 25px;;
+            margin-left: 25px;
+            br{
+               display: none;
+            }
 
          }
          & ul{
@@ -207,7 +222,9 @@
   &-logo-contact{
       font-size: 16px;
       color: #B1ACAC;
-
+      @media #{$sm}{
+         font-size: 15px;
+      }
   }
   &-sep {
     border-top: 1px solid #3B302C;
@@ -236,6 +253,9 @@
    font-size: 24px;
    line-height: 24px;
    font-weight: 400;
+   @media #{$lg}{
+     font-size: 19px;
+    }
    &-2{
       display: block;
       color: #B1ACAC;

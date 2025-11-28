@@ -20,4 +20,10 @@
         font-weight: 600;
         font-size: 45px;
     }
+    &-area{
+        padding-bottom: 110px;
+        @media #{$xs} {
+            padding-bottom: 60px;
+        }
+    }
 }

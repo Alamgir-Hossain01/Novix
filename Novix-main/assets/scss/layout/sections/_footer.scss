@@ -48,6 +48,10 @@
             margin-top: 40px;
             margin-left: 25px;
          }
+         @media #{$sm}{
+            margin-top: 40px;
+            margin-left: 25px;
+         }
          & ul{
             color: var(--it-body-font-color);
             font-family: var(--it-font-heading);
@@ -161,7 +165,7 @@
 
          }
             @media #{$xs}{
-            margin-left: 0;
+            margin-left: 25px;
             br{
                display: none;
             }

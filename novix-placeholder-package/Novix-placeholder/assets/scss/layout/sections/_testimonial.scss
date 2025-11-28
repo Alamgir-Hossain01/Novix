@@ -6,8 +6,8 @@
 .it-testimonial{
     &-area{
         @media #{$xs}{
-            padding-top: 42px;
-            padding-bottom: 0;
+            padding-top: 60px;
+            padding-bottom: 60px;
         }
         & p {
             font-size: 16px;
@@ -152,5 +152,14 @@
 .it-faq-area{
      @media #{$xs}{
         padding-top: 30px;
+    }
+}
+.it-testimonial-area{
+    & .it-section-title{
+        & br{
+            @media #{$lg, $xl}{
+                display: none;
+            }
+        }
     }
 }

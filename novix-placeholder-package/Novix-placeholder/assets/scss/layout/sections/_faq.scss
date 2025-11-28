@@ -6,10 +6,12 @@
 
 .it-faq {
     &-area{
-        @media #{$sm}{
-            padding-top: 0;
+        @media #{$xs}{
+            padding-top: 60px;
         }
-    }
+
+        }
+
    &-thumb{
     &-1{
         border-radius: 30px;
@@ -83,12 +85,21 @@
         }
 
         @media #{$lg} {
-            margin-left: 30px;
-        }
+           margin-left: 30px;
+        } 
 
         @media #{$md,$xs} {
             margin-left: 0;
             margin-top: 70px;
         }
     }
+}
+.it-faq-shape-1 {
+    @media #{$xl, $lg, $md} {
+        z-index: 4;
+        left: 48%;
+        top: -215px;
+    }
+
+
 }

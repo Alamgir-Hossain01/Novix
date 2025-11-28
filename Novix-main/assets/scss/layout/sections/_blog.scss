@@ -49,31 +49,35 @@
    &-time{
       font-size: 15px;
       @media #{$lg}{
-      font-size: 12px;
+      font-size: 15px;
       & i{
          margin-right: 5px;
          }
       }
       @media #{$xs}{
-         font-size: 15px;
-      }
+            font-size: 15px;
+         }
       &-2{
-         margin-left: 30px;
+         margin-left: 20px;
          @media #{$lg}{
-         font-size: 12px;
+         font-size: 15px;
          & i{
                margin-right: 5px;
             }
          }
          @media #{$xs}{
-            font-size: 12px;
+            font-size: 15px;
+            margin-left: 15px;
          }
+      }
+      &-2{
+         font-size: 15px;
       }
    }
    &-comment{
       font-size: 15px;
          @media #{$lg}{
-      font-size: 12px;
+      font-size: 15px;
    }
    @media #{$xs}{
             font-size: 15px;
@@ -81,9 +85,6 @@
    }
    &-user{
       font-size: 15px;
-         @media #{$lg}{
-      font-size: 15px;
-   }
    }
    &-area{
       @media #{$xs, $sm}{
@@ -91,14 +92,15 @@
            padding-bottom: 60px;
         }
    }
-   &-btn{
-      
-   }
 }
 
 
 
-
+.it-inner-title{
+    @media #{$xs}{
+      font-size: 22px;
+    }
+}
 .it-blog {
    &-top-text {
       & p {
@@ -146,21 +148,13 @@
    &-meta {
       &-time{
             font-size: 15px;
-            @media #{$lg}{
-            font-size: 12px;
-      }
       }
       &-comment{
             font-size: 15px;
-            @media #{$lg}{
-            font-size: 12px;
-      }
+            
       }
       &-user{
             font-size: 15px;
-            @media #{$lg}{
-            font-size: 12px;
-      }
       }
    }
    &-title {
@@ -674,7 +668,7 @@
                   padding: 0 12px;
                   height: 32px;
                   line-height: 32px;
-                  font-size: 12px;
+                  font-size: 15px;
                   margin-bottom: 10px;
                }             
                &:hover {
@@ -1074,7 +1068,7 @@
    & a {
       position: relative;
       padding: 15px 0px;
-      font-size: 12px;
+      font-size: 15px;
       font-weight: 700;
       display: block;
       color: #8A879F;
@@ -1097,10 +1091,8 @@
 }
 .tagcloud {
    & a {
-      // padding: 8px 10px;
       justify-content: center;
       align-items: center;
-
       display: inline-block;
       line-height: 1;
       padding: 20px 20px;
@@ -1115,7 +1107,7 @@
       border-radius: 8px;
       background-color: #F8F5F4;
       @media #{$xl} {
-            font-size: 12px;
+            font-size: 15px;
       }
       @media #{$lg} {
             font-size: 13px;
@@ -1153,13 +1145,13 @@
 .rc {
    &-post { 
       &-thumb {
-            & img {
-               width: 90px;
-               height: 70px;
-               border-radius: 5px;
-               background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-               object-fit: cover;
-            }
+         & img {
+            width: 90px;
+            height: 70px;
+            border-radius: 5px;
+            background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+            object-fit: cover;
+         }
       }
    
       &-title {
@@ -1237,21 +1229,6 @@
         }
 }
 
-.it-blog{
-   &-time{
-      
-   }
-   &-comment{
-   @media #{$md}{
-      margin-left: 15px;
-      font-size: 12px;
-   }
-    @media #{$lg}{
-      margin-left: 15px;
-      font-size: 14px;
-   }
-}
-}
 .it-blog-area{
    & .it-section-title{
       & br{
@@ -1260,5 +1237,11 @@
           }
       }
       
+   }
+}
+.it-blog-comment{
+      margin-left: 20px;
+      @media #{$xs}{
+         margin-left: 15px;
    }
 }

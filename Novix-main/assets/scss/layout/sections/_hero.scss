@@ -6,6 +6,10 @@
 
 .it-hero{
    padding-top: 220px;
+   @media #{$md , $sm, $xs } {
+       padding-top: 40px;
+       padding-bottom: 40px;
+   }
    &-area{
    @media #{$md, $sm, $xs}{
          padding-top: 30px ;
@@ -17,16 +21,13 @@
       }
    }
    @media #{$xl,$lg}{
-      padding: 110px 0;
+      padding: 120px 0;
    }
    
    &-content{
       & p{
             font-size: 20px;
             font-weight: 400;
-            // @media #{$sm}{
-            //    font-size: 16px;
-            // }
             @media #{$md, $sm, $xs}{
                text-align: center;
                font-size: 16px;
@@ -47,8 +48,8 @@
             font-size: 15px;
          }
       }
-           @media #{$md, $sm, $xs}{
-      text-align: center;
+      @media #{$md, $sm, $xs}{
+         text-align: center;
    }
    &-title{
       font-size: 70px;
@@ -129,31 +130,26 @@
       &-1{
          top: 2%;
          right: 2%;
-         // opacity: .5;
          animation: itswing 2.5s forwards infinite alternate;
       }
       &-2{
          top: 20%;
          right: 5%;
-         // opacity: .5;
          animation: itswing 2.5s forwards infinite alternate;
       }
       &-3{
          top: 5%;
          right: 52%;
-         // opacity: .5;
          animation: itswing 2.5s forwards infinite alternate;
       }
       &-4{
          top: 3%;
          left: 3%;
-         // opacity: .5;
          animation: itswing 2.5s forwards infinite alternate;
       }
       &-5{
          top: 23%;
          left: 9%;
-         // opacity: .5;
          animation: itswing 2.5s forwards infinite alternate;
          @media #{$lg, $xl}{
          bottom: 10%;

@@ -37,25 +37,25 @@
       font-size: 40px;
       line-height: 45px;
     }
-    @media #{$sm}{
-      padding-top: 20px;
-      padding-bottom: 30px;
-      margin-right: 53px;
+    @media #{$xs}{
+      font-size: 25px;
     }
-    @media #{$md, $sm}{
-      font-size: 33px;
+    @media #{$md,}{
+      font-size: 40px;
+    }
+    @media #{$sm}{
+      font-size: 30px;
+      padding-top: 20px;
     }
 
     & br{
     @media #{$sm, $xs}{
-  display: none;
+      display: none;
       
     }
     }
     @media #{$xs}{
-
-   font-size: 18px;
-    margin-top: 15px;
+      margin-top: 15px;
       text-align: center;
       padding-top: 0;
       padding-bottom: 0;

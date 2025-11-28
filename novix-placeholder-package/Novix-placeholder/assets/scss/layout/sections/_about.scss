@@ -6,34 +6,54 @@
 
 .it-about{
   &-area{
-    @media #{$md, $xs, $sm}{
+    @media #{$xs, $sm}{
       padding-bottom: 0px;
+    }
+    @media #{$xs}{
+      padding-bottom: 60px;
+    }
+    &-2 {
+    @media #{$md, $xs, $sm}{
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    // @media #{$xs, $sm}{
+    //   padding-bottom: 0px;
+    //   padding-bottom: 60px;
+    // }
+    // @media #{$xs}{
+      
+    // }
     }
   }
   &-wrapper{
+    @media #{$md,}{
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
     & img{
       border-radius: 30px;
     }
-    @media #{$lg, $xs, $sm}{
-      padding-top: 21px;
-      margin-left: 0;
-      padding-bottom: 50px;
+     @media #{$md}{
+      margin-top: 67%;
+      text-align: center;
+      margin-bottom: 0;
     }
-    @media #{$md, $sm}{
-     margin-top: 597px;
-     text-align: center;
-     margin-bottom: 0;
+     @media #{$lg}{
+      padding-top: 50px;
     }
-    @media #{$xs}{
-     padding-top: 270px;
-     text-align: center;
-     margin-bottom: 40px;
+     @media #{$xs}{
+      margin-top: 55%;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
      @media #{$sm}{
-     margin-top: 200px;
-     text-align: center;
-     margin-bottom: 0;
+      margin-top: 60%;
+      text-align: center;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
+    
   }
     &-Experience{
         border-radius: 5px;
@@ -100,17 +120,21 @@
         font-size: 17px;
         line-height: 11px;
       }
+      @media #{$lg}{
+        font-size: 24px;
+      }
+      
     }
     &-text{
-      & p{
-        line-height: 26px;
-         @media #{$lg}{
-          font-size: 15px;;
-        }
-        @media #{$xs}{
-          font-size: 12px;
-        }
-      }
+      // & p{
+      //   line-height: 26px;
+      //    @media #{$lg}{
+      //     font-size: 15px;;
+      //   }
+      //   @media #{$xs}{
+      //     font-size: 12px;
+      //   }
+      // }
     }
     @media #{$md, $sm, $xs}{
       justify-content: space-between;
@@ -157,7 +181,32 @@
   }
 }
 
+.it-about-list-content {
+  p{
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
+	@media #{$sm, $md} {
+    text-align: start;
+  }
+	@media #{$xs} {
+    text-align: left;
+  }
+}
 
+.it-about-area {
+  .it-section-info{
+    @media #{$md}{
+      padding-top: 100px;
+    }
+  }
+  & .it-section-title{
+    @media #{$md}{
+      padding-bottom: 0;
+    }
+  }
+}
 
 .it-about-thumb{
   &-1{
@@ -196,17 +245,21 @@
     } 
   }
   &-3{
-     @media #{$md, $sm, $xs}{
+     @media #{$sm}{
       top: -104px;
       width: 100%;
       right: 0;
     } 
-    @media #{$sm, $xs}{
-      top: -104px;
+    @media #{$xs}{
+      top: -50px;
       width: 100%;
       right: 0;
     }
-
+     @media #{$md}{
+      top: -50px;
+      width: 100%;
+      right: 0;
+    } 
   }
 
 }
@@ -218,24 +271,15 @@
   gap: 50px;
   @media #{$lg}{
     	padding: 10px 18px;
-	gap: 29px;
+	    gap: 29px;
+      p{
+        font-size: 14px;
+      }
 
   }
 }
 
-.it-about-list-content {
-  p{
-    font-size: 18px;
-    line-height: 30px;
-    padding-bottom: 20px;
-  }
-	@media #{$sm, $md} {
-    text-align: start;
-  }
-	@media #{$xs} {
-    text-align: left;
-  }
-}
+
 
 .it-about-wrapper-3{
   @media #{$xs, $sm, $lg}{
@@ -243,9 +287,23 @@
   }
 }
 .it-about-title {
-    @media #{$xs, $sm, $md}{
-      text-align: center;
+    @media #{$xs, $sm , $md}{
+      text-align: start;
   }
 }
 
-
+.it-about-title-area{
+   @media #{$xs, $sm , $md}{
+      text-align: start;
+  }
+}
+.it-section-sub-title-2{
+  @media #{$xs, $sm , $md}{
+      text-align: center;
+  }
+}
+.it-about-section-info {
+  @media #{$xs, $sm , $md}{
+      text-align: center;
+  }
+}

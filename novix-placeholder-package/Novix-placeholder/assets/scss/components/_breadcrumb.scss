@@ -22,22 +22,30 @@
         }
     }
     &-title{
-    color: var(--it-body-color);
-font-size: 70px;
-font-weight: 400;
-line-height: 85px;
-&-2{
-     @media #{$sm, $xs}{
-        font-size: 30px;
-        line-height: 55px;
+        color: var(--it-body-color);
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 85px;
+         @media #{$md, $sm, $xs }{
+            font-size: 30px;
+            line-height: 55px;
+         }
+         @media #{$md }{
+            font-size: 45px;
+            line-height: 60px;
+         }
+        &-2{
+            @media #{$sm, $xs}{
+                font-size: 30px;
+                line-height: 55px;
+            }
+            & br{
+                @media #{$sm, $xs}{
+                display: none;
+            }
+            }
+        }
     }
-    & br{
-        @media #{$sm, $xs}{
-        display: none;
-    }
-    }
-}
-}
 &-list{
     color: var(--it-body-color);
 text-align: center;

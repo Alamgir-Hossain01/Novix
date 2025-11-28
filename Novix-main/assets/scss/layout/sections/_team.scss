@@ -244,20 +244,53 @@
     
   }
 }
-.it-team-content{
-    padding-top: 50px;
-    @media #{$lg, $md }{
-     padding-top: 0px;
+// .it-team-content{
     
-  }
-}
+//     @media #{$lg, $md }{
+//      padding-top: 0px;
+//   }
+//     @media #{$md }{
+//      text-align: center;
+    
+//   }
+// }
 
 .it-team-area{
-    & .it-section-title {
-        & br{
-            @media #{$lg, $xl, $xxl, $xxxl }{
-                display: none;
-            }
-        }
+   & .it-section-title{
+    padding-bottom: 50px;
+     @media #{$md}{
+        padding-bottom: 0;
+        
+        
+     }
+      & br{
+          @media #{$xl}{
+            display: none;
+          }
+      }
+      
+   }
+   .it-team-content{
+    padding-top: 50px;
+     @media #{$md}{
+        padding-top: 0;
+        text-align: center;
+     }
+     & span{
+          @media #{$xl, $lg}{
+            display: none;
+          }
+      }
+   }
+}
+
+.it-team__content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @media #{$xs, $sm, $md }{
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+
     }
 }

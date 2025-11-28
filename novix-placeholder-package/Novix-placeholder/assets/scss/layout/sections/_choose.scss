@@ -7,8 +7,14 @@
 .it-Choose{
     &-area{
         @media #{$xs}{
-            padding-top: 42px;
-            padding-bottom: 20px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        &-2{
+            @media #{$xs}{
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
         }
     }
 }
@@ -116,3 +122,33 @@
             
         }
     }
+.it{
+    &-Choose-area{
+        & .it-section-title{
+            @media #{$xl, $lg}{
+                font-size: 35px;
+            }
+            @media #{$xs}{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+// .it-choose-content-area{
+//     @media #{$md}{
+//                 display: flex;
+//                 justify-content: space-between;
+//             }
+// }
+
+.it-Choose-area{
+    .it-section-info {
+         @media #{$lg }{
+                text-align: center;
+            }
+    }
+    & h2.it-section-title {
+        margin-bottom: 30px;
+        
+    }
+}

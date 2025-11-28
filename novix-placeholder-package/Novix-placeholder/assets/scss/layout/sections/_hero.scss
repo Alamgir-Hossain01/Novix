@@ -6,28 +6,31 @@
 
 .it-hero{
    padding-top: 220px;
-   &-area{
-@media #{$md, $sm, $xs}{
-      padding: 30px 0;
+   @media #{$md , $sm, $xs } {
+       padding-top: 40px;
+       padding-bottom: 40px;
    }
+   &-area{
+   @media #{$md, $sm, $xs}{
+         padding-top: 30px ;
+      }
+      &-2{
+         @media #{$md, $sm, $xs}{
+         padding-top: 0px ;
+      }
+      }
    }
    @media #{$xl,$lg}{
-      padding: 110px 0;
-   }
-   @media #{$md, $sm, $xs}{
-      padding: 30px 0;
+      padding: 120px 0;
    }
    
    &-content{
       & p{
             font-size: 20px;
             font-weight: 400;
-            @media #{$lg}{
-               font-size: 16px;
-            }
             @media #{$md, $sm, $xs}{
                text-align: center;
-               font-size: 13px;
+               font-size: 16px;
             }
       }
       
@@ -45,14 +48,18 @@
             font-size: 15px;
          }
       }
-           @media #{$md, $sm, $xs}{
-      text-align: center;
+      @media #{$md, $sm, $xs}{
+         text-align: center;
    }
    &-title{
       font-size: 70px;
       line-height: 85px;
       @media #{$lg}{
             font-size: 55px;
+            line-height: 65px;
+         }
+      @media #{$xl}{
+            font-size: 60px;
             line-height: 1;
          }
          @media #{$md, $sm}{
@@ -66,9 +73,9 @@
          @media #{$lg}{
             width: 40%;
          }
-                 @media #{$md, $sm}{
-      text-align: center;
-   }
+         @media #{$md, $sm}{
+            text-align: center;
+         }
       }
         @media #{$sm}{
            font-size: 44px;
@@ -97,9 +104,13 @@
       @media #{$md, $sm}{
          text-align: center;
       }
-      @media #{$xs}{
+       @media #{$xs}{
          padding-left: 40%;
          padding-top: 5%;
+      }
+       @media #{$sm}{
+         padding-left: 0;
+         padding-top: 0;
       }
    }
    &-img {
@@ -119,31 +130,26 @@
       &-1{
          top: 2%;
          right: 2%;
-         // opacity: .5;
          animation: itswing 2.5s forwards infinite alternate;
       }
       &-2{
          top: 20%;
          right: 5%;
-         // opacity: .5;
          animation: itswing 2.5s forwards infinite alternate;
       }
       &-3{
          top: 5%;
          right: 52%;
-         // opacity: .5;
          animation: itswing 2.5s forwards infinite alternate;
       }
       &-4{
          top: 3%;
          left: 3%;
-         // opacity: .5;
          animation: itswing 2.5s forwards infinite alternate;
       }
       &-5{
          top: 23%;
          left: 9%;
-         // opacity: .5;
          animation: itswing 2.5s forwards infinite alternate;
          @media #{$lg, $xl}{
          bottom: 10%;
@@ -181,6 +187,10 @@
       }
    }
    &-btn{
+      @media #{$sm}{
+         
+      }
+
       & span{
       font-size: 18px;
       display: inline-block;
@@ -191,13 +201,17 @@
       }
       @media #{$md, $sm}{
          text-align: center;
-   }
+      }
    }
 }
 
 .it-hero-btn {
+    margin-top: 0px;
    @media #{$md, $sm}{
       justify-content: center;
+   }
+   @media #{$xs}{
+      margin-top: 20px;
    }
 	
 }
@@ -248,61 +262,65 @@ margin-top: 12px;
 &-info {
 	padding-top: 40px;
 	margin-left: 5%;
+   @media #{$sm}{
+      padding-top: 25px;
+   }
+   // @media #{$xs}{
+   //    padding-top: 15px;
+   // }
 }
    &-box {
-	padding-top: 40px;
-
-}
-&-avatars {
-  display: flex;
-  align-items: center;
-  position: relative;
-  &  img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  margin-left: -10px;
-  &:first-child{
-   margin-left: 0;
-  }
-}
-& .count {
-  background: #BF4315;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -10px;
-}
-}
-&-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 15px;             
-  border: 1px solid #BF4315; 
-  border-radius: 10px;  
-  padding: 10px 15px;  
-  background: #fff;    
-  width: fit-content;   
-}
+	   padding-top: 40px;
+      @media #{$sm}{
+         padding-top: 25px;
+      }
+   }
+   &-avatars {
+   display: flex;
+   align-items: center;
+   position: relative;
+   &  img {
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   border: 2px solid #fff;
+   margin-left: -10px;
+   &:first-child{
+      margin-left: 0;
+   }
+   }
+   & .count {
+   background: #BF4315;
+   color: #fff;
+   font-size: 14px;
+   font-weight: bold;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: -10px;
+   }
+   }
+   &-wrapper {
+   display: flex;
+   align-items: center;
+   gap: 15px;             
+   border: 1px solid #BF4315; 
+   border-radius: 10px;  
+   padding: 10px 15px;  
+   background: #fff;    
+   width: fit-content;   
+   }
 
 }
 
 .it-home-2-review {
-	@media #{$xl, $lg}{
-      margin-top: 57px;
-	margin-left: 12px;
-   }
    @media #{$md, $sm}{
       text-align: center;
-  justify-content: center;
-  margin-top: 159px;
+      justify-content: center;
+      margin-bottom: 30px;
    }
 }
 
@@ -342,21 +360,16 @@ margin-top: 12px;
 }
 
    
-
+.it-hero-2{
+      @media #{$md}{
+      text-align: center;
+      }
+}
 
 
 .it-review-stars{
    margin-bottom: 5px;
 }
-
-// .it-hero-shape-6 {
-//     position: absolute;
-//     top: 59%;
-//     left: 0;
-//     z-index: 1;
-//     transform-origin: top center;
-//     animation: itswing 1.5s forwards infinite alternate;
-// }
 
 .it-hero-banner {
   position: relative;
@@ -401,4 +414,67 @@ margin-top: 12px;
   @media #{$xs ,$sm ,$md ,$lg , $xl}{
    height: 100%;
   }
+}
+.it-hero{
+    @media #{$xs ,$sm ,$md}{
+         text-align: center;
+         margin-top: 20px;
+      }
+      & p{
+         margin-bottom: 30px;
+         @media #{$xl, $lg}{
+            margin-top: 30px;
+         }
+         @media #{$sm}{
+            margin-bottom: 20px;
+             
+            & span{
+               display: none;
+            }
+         }
+         @media #{$xs}{
+            display: none;
+         }
+      }
+
+   &-3{
+      @media #{$xs ,$sm ,$md}{
+         text-align: center;
+         margin-top: 40px;
+      }
+      & p{
+         margin-bottom: 40px;
+         @media #{$xl, $lg}{
+            margin-top: 20px;
+         }
+         @media #{$sm}{
+            margin-bottom: 20px;
+            margin-top: 20px;
+            & span{
+               display: none;
+            }
+         }
+         @media #{$xs}{
+             
+            display: none;
+         }
+      }
+   }
+}
+
+.it-hero-2{
+     @media #{$xs ,$sm}{
+      text-align: center;
+      
+     }
+}
+.it-home-2-review-2{
+   @media #{$sm}{
+      margin-top: 20px;
+   }
+}
+.it-home-2-review{
+   @media #{$xs , $sm}{
+      display: none;
+   }
 }

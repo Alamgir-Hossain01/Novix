@@ -85,10 +85,10 @@
         font-size: 22px;
         letter-spacing: .1px;
          transition: 0.3s;
-                @media #{$xs}{
-      font-size: 16px;
+        @media #{$xs}{
+            font-size: 16px;
+        }
 
-    }
         &:hover{
             color: #BF4315;
             }
@@ -105,8 +105,8 @@
     }
     &-area{
         @media #{$xs}{
-            padding-bottom: 24px;
-            padding-top: 35px;
+            padding-bottom: 60px;
+            padding-top: 60px;
         }
     }
    &-details{
@@ -243,4 +243,54 @@
      padding-top: 30px;
     
   }
+}
+// .it-team-content{
+    
+//     @media #{$lg, $md }{
+//      padding-top: 0px;
+//   }
+//     @media #{$md }{
+//      text-align: center;
+    
+//   }
+// }
+
+.it-team-area{
+   & .it-section-title{
+    padding-bottom: 50px;
+     @media #{$md}{
+        padding-bottom: 0;
+        
+        
+     }
+      & br{
+          @media #{$xl}{
+            display: none;
+          }
+      }
+      
+   }
+   .it-team-content{
+    padding-top: 50px;
+     @media #{$md}{
+        padding-top: 0;
+        text-align: center;
+     }
+     & span{
+          @media #{$xl, $lg}{
+            display: none;
+          }
+      }
+   }
+}
+
+.it-team__content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @media #{$xs, $sm, $md }{
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    }
 }

@@ -42,13 +42,17 @@
         display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		@media #{$xl,$lg,$md} {
+		@media #{$xl,} {
 			font-size: 18px;
 			padding: 15px 20px;
 		}
-		@media #{$xs}{
+		@media #{$lg,$md} {
+			font-size: 15px;
+			padding: 12px 12px;
+		}
+		@media #{$sm, $xs}{
 			font-size: 14px;
-    		padding: 12px 15px;
+    		padding: 12px 12px;
 		}
 		
 		
