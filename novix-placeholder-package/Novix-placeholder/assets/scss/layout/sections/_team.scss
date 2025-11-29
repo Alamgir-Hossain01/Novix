@@ -241,38 +241,41 @@
 .it-team-details-content{
    @media #{$xs}{
      padding-top: 30px;
-    
+  }
+   @media #{$md, $lg }{
+     padding-top: 60px;
+  }
+  &-2{
+       @media #{$lg }{
+     padding-top:0;
+  }
   }
 }
-// .it-team-content{
-    
-//     @media #{$lg, $md }{
-//      padding-top: 0px;
-//   }
-//     @media #{$md }{
-//      text-align: center;
-    
-//   }
-// }
 
 .it-team-area{
    & .it-section-title{
     padding-bottom: 50px;
      @media #{$md}{
         padding-bottom: 0;
-        
-        
      }
       & br{
           @media #{$xl}{
             display: none;
           }
       }
-      
+    &-team{
+        padding-bottom: 0px;
+    }
+    &-2{
+        padding-bottom: 0;
+        @media #{$xs}{
+        padding-bottom: 0;
+     }
+    }
    }
    .it-team-content{
     padding-top: 50px;
-     @media #{$md}{
+     @media #{$md, $xs}{
         padding-top: 0;
         text-align: center;
      }
@@ -291,6 +294,8 @@
     text-align: center;
     padding-top: 0;
     padding-bottom: 0;
-
+    }
+    &-2{
+        padding-top: 0;
     }
 }

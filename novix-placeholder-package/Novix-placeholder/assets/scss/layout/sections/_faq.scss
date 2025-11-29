@@ -100,6 +100,9 @@
         left: 48%;
         top: -215px;
     }
-
-
+}
+.it-faq-area-2{
+    @media #{$xl, $lg} {
+        margin-bottom: 70px;
+    }
 }

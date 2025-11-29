@@ -307,6 +307,9 @@
 
 }
 .it-footer-area{
+   @media #{$md, $lg} {
+      padding-top: 70px;
+   }
    & a{
       &:hover{
          color: var(--it-theme-color);

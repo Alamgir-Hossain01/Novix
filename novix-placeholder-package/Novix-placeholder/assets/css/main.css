@@ -4729,8 +4729,13 @@ header {
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .it-Choose-area .it-section-info {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .it-Choose-area .it-section-info-2 {
     text-align: center;
   }
 }
@@ -5071,6 +5076,16 @@ header {
     padding-top: 30px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .it-team-details-content {
+    padding-top: 60px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .it-team-details-content-2 {
+    padding-top: 0;
+  }
+}
 
 .it-team-area .it-section-title {
   padding-bottom: 50px;
@@ -5085,10 +5100,21 @@ header {
     display: none;
   }
 }
+.it-team-area .it-section-title-team {
+  padding-bottom: 0px;
+}
+.it-team-area .it-section-title-2 {
+  padding-bottom: 0;
+}
+@media (max-width: 767px) {
+  .it-team-area .it-section-title-2 {
+    padding-bottom: 0;
+  }
+}
 .it-team-area .it-team-content {
   padding-top: 50px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .it-team-area .it-team-content {
     padding-top: 0;
     text-align: center;
@@ -5110,6 +5136,9 @@ header {
     padding-top: 0;
     padding-bottom: 0;
   }
+}
+.it-team__content-2 {
+  padding-top: 0;
 }
 
 /*----------------------------------------*/
@@ -7310,6 +7339,11 @@ a:last-child .sidebar-widget-list {
   line-height: 24px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .it-footer-area {
+    padding-top: 70px;
+  }
+}
 .it-footer-area a:hover {
   color: var(--it-theme-color);
 }
@@ -7448,6 +7482,12 @@ a:last-child .sidebar-widget-list {
     z-index: 4;
     left: 48%;
     top: -215px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .it-faq-area-2 {
+    margin-bottom: 70px;
   }
 }
 
