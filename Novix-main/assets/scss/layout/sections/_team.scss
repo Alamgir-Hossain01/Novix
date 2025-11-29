@@ -51,11 +51,6 @@
         }
     }
 
-    // transition: all 0.7s linear;
-    // &:hover{
-    //   transform: scale(1.2);
-    //   z-index: 2;
-    // }
 
     &__socail{
         position: absolute;
@@ -226,12 +221,6 @@
 }
 
 
-.it-team__info{
-//   @media #{$xs, $sm}{
-//     margin: 2px 75px;
-//   }
-
-}
 .it-team__content {
   @media #{$xs, $sm, $md}{
     text-align: center;

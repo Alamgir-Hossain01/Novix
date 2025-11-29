@@ -16,12 +16,6 @@
         @media #{$lg, $md, $sm, $xs}{
             padding: 15px 180px 15px 15px;
         }
-        // @media #{$md}{
-        //     padding: 16px 180px 16px 14px;
-        // }
-        // @media #{$xs, $sm}{
-        //     padding: 16px 180px 16px 14px;
-        // }
         
 
     }
@@ -35,9 +29,6 @@
             right: 4px;
             
         }
-    //      @media #{$md}{
-    //     right: 10px;
-    // }
         @media #{$lg, $md, $sm}{
             right: 0;
         }
@@ -57,20 +48,6 @@
        margin-bottom: -60px;
     }
 }
-
-
-// .it-section-title{
-//     @media #{$md}{
-//         padding-top: 21px;
-//         padding-bottom: 21px;
-//         padding-left: 0;
-//     }
-//     & br{
-//         @media #{$md}{
-//             display: none;
-//         }
-//     }
-// }
 
 .it-Subscribe-area{
     @media #{$xs, $sm}{

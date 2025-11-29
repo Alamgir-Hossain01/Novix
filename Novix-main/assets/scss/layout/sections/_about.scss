@@ -17,13 +17,6 @@
       padding-top: 60px;
       padding-bottom: 60px;
     }
-    // @media #{$xs, $sm}{
-    //   padding-bottom: 0px;
-    //   padding-bottom: 60px;
-    // }
-    // @media #{$xs}{
-      
-    // }
     }
   }
   &-wrapper{
@@ -124,17 +117,6 @@
         font-size: 24px;
       }
       
-    }
-    &-text{
-      // & p{
-      //   line-height: 26px;
-      //    @media #{$lg}{
-      //     font-size: 15px;;
-      //   }
-      //   @media #{$xs}{
-      //     font-size: 12px;
-      //   }
-      // }
     }
     @media #{$md, $sm, $xs}{
       justify-content: space-between;
